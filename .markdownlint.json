@@ -1,0 +1,8 @@
+{
+    "default": true,
+    "MD003": { "style": "atx" },
+    "MD025": { "front_matter_title": "" },
+    "no-hard-tabs": true,
+    "line-length": false,
+    "ul-indent": { "indent": 4}
+}

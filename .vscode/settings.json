@@ -1,0 +1,9 @@
+{
+    "files.eol": "\r\n",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "markdown.extension.tableFormatter.enabled": true,
+    "markdown.extension.list.indentationSize": "inherit"
+
+}

@@ -1,0 +1,21 @@
+# Project information
+site_name: Squash TM documentation
+site_author: Henix
+site_description: >- 
+    Squash TM user documentation starting from 2.0
+    previous documentation is available at: 
+copyright: Copyright &copy; 2020 - 2021 Henix
+
+# Repository
+repo_name: squash-test/squashtm-doc
+repo_url: https://github.com/squash-test/squashtm-doc
+
+# Theme
+theme:
+  name: readthedocs
+
+# Extensions
+markdown_extensions:
+  - admonition            # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - meta                  # https://www.mkdocs.org/user-guide/writing-your-docs/#meta-data
+  - tables                # https://www.mkdocs.org/user-guide/writing-your-docs/#tables
