@@ -1,6 +1,7 @@
 # Welcome to Squash TM Documentation
 
-Here the documentation.
+Here the documentation. This is a modification attempt from Florent from StackEdit.io !
+How is it handling it ?
 
 ## Title 1
 
@@ -15,3 +16,6 @@ Here the documentation.
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjc4MDUzNzYxXX0=
+-->
