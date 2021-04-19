@@ -5,6 +5,7 @@ site_description: >-
     Squash TM user documentation starting from 2.0
     previous documentation is available at: 
 copyright: Copyright &copy; 2020 - 2021 Henix
+site_url: https://squash-test.github.io/squashtm-doc/
 
 # Repository
 repo_name: squash-test/squashtm-doc
