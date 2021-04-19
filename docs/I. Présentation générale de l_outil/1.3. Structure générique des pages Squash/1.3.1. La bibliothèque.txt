@@ -1,0 +1,22 @@
+# La bibliothèque
+Pour l'ensemble de l'application, la bibliothèque de chaque espace est structurée à l'identique. 
+L'arbre présente les projets dans la couleur de l'espace. En cliquant sur le bouton **[+]** devant  un élément ou en double cliquant sur celui-ci, l'utilisateur déroule l'arborescence.
+Il est ainsi possible d'organiser sa bibliothèque en arborescence de dossiers et sous-dossiers qui contiennent eux-mêmes les objets rattachés au projet.
+[screen Toutes biblio_FR]
+
+Devant le nom de chaque projet dans la bibliothèque, une icône indique les permissions de l'utilisateur courant :
+
+ - [screen icone étoile] : cette icône indique que l'utilisateur dispose des droits de création/suppression, de modification et de lecture pour l'espace.
+ - [screen icone crayon] : cette icône indique un droit de modification et de lecture mais pas de création ou de suppression.
+ - [screen icone oeil] : cette icône indique un droit de lecture uniquement sur l'espace.
+ - [screen icone play] : cette icône, visible uniquement sur l'espace Campagnes, indique un droit d'exécution sur les tests présents dans les plans d'exécution du projet.
+ 
+>Le profil Automaticien n'a pas accès aux espaces classiques de  Squash. Il n'a des droits que sur l'espace Automatisation.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTg1NjIzOTkzLDEyNDI5NDAzMjMsLTEyMD
+I2OTc1MjIsLTg0ODM0NDczLC0xNjE3OTI4NTAzLC0xNjEyODEy
+MDY3LC0xMDUxODI1MjMsMTMwNzQ5NTU5NCwxMDA3NDcyNTY1LD
+Q1MDMyODM5MSwxNDUyNDY2NjI3LC00NDAyOTgxOTEsMTY5NjMw
+Njg0MywyNjM3NTQxNTUsMTM1MjA2ODg4OCwtNDkzNjQ2MDQ4LD
+QyMzE4Nzk0NCwtMTk0NzI0NTgwMl19
+-->

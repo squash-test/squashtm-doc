@@ -1,0 +1,7 @@
+
+# Les attributs d’un cas de test
+
+(parler des références+statut+type+importance+cuf)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTgwNTY3MzQzN119
+-->

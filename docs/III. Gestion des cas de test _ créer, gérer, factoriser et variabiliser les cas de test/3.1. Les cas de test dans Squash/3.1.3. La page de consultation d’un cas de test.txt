@@ -1,0 +1,7 @@
+# La page de consultation d’un cas de test
+
+
+structure/capsule/ancres d’un CT
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwNjQ1MTAzNzJdfQ==
+-->

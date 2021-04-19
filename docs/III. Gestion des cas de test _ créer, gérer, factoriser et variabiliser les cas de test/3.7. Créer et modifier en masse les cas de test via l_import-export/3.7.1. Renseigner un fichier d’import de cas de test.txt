@@ -1,0 +1,9 @@
+# Renseigner un fichier d’import de cas de test 
+
+(gabarit d’import + détails des colonnes)
+
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM0NDc2MDUzNF19
+-->

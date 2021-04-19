@@ -1,0 +1,17 @@
+# Importer des exigences à partir d’un export
+
+--> mettre en avant la modification en masse
+
+A l’export, les chemins devront être échappés pour pouvoir être réimportés (noms contenant des « / »). L’échappement est indiqué par le caractère ‘\’. dans la colonne Req_Path
+
+
+| *PROJECT_ID*  | *ID du projet de destination (colonne ignorée si présente dans le fichier d’import)*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | |   
+| *PROJECT_NAME* | *Nom du projet de destination (colonne ignorée si présente dans le fichier d’import)*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | |
+
+| REQ_VERSION_CREATED_ON         | Date de création de l’exigence. Les dates sont exportées dans des cellules de type date dans le fichier Excel.
+
+| REQ_VERSION_MILESTONE          | NB : si la fonctionnalité Jalon n’est pas activée, à l’export cette colonne n’apparait pas. (Informations complémentaires pour la gestion des erreurs dans l’évolution Jalon #3606) 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4NDM0MjQ0OTEsODYxNjY4NjA2LC0yMD
+Y1NDI0MjYyXX0=
+-->

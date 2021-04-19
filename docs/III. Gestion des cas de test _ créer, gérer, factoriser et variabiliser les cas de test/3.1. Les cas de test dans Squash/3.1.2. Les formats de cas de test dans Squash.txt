@@ -1,0 +1,41 @@
+# Les formats de cas de test dans Squash
+
+Trois formats de cas de test sont disponibles dans Squash: Classique, BDD et Gherkin.
+
+[screen Format_Cas_de_test]. 
+
+Chaque format est facilement identifiable par sa couleur dans l'espace 'Cas de test'. Dans l'arbre des cas de test, les libellés apparaissent en noir pour le format Classique, en vert pour le format BDD et en bleu pour le format Gherkin.
+
+## Cas de test Classique
+Le cas de test classique consiste en un scénario décrivant, via des pas de test, les actions à mener et leurs résultats attendus.
+Il dispose d'un bloc 'Prérequis' qui recueille les préconditions du cas de test.
+
+[screen Cas_de_test_classique]
+
+## Cas de test BDD
+
+Le cas de test BDD permet de rédiger un scénario basé sur la syntaxe Gherkin via une interface simple et intuitive qui propose de l'autocomplétion*. Chaque pas de test BDD est composé d'un mot-clé et d'une phrase d'action. Une même action peut être utilisée par plusieurs cas de test BDD issus d'un même projet ou de projets différents. Un cas de test BDD correspond à un scénario Gherkin. 
+Les scripts associés aux cas de test BDD, peuvent être exportés au format Cucumber ou Robot Framework sans impact sur leur rédaction, Squash se chargeant de les convertir.
+
+
+[screen Cas_de_test_BDD]
+
+## Cas de test Gherkin
+Le cas de test Gherkin consiste en la rédaction d'un ou plusieurs scénarios Gherkin dans un éditeur de texte dédié qui propose une coloration et une vérification syntaxique.
+Chaque cas de test Gherkin ainsi rédigé est indépendant des autres. Les actions utilisés par les cas de test Gherkin ne sont pas réutilisables. Ce format ne propose pas d'autocomplétion. 
+Le script Gherkin exporté au format Cucumber sera identique a celui qui aura été rédigé par l'utilisateur. 
+
+[screen Cas_de_test_Gherkin]
+
+!!! info FOCUS
+	Les formats Gherkin et BDD facilitent la mise en place de l'automatisation.
+
+\* Disponible via le plugin Bibliothèque d'actions.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1Njg5MTgwODEsLTQ3MTE4NTkxLC0zMD
+ExMTEzNjMsMTQwODAzMzA0NCwtMTgyMzY5MTgyNywtODU0MTk4
+MTkyLDI0NjI3Nzc2MCwxMzY5MzMzNDA4LDE3OTUyMzEwMjMsLT
+M4NzY4NjM4NCwyMDM2MTc4ODMxLDIwODc2MzEwNCwyNTU1NTMy
+MTksLTEwNjU1NjA5MjEsLTE0NTUwNDA0MjcsMTA5MTEzNDkyOS
+wzMDI5NDQ5MDYsLTIyNDU1MzIyLDE5MjYwNTg3NDldfQ==
+-->

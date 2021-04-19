@@ -1,0 +1,6 @@
+# Organiser le référentiel de tests
+
+inclure ici l’explication des capsules et des icônes, normer les références impacts
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExMDUwMzM2NTBdfQ==
+-->

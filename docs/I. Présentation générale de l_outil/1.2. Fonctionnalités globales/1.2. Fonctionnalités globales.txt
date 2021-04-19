@@ -1,0 +1,14 @@
+# Fonctionnalités globales 
+ 
+1. Mon compte
+2. Filtre projets  
+3. Bugtrackers
+4. Aide  
+5. Déconnexion
+
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQwOTM1NTExNiw4MzkzNTExNDIsLTcyMT
+AzODc1NCw3MzA5OTgxMTZdfQ==
+-->

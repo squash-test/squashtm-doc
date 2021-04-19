@@ -1,0 +1,10 @@
+# Les différents espaces de Squash
+
+1. Gestionnaire de référentiel de tests
+2. La page d’accueil de Squash
+3. Présentation des espaces de Squash
+4. Terminologie
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE2Njc3ODA0NiwtOTY3NjU1NTk3LDczMD
+k5ODExNl19
+-->

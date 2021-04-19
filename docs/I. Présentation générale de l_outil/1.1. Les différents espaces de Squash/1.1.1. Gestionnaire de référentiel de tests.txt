@@ -1,0 +1,11 @@
+
+# Gestionnaire de référentiel de tests
+
+présentation rapide, 
+insister sur référentiel multi projet
+travail collaboratif
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwOTMwODAwNjYsLTExNjA5NDM1MDgsMj
+cwMjczMTU1LDczMDk5ODExNl19
+-->

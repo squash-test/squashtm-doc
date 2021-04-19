@@ -1,0 +1,8 @@
+# Créer un tableau de bord personnalisé 
+
+(mécanique/possible avec des graph-rapport de différents projets / adaptation des données si périmètre perso)
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA3MDgwNjAyMF19
+-->

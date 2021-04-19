@@ -1,0 +1,29 @@
+# Qu'est ce qu'une exigence ?
+
+Une exigence est "une condition ou capacité requise par un utilisateur pour résoudre un problème ou atteindre un objectif qui doit être tenu ou possédé par un système ou composant pour satisfaire à un contrat, standard, spécification ou autre document imposé formellement" (ISTQB)[^1]. Une exigence décrit un comportement attendu d'un système définit en amont dans un document spécifique pour répondre au besoin d'un utilisateur.
+
+Le terme "exigence" recouvre plusieurs niveaux allant des exigences métiers (macro) aux exigences de tests (micro). Les livrables d'un projet logiciel (cahier des charges, spécifications fonctionnelles, spécifications détaillées, maquettes) permettent l'extraction des exigences. 
+
+Dans Squash TM, une exigence est un objet de l’Espace **Exigences**. Toutes exigences ou règles de gestion qualifiant un système pourra être représentée sur Squash TM sous forme d'une exigence avec la possibilité d'être qualifiée ( 'Criticité', 'Statut', 'Catégorie', ... ) pour constituer le référentiel d'exigences souhaité.
+
+!!! info "FOCUS"
+	*Une exigence doit être non ambiguë et testable : elle doit offrir un moyen de prouver que le système satisfait à son énoncé.
+Chaque exigence de test décrit un comportement attendu : elle doit pouvoir être rédigée sous la forme :
+"L’application doit permettre [Action]".*
+
+[^1]: en anglais  "International Software Testing Qualifications Board", l'ISTQB est le Comité international de qualification du test logiciel.
+
+
+
+
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzU5NjAxMTUwLDE4ODc4Mjg1MDYsLTIxMj
+UyMzU2NTgsLTIxMjUyMzU2NTgsNDAwNTYwNDE4LC0xOTUzNzE2
+ODU2LC03MDYyMDY1MjAsLTE5NTM3MTY4NTYsLTcwOTU2NDg4LC
+0yMTQzNzQ5NzcsMTE3MTQxMTgyMywxMzk5MDk2NDYsLTU0OTQw
+NjkxNywtNzQ2MDI3MjY5LDI0ODYzMjY0MCwtMTQ1OTA4NzQ3LD
+E3MDYyMTk3MTgsLTgzODQ0ODI2NiwtMTM2NDYzMTI4OCwtMTIy
+NTI5NTA0MV19
+-->

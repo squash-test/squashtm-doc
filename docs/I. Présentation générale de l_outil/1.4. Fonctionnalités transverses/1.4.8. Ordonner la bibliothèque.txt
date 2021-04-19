@@ -1,0 +1,10 @@
+# Ordonner la bibliothèque
+
+###  Bouton [Ordonner la bibliothèque] [screen Icone Ordre]
+ Le survol de ce bouton affiche 2 options qui permettent aux utilisateurs ayant les droits de création/modification de choisir d’afficher les items des bibliothèques des 3 espaces (Exigences, Cas de test et Campagne) selon un ordre alphabétique ou positionnel.
+Lorsque l’utilisateur choisi l’ordre positionnel, il peut ordonner les différents items les uns par rapport aux autres de l’arbre par glisser-déposer.
+Cet ordre, propre à chaque espace, est partagé par l’ensemble des utilisateurs.
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTk0NTIxMjI4OCwzMDcwNDQwMzNdfQ==
+-->

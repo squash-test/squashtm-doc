@@ -1,4 +1,3 @@
-
 # Créer un objet
 
 ## Bouton [Ajouter]  [screen Icone Ajouter] 
@@ -17,6 +16,16 @@ Dans l'espace Pilotage, le clic sur certaines options de création donnent accè
  - page de sélection des attributs pour 'Ajouter un export personnalisé'
 
 Une fois les attributs ou le rapport sélectionnés, l'utilisateur peut ensuite enregistrer l'objet crée. Il est ensuite accessible depuis la bibliothèque de l'espace Pilotage à la racine de l'élément sélectionné.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTc2OTMxMjFdfQ==
+eyJkaXNjdXNzaW9ucyI6eyI0UzJ6UGNQWXE3cFJhM2tkIjp7In
+N0YXJ0Ijo2MywiZW5kIjo4MywidGV4dCI6IkxvcnNxdSd1bmUg
+c8OpbGVjdGlvbiJ9fSwiY29tbWVudHMiOnsia3ZuZW15ZEtaWE
+VCZFpCTiI6eyJkaXNjdXNzaW9uSWQiOiI0UzJ6UGNQWXE3cFJh
+M2tkIiwic3ViIjoiZ286MTE3MDI0MjMwMTAxOTI5MzA3MTI0Ii
+widGV4dCI6IkNvbW1lbnRhaXJlIGJpZG9uIiwiY3JlYXRlZCI6
+MTYxODQxNTM0NDUxOH19LCJoaXN0b3J5IjpbLTEzNjc2MTM3Mj
+AsMTQxNzIzODQyNywtMTQwNDUzMDQ4OSwtMTkwNTE0OTgyNSw3
+NTY2NDI0LC03MTA4NDc2MzAsLTE2NDgxOTc5MjcsMTM4MjQ3Nj
+Q2MywtMTE1MjM0ODYxOCwtNzgyMzQzNTE5XX0=
 -->

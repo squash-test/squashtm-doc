@@ -1,0 +1,14 @@
+# Filtre projets
+Accessible depuis la barre de navigation, le menu **Filtre projets** permet d'afficher tout (sous-menu Tous les projets) ou partie (sous-menu Multi-projets) des projets dans les différentes bibliothèques de l'application et fonctionnalités appelant le référentiel d'une bibliothèque.
+
+Un champ de recherche dynamique sur le Nom ou l'Étiquette du projet affiche la liste des projets disponibles au fur et à mesure de la saisie.
+Pour sélectionner un projet à inclure dans le filtre, cliquer dans la case à cocher située devant le nom du projet.
+Le clic sur **[Confirmer]** valide la sélection et seuls les projets sélectionnés seront affichés dans les bibliothèques.
+>FOCUS : le filtre projets est appliqué par défaut sur les espaces Recherche.
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzMTAwODEwODcsMjAwNjE5NjA2MiwxND
+I0NjMyMzkzLC01NTU0NTA2NzcsLTY1MTcxMTI0MCwtMTk2Mzk0
+OTg5MCwtOTAzODU0NzIyLC0xNjQ0MDQ1OTcsLTIwNjI2NjA3NT
+UsLTI1NTE2MjI4MSwyMDI1MDgxMDk4XX0=
+-->
