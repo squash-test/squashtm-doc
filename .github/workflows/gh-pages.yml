@@ -1,8 +1,9 @@
 name: build and deploy docs to github pages
 on:
-  schedule:
+  #schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '10 9-19 * * 1-5'
+    #- cron:  '10 9-19 * * 1-5'
+  - workflow_dispatch
 
 jobs:
   deploy:
@@ -16,19 +17,19 @@ jobs:
         with:
           python-version: '3.x'
 
-      #- name: Install dependencies
-      #  run: |
-      #    python3 -m pip install --upgrade pip
-      #    python3 -m pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
 
       #- name: Deploy
       #  run: | 
       #    mkdocs gh-deploy
 
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+      - run: mkdocs build
 
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: build-base
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
