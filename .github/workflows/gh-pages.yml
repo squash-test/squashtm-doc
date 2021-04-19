@@ -16,11 +16,19 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
-        run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install -r requirements.txt
+      #- name: Install dependencies
+      #  run: |
+      #    python3 -m pip install --upgrade pip
+      #    python3 -m pip install -r requirements.txt
 
-      - name: Deploy
-        run: | 
-          mkdocs gh-deploy
+      #- name: Deploy
+      #  run: | 
+      #    mkdocs gh-deploy
+
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG_FILE: mkdocs.yml
+          EXTRA_PACKAGES: build-base
