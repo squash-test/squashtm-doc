@@ -720,12 +720,12 @@ Cette fonctionnalité est très utile :
 </tr>
 <tr>
 <td>REQ_PATH</td>
-<td>Chemin de l’exigence. Il commence par « /nom du projet » et se termine par le nom de l’exigence (= nom de la version courante, soit la dernière version). Il inclut le nom du projet car l’import peut être multi-projet.</td>
+<td>Chemin de l’exigence. Il commence par « /nom du projet » et se termine par le nom de l’exigence (= nom de la version courante, soit la dernière version). Il inclut le nom du projet car l’import est multi-projet.</td>
 <td><u>Champ Obligatoire</u> <br/>Par exemple : <br/>- \/projet\/dossier\/exigence <br/>- \/projet\/exiMère\/exiFille</td>
 </tr>
 <tr>
 <td>REQ_VERSION_NUM</td>
-<td>Numéro de version de l’exigence. <br/>- Mode <strong>CREATE</strong> : Si le champ n’est pas renseigné, deux cas possibles : <br/>-- Il n’y a qu’une version d’exigence avec ce REQ_PATH, alors REQ_VERSION_NUM=1. <br/>-- Il y a plusieurs versions d’exigences avec le même REQ_PATH, alors les versions sont numérotées dans l’ordre d’apparition à partir de 1. <br/>- Mode <strong>UPDATE</strong> : ce champ permet d’identifier la version à mettre à jour ou à supprimer.</td>
+<td>Numéro de version de l’exigence. <br/>- Mode <strong>CREATE</strong> : Si le champ n’est pas renseigné, deux cas possibles : <br/>-- Il n’y a qu’une version d’exigence avec ce REQ_PATH, alors REQ_VERSION_NUM=1. <br/>-- Il y a plusieurs versions d’exigences avec le même REQ_PATH, alors les versions sont numérotées dans l’ordre d’apparition à partir de 1. <br/>- Mode <strong>UPDATE</strong> : ce champ permet d’identifier la version à mettre à jour.</td>
 <td>Mode <strong>CREATE</strong> : <u>Champ facultatif</u>. <br/>Mode <strong>UPDATE</strong> : <u>Champ obligatoire</u></td>
 </tr>
 <tr>
@@ -867,7 +867,7 @@ Cette fonctionnalité est très utile :
 </tbody>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODU4NjQxMywtMzgxNzUyNTIxLDk0OT
+eyJoaXN0b3J5IjpbLTQ0ODEyMjA1NywtMzgxNzUyNTIxLDk0OT
 kzMjExMSwtMTE2Nzg1NTcyMSwxODE2MzY3MDkxLDE0NTA3NTUw
 NjEsMTQwNDIxODc1MywyMDI3NjkxNTMxLC0xODU0MTY2MTY5LC
 0yMDMwOTM1MDkzLDgyNjI1MTY5MiwtMjUwMjY0NDc1LC0xNzY5
