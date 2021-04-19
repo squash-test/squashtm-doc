@@ -725,7 +725,7 @@ Cette fonctionnalité est très utile :
 </tr>
 <tr>
 <td>REQ_VERSION_NUM</td>
-<td>Numéro de version de l’exigence. <br/>- Mode <strong>CREATE</strong> : Si le champ n’est pas renseigné, deux cas possibles : <br/>-- Il n’y a qu’une version d’exigence avec ce REQ_PATH, alors REQ_VERSION_NUM=1. <br/>-- Il y a plusieurs versions d’exigences avec le même REQ_PATH, alors les versions sont numérotées dans l’ordre d’apparition à partir de 1. <br/>- Mode <strong>UPDATE</strong> : ce champ permet d’identifier la version à mettre à jour.</td>
+<td>Numéro de version de l’exigence. <br/>- Mode <strong>CREATE</strong> : Si le champ n’est pas renseigné, deux cas possibles : <br/>- Il n’y a qu’une version d’exigence avec ce REQ_PATH, alors REQ_VERSION_NUM=1. <br/>- Il y a plusieurs versions d’exigences avec le même REQ_PATH, alors les versions sont numérotées dans l’ordre d’apparition à partir de 1. <br/>- Mode <strong>UPDATE</strong> : ce champ permet d’identifier la version à mettre à jour.</td>
 <td>Mode <strong>CREATE</strong> : <u>Champ facultatif</u>. <br/>Mode <strong>UPDATE</strong> : <u>Champ obligatoire</u></td>
 </tr>
 <tr>
@@ -760,13 +760,13 @@ Cette fonctionnalité est très utile :
 </tr>
 <tr>
 <td><em>REQ_VERSION_#_TC</em></td>
-<td><em>Nombre de cas de test associés à l’exigence. (colonne ignorée si présente dans le fichier d’import)</em></td>
-<td></td>
+<td><em>Nombre de cas de test associés à l’exigence.</em></td>
+<td><em>Colonne ignorée si présente dans le fichier d’import</em></td>
 </tr>
 <tr>
 <td><em>REQ_VERSION_#_ATTACHEMENT</em></td>
-<td><em>Nombre de pièces jointes liées à l’exigence (colonne ignorée si présente dans le fichier d’import)</em></td>
-<td></td>
+<td><em>Nombre de pièces jointes liées à l’exigence</em></td>
+<td><em>Colonne ignorée si présente dans le fichier d’import</em></td>
 </tr>
 <tr>
 <td>REQ_VERSION_CREATED_ON</td>
@@ -795,13 +795,13 @@ Cette fonctionnalité est très utile :
 </tr>
 <tr>
 <td>REQ_VERSION_CUF_\&lt;code du cuf></td>
-<td>La valeur du champ personnalisé de code \&lt;code du cuf> pour l’exigence</td>
-<td></td>
+<td>Une colonne par champ personnalisé.<br/> Dans l'en-tête, remplacer \&lt;code du cuf> par le code du champ personnalisé.</td>
+<td>Valeur associée au champ personnalisé</td>
 </tr>
 </tbody>
 </table>
 <h3 id="onglet-link_req_tc">Onglet LINK_REQ_TC</h3>
-<p>Si vous souhaitez faire des associations entre les exigences et les cas de test, les 3 champs sont obligatoires.</p>
+<p>Si vous souhaitez faire des associations entre les exigences et des cas de test présents dans le référentiel, les 3 champs sont obligatoires.</p>
 <table>
 <thead>
 <tr>
@@ -862,18 +862,18 @@ Cette fonctionnalité est très utile :
 <tr>
 <td>RELATED_REQ_ROLE</td>
 <td>La valeur du champ code rôle pour le lien entre les exigences</td>
-<td></td>
+<td>Par exemple : <br/>pour lier une Exigence A (PARENT) à une Exigence B (CHILD) avec le rôle Parent-Enfant, saisir le rôle de l'exigence B : CHILD</td>
 </tr>
 </tbody>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzkzOTE1MjMsLTM4MTc1MjUyMSw5ND
-k5MzIxMTEsLTExNjc4NTU3MjEsMTgxNjM2NzA5MSwxNDUwNzU1
-MDYxLDE0MDQyMTg3NTMsMjAyNzY5MTUzMSwtMTg1NDE2NjE2OS
-wtMjAzMDkzNTA5Myw4MjYyNTE2OTIsLTI1MDI2NDQ3NSwtMTc2
-OTgxNjYwNSwtMTY3NTQ5NTE1MywtNzg2NTE5ODU3LDEwMDk3NT
-I1NTAsMzIwNDUyNzEsMjI2NzM0MjM5LC01MDk0NDQ0OTYsLTU1
-MTcxMTc4Ml19
+eyJoaXN0b3J5IjpbLTUzOTExMzMyOSwtMTgzNzM0OTgxNywtMj
+EzOTM5MTUyMywtMzgxNzUyNTIxLDk0OTkzMjExMSwtMTE2Nzg1
+NTcyMSwxODE2MzY3MDkxLDE0NTA3NTUwNjEsMTQwNDIxODc1My
+wyMDI3NjkxNTMxLC0xODU0MTY2MTY5LC0yMDMwOTM1MDkzLDgy
+NjI1MTY5MiwtMjUwMjY0NDc1LC0xNzY5ODE2NjA1LC0xNjc1ND
+k1MTUzLC03ODY1MTk4NTcsMTAwOTc1MjU1MCwzMjA0NTI3MSwy
+MjY3MzQyMzldfQ==
 -->
               
             </div>
