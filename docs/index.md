@@ -2,6 +2,7 @@
 
 Here the documentation. This is a modification attempt from Florent from StackEdit.io !
 How is it handling it ?
+Bonjour Yamina !
 
 ## Title 1
 
@@ -17,5 +18,5 @@ How is it handling it ?
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc4MDUzNzYxXX0=
+eyJoaXN0b3J5IjpbNDc3MzQ3NjU2LDI3ODA1Mzc2MV19
 -->
