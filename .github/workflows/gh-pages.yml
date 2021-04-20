@@ -1,7 +1,7 @@
 name: Scheduled build and deploy docs to github pages
 on:
   schedule:
-    - cron:  '*/10 7-17 * * 1-5'
+    - cron:  '0,10,20,30,40,50 7-17 * * 1-5'
   #- workflow_dispatch
 
 jobs:
