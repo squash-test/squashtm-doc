@@ -689,12 +689,14 @@
             <div class="section">
               
                 <h1 id="renseigner-un-fichier-dimport-dexigences">Renseigner un fichier d'import d'exigences</h1>
-<p>L'import d'exigences via un fichier Excel permet de créer ou modifier un patrimoine d'exigences <strong>en masse</strong>. Il est possible d'importer des exigences, leurs attributs ainsi que leurs associations (exigences et cas de test). 
-Cette fonctionnalité est très utile :
- - lors d'une <strong>migration</strong> depuis un outil tiers
- - pour récupérer un patrimoine de spécifications existant dans un document
- - pour effectuer des modifications en masse sur les exigences présentes dans Squash</p>
-<p>L'import d'exigences se fait depuis des fichiers au format <strong>.xls</strong>, <strong>.xlsx</strong> ou <strong>.xlsm</strong> pour être interprété par Squash. </p>
+<p>L'import d'exigences via un fichier Excel permet de créer ou modifier un patrimoine d'exigences <strong>en masse</strong>. Il est possible d'importer des exigences, leurs attributs ainsi que leurs associations (exigences et cas de test).
+Cette fonctionnalité est très utile :</p>
+<ul>
+<li>lors d'une <strong>migration</strong> depuis un outil tiers</li>
+<li>pour récupérer un patrimoine de spécifications existant dans un document</li>
+<li>pour effectuer des modifications en masse sur les exigences présentes dans Squash</li>
+</ul>
+<p>L'import d'exigences se fait depuis des fichiers au format <strong>.xls</strong>, <strong>.xlsx</strong> ou <strong>.xlsm</strong> pour être interprété par Squash.</p>
 <div class="admonition info">
 <p class="admonition-title">Focus</p>
 <ul>
@@ -703,17 +705,21 @@ Cette fonctionnalité est très utile :
 </ul>
 </div>
 <h2 id="structure-du-fichier-dimport">Structure du fichier d'import</h2>
-<p>Le fichier d'import comprend trois onglets : REQUIREMENT, LINK_REQ_TC et LINK_REQ_REQ<br />
-- L'onglet REQUIREMENT permet de remplir les informations liées aux exigences à importer comme l'emplacement, la description, la criticité, etc.<br />
-- L'onglet LINK_REQ_TC renseigne les informations pour associer les exigences à des cas de test déjà présents dans Squash.<br />
-- L’onglet LINK_REQ_REQ renseigne les informations pour lier des versions d’exigences entre elles (soit déjà présentes dans Squash, soit présentes dans le fichier d'import)</p>
+<p>Le fichier d'import comprend trois onglets : REQUIREMENT, LINK_REQ_TC et LINK_REQ_REQ  </p>
+<ul>
+<li>L'onglet REQUIREMENT permet de remplir les informations liées aux exigences à importer comme l'emplacement, la description, la criticité, etc.  </li>
+<li>L'onglet LINK_REQ_TC renseigne les informations pour associer les exigences à des cas de test déjà présents dans Squash.  </li>
+<li>L’onglet LINK_REQ_REQ renseigne les informations pour lier des versions d’exigences entre elles (soit déjà présentes dans Squash, soit présentes dans le fichier d'import)</li>
+</ul>
 <blockquote>
-<p>Le fichier d'import doit respecter les règles ci dessous
-- Le nom des 3 onglets ne doivent pas être modifiés
-- Les entêtes des colonnes ne doivent pas être modifiées. 
-- Les lignes vides ne sont pas interprétées.<br />
-- Les cellules ne doivent pas être fusionnées<br />
-- L'ordre des lignes n'a pas d'importance. L'import se fait ligne par ligne</p>
+<p>Le fichier d'import doit respecter les règles ci dessous</p>
+<ul>
+<li>Le nom des 3 onglets ne doivent pas être modifiés</li>
+<li>Les entêtes des colonnes ne doivent pas être modifiées. </li>
+<li>Les lignes vides ne sont pas interprétées.  </li>
+<li>Les cellules ne doivent pas être fusionnées  </li>
+<li>L'ordre des lignes n'a pas d'importance. L'import se fait ligne par ligne</li>
+</ul>
 </blockquote>
 <h3 id="onglet-requirement">Onglet REQUIREMENT</h3>
 <table>
