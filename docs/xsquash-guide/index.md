@@ -1,0 +1,3 @@
+# Xsquash Documentation
+
+> To do
