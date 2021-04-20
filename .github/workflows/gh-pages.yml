@@ -1,4 +1,4 @@
-name: build and deploy docs to github pages
+name: Scheduled build and deploy docs to github pages
 on:
   schedule:
     - cron:  '*/10 7-17 * * 1-5'
@@ -26,4 +26,3 @@ jobs:
       - name: Deploy
         run: | 
           mkdocs gh-deploy
- 
