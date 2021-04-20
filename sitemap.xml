@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>https://squash-test.github.io/squashtm-doc/</loc>
+     <lastmod>2021-04-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squash-test.github.io/squashtm-doc/admin-guide/</loc>
+     <lastmod>2021-04-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squash-test.github.io/squashtm-doc/install-guide/</loc>
+     <lastmod>2021-04-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://squash-test.github.io/squashtm-doc/user-guide/01.presentation-generale-outil/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
@@ -685,6 +697,14 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squash-test.github.io/squashtm-doc/user-guide/08.gestion-jalons/8.4.jalons-reporting/8.4.2.%20Les%20rapports%20par%20jalon/</loc>
+     <lastmod>2021-04-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squash-test.github.io/squashtm-doc/waj-guide/</loc>
+     <lastmod>2021-04-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squash-test.github.io/squashtm-doc/xsquash-guide/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
