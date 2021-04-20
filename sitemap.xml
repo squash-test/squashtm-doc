@@ -172,11 +172,11 @@
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.4.suivi-couverture/2.4.1.%20Ancre%20indicateurs%20de%20couverture/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.4.suivi-couverture/2.4.1.ancre-indicateurs-couverture/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.4.suivi-couverture/2.4.2.%20Calculs%20des%20indicateurs%20de%20couverture/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.4.suivi-couverture/2.4.2.calculs-indicateurs-couverture/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -184,55 +184,55 @@
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.5.versionner-exigences/2.5.%20Versionner%20les%20exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.5.versionner-exigences/2.5.1.versionning-exigences/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.5.versionner-exigences/2.5.1.%20Le%20versionning%20d_exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.5.versionner-exigences/2.5.2.creer-nouvelle-version-exigences/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.5.versionner-exigences/2.5.2.%20Cr%C3%A9er%20une%20nouvelle%20version%20d_exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.5.versionner-exigences/2.5.3.consulter-historique-versions-exigence/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.5.versionner-exigences/2.5.3.%20Consulter%20l_historique%20des%20versions%20d_une%20exigence/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.5.versionner-exigences/2.5.versionner-exigences/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.%20Cr%C3%A9er%20et%20modifier%20en%20masse%20les%20exigences%20via%20l_import%20export/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.1.renseigner-fichier-import-exigences/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.1.%20Renseigner%20un%20fichier%20d_import%20d_exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.2.importer-exigences/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.2.%20Importer%20des%20exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.3.exporter-exigences-bibliotheque/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.3.%20Exporter%20des%20exigences%20depuis%20la%20biblioth%C3%A8que/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.4.importer-exigences-a-partir-un-export/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.4.%20Importer%20des%20exigences%20%C3%A0%20partir%20d_un%20export/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.creer-modifier-en-masse-exigences-import-export/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.7.tableaux-bord-exigences/2.7.%20Tableau%20de%20bord%20des%20exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.7.tableaux-bord-exigences/2.7.tableau-bord-exigences/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.8.rechercher-exigences/2.8.%20Recherche%20des%20exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.8.rechercher-exigences/2.8.1.criteres-recherche-exigences/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.8.rechercher-exigences/2.8.1.%20Les%20crit%C3%A8res%20de%20recherche%20des%20exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.8.rechercher-exigences/2.8.2.resultats-recherche/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.8.rechercher-exigences/2.8.2.%20Les%20r%C3%A9sultats%20de%20recherche/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc/user-guide/02.gestion-exigences/2.8.rechercher-exigences/2.8.recherche-exigences/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
