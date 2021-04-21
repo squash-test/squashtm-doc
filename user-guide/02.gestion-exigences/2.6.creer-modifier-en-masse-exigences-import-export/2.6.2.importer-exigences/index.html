@@ -734,16 +734,45 @@ Le chemin : /Projet1/Dossier1/ExigenceMère/ExigenceFille.</p>
 </ol>
 <h3 id="importer-des-exigences-avec-des-champs-personnalises">Importer des exigences avec des champs personnalisés</h3>
 <p>Si des champs personnalisés (CUF) sont configurés pour les exigences du projet, dans le fichier d'import, la colonne "REQ_VERSION_CUF_\&lt;code du cuf>" pourra être renseigné, a raison d'une colonne par champ personnalisé. L'entête de la colonne devra comporter le code du champ personnalisé présent sur sa page de consultation.</p>
-<p>Contenu de la colonne "REQ_VERSION_CUF_\&lt;code du cuf>" :
-| Type de champ personnalisé | Valeur attendue |
-|--|--|
-| Tag | Tag1|Tag2 |
-| Case à cocher| 'true' ou 'false' |
-| Liste déroulante | Libellé de l'option |
-| Numérique| Par exemple : '50', '12,8' |
-| Date| 'AAAA-MM-JJ'  |
-| Texte simple| Texte avec 255 caractères maximum sans mise en forme  |
-| Texte riche| Pour importer de la mise en forme, le texte doit être en HTML  |</p>
+<p>Contenu de la colonne "REQ_VERSION_CUF_\&lt;code du cuf>" :</p>
+<table>
+<thead>
+<tr>
+<th>Type de champ personnalisé</th>
+<th>Valeur attendue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tag</td>
+<td>Tag1|Tag2</td>
+</tr>
+<tr>
+<td>Case à cocher</td>
+<td>'true' ou 'false'</td>
+</tr>
+<tr>
+<td>Liste déroulante</td>
+<td>Libellé de l'option</td>
+</tr>
+<tr>
+<td>Numérique</td>
+<td>Par exemple : '50', '12,8'</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>'AAAA-MM-JJ'</td>
+</tr>
+<tr>
+<td>Texte simple</td>
+<td>Texte avec 255 caractères maximum sans mise en forme</td>
+</tr>
+<tr>
+<td>Texte riche</td>
+<td>Pour importer de la mise en forme, le texte doit être en HTML</td>
+</tr>
+</tbody>
+</table>
 <h3 id="importer-des-exigences-avec-des-associations-a-des-cas-de-test">Importer des exigences avec des associations à des cas de test</h3>
 <p>L'onglet "LINK_REQ_TC" du fichier d'import sera à compléter avec le chemin de l'exigence, le numéro de la version ainsi que le chemin du cas de test que l'on souhaite associer.
 Les informations seront visibles dans l'ancre Cas de test vérifiant cette exigence, sur la page de consultation de l'exigence.</p>
