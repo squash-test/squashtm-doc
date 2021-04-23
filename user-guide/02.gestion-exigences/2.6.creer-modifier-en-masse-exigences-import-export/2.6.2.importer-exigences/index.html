@@ -706,9 +706,9 @@
 <p>Si les dossiers sont inexistants dans Squash au moment de l'import, ceux-ci seront créés. </p>
 <p><u><strong>Par exemple :</strong></u>
 Le chemin : /Projet1/Dossier1/ExigenceMère/ExigenceFille.
-- Si l’exigence ExigenceMère est présente dans le référentiel, ExigenceFille est ajoutée sous l'exigence mère ExigenceMère. 
-- Si l’exigence mère n’existe pas dans le référentiel mais est présente dans le fichier d’import AVANT l'exigence fille, ExigenceFille est ajoutée sous l'exigence mère ExigenceMère. 
-- Si l’exigence mère n’existe pas dans le référentiel et n’est pas présente dans le fichier d’import ou présente après l'exigence fille, alors l’exigence ExigenceFille est ajoutée dans le dossier ExigenceMère, sous-dossier de Dossier1.</p>
+    - Si l’exigence ExigenceMère est présente dans le référentiel, ExigenceFille est ajoutée sous l'exigence mère ExigenceMère. 
+    - Si l’exigence mère n’existe pas dans le référentiel mais est présente dans le fichier d’import AVANT l'exigence fille, ExigenceFille est ajoutée sous l'exigence mère ExigenceMère. 
+    - Si l’exigence mère n’existe pas dans le référentiel et n’est pas présente dans le fichier d’import ou présente après l'exigence fille, alors l’exigence ExigenceFille est ajoutée dans le dossier ExigenceMère, sous-dossier de Dossier1.</p>
 <h3 id="importer-des-versions-dexigences">Importer des versions d'exigences</h3>
 <p>Pour <strong>créer</strong> plusieurs versions d'une même exigence, dans le fichier excel, chaque version correspondra à une ligne. Le numéro de version que l'on souhaite créer sera à renseigner dans la colonne "REQ_VERSION_NUM".</p>
 <div class="admonition note">
@@ -722,10 +722,16 @@ Le chemin : /Projet1/Dossier1/ExigenceMère/ExigenceFille.
 <p>Si une liste personnalisée pour la catégorie des exigences est configurée sur le projet, dans le fichier d'import, <strong>le code de l'option</strong> souhaitée sera à renseigner dans la colonne "REQ_VERSION_CATEGORY".</p>
 <p><u><strong>Par exemple:</strong> </u></p>
 <ol>
-<li>Avoir une liste personnalisée avec plusieurs options, dont le libellé de l'option est "Option2" associé au code "Opt2".
-<img alt="Page de consultation d'une liste personnalisé" src="../resources/listeperso.jpg" /></li>
-<li>Dans le fichier Excel, renseigner la valeur du code de l'option dans la colonne "REQ_VERSION_CATEGORY" : ici "Opt2"</li>
-<li>Lorsque le fichier sera importé, l'exigence sera créée et le champ 'Catégorie' sera renseignée par "Option2"</li>
+<li>
+<p>Avoir une liste personnalisée avec plusieurs options, dont le libellé de l'option est "Option2" associé au code "Opt2".
+<img alt="Page de consultation d'une liste personnalisé" src="../resources/listeperso.jpg" /></p>
+</li>
+<li>
+<p>Dans le fichier Excel, renseigner la valeur du code de l'option dans la colonne "REQ_VERSION_CATEGORY" : ici "Opt2"</p>
+</li>
+<li>
+<p>Lorsque le fichier sera importé, l'exigence sera créée et le champ 'Catégorie' sera renseignée par "Option2"</p>
+</li>
 </ol>
 <h3 id="importer-des-exigences-avec-des-champs-personnalises">Importer des exigences avec des champs personnalisés</h3>
 <p>Si des champs personnalisés (CUF) sont configurés pour les exigences du projet, dans le fichier d'import, la colonne "REQ_VERSION_CUF_&lt;code du cuf>" pourra être renseigné, a raison d'une colonne par champ personnalisé. L'entête de la colonne devra comporter le code du champ personnalisé présent sur sa page de consultation.</p>
@@ -775,8 +781,8 @@ Les informations seront visibles dans l'ancre Cas de test vérifiant cette exige
 <p>L'onglet "LINK_REQ_REQ" du fichier d'import sera à compléter avec les chemins des deux exigences que l'on souhaite lier ainsi que leur numéro de version. Le code du type de lien sera également à renseigner.
 Les informations seront visibles dans l'ancre Exigences liées, sur la page de consultation de l'exigence.</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODk5MzI2NywtOTExOTQ2Mjc5LDYwOD
-YyODMzXX0=
+eyJoaXN0b3J5IjpbLTU1NTc0MDE5MywxNTI4OTkzMjY3LC05MT
+E5NDYyNzksNjA4NjI4MzNdfQ==
 -->
               
             </div>
