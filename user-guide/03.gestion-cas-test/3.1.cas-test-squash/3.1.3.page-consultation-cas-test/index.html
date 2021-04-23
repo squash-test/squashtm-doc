@@ -249,7 +249,7 @@
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#exigences-verifiees-par-le-cas-de-test">Exigences vérifiées par le cas de test</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#parametres-et-jeux-de-donnees">Paramètres et jeux de données</a>
+    <li class="toctree-l4"><a class="reference internal" href="#parametres-et-jeux-de-donneesscren-ane">Paramètres et jeux de donnéesscren ane</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#cas-de-test-appele-par">Cas de test appelé par</a>
     </li>
@@ -711,17 +711,16 @@
 <p class="admonition-title">Info</p>
 <p>Le nom et la référence (facultative) sont déterminés lors de la création du cas de test. Avoir un cas de test avec une référence est fortement conseillé afin d'organiser son référentiel. Il est possible de modifier la référence et le nom depuis la page de consultation du cas de test.</p>
 </div>
-<p>Il est possible d'exporter le cas de test via le bouton <img alt="Afficher plus" src="../resources/more.png" /> puis [Exporter] ou d'y aouter une pièce jointe via le bouton <img alt="Ajouter une pièce-jointe" src="resources/addattachments.png" /> en haut à droite de la page. </p>
+<p>Il est possible d'exporter le cas de test via le bouton <img alt="Afficher plus" src="../resources/more.png" /> puis [Exporter] ou d'y aouter une pièce jointe via le bouton <img alt="Ajouter une pièce-jointe" src="../resources/add_attachments.png" /> en haut à droite de la page. </p>
 <p>La barre des ancres à gauche, permet au clic sur une ancre, d'accéder au bloc correspondant :</p>
 <h4 id="informations"><img alt="Ancre Informations" src="../resources/information.png" /> Informations</h4>
-<p>Le bloc 'Informations' affiche les attributs du cas de test: 'Statut', 'Importance', 'Type', 'Nature', et 'Format', sa escription ainsi que ses champs personnalisés.</p>
-<h4 id="exigences-verifiees-par-le-cas-de-test">Exigences vérifiées par le cas de test</h4>
-<p>Le bloc 'Exigences vérifiées par le cas de test' permet de relier la ou les exigence(s) couverte(s) par le as e test n tble affiche les informations des exigences associées.</p>
-<h4 id="parametres-et-jeux-de-donnees">Paramètres et jeux de données</h4>
-<p>[screen ancre]
-Le bloc 'Paramètres et jeux de données' permet de variabiliser et de valoriser des pas de test par une gestion des paramètres et des jeux de données.
+<p>Le bloc 'Informations' affiche les attributs du cas de test: 'Statut', 'Importance', 'Type', 'Nature', et 'Format', sa description ainsi que ses champs personnalisés.</p>
+<h4 id="exigences-verifiees-par-le-cas-de-test"><img alt="Ancre Exigences vérifiées par le cas de test" src="../resources/verified_requirement.png" /> Exigences vérifiées par le cas de test</h4>
+<p>Le bloc 'Exigences vérifiées par le cas de test' permet de relier la ou les exigence(s) couverte(s) par le cas de test. Une table affiche les informations des exigences associées.</p>
+<h4 id="parametres-et-jeux-de-donneesscren-ane"><img alt="Ancre Paramètres et jeux de données" src="../resources/param_datasets.png" /> Paramètres et jeux de donnéesscren ane</h4>
+<p>Le bloc 'Paramètres et jeux de données' permet de variabiliser et de valoriser des pas de test par une gestion des paramètres et des jeux de données.
 Au lieu de renseigner une valeur dans le bloc "Action" ou dans le bloc "Résultat attendu", il est possible de renseigner un paramètre qui pourra prendre une ou plusieurs valeurs (jeux de données). Les paramètres renseignés dans les pas de test sont automatiquement reportés dans la table des 'Paramètres et jeux de données'.</p>
-<h4 id="cas-de-test-appele-par">Cas de test appelé par</h4>
+<h4 id="cas-de-test-appele-par"><img alt="Ancre Cas de test appelé par" src="../resources/called_testcase.png" /> Cas de test appelé par</h4>
 <p>[screen ancre]
 Le bloc 'Cas de test appelé par' aie le oules cs de test qui appelle(nt) le cas de test en cours. Le mécanisme d'appels de tests dans un cas de test permet la construction de bibliothèques modulaires de cas de test. Lors de l'exécution, les pas de test du cas de test appelé sont vu comme des pas de test dans le cas de test appelant. Une table affiche les informations des cas de test "appelant".</p>
 <div class="admonition note">
@@ -743,12 +742,13 @@ Trois liens cliquables permettent à l'utilisateur d'accéder à :
 <hr />
 <p>*Cette ancre s'affiche uniquement lorsqu'un bugtracker est associé au projet de l'exigence.</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMwMzUxMzg2LDE3NDM2NTI1NzIsMTMwNT
-Y3MzAxMyw5NDAzNTQ0NjYsLTIwOTc0NDY2NzYsLTEzNzgwOTY3
-MSwtMzQ0NjQzNTE3LC0xNjA1NzU1MjE1LDgxOTMyODQ2MSw0NT
-AxNDQ2OTEsMTE3MDE4NDg1LDE4NjU3NTM3MTEsLTE3MzQ0MTM3
-NjAsMTY0MTY2NjUsLTE5NzAxMjIzNywtMTEzMTkyOTA5MSwtMj
-A2MzE1MzMyOCwtNzg4NjY2OTE2LC0yMDY0NTEwMzcyXX0=
+eyJoaXN0b3J5IjpbMjA0MjQ5NTQ0NiwtMjEyOTgwMzQ5NSw5Mz
+AzNTEzODYsMTc0MzY1MjU3MiwxMzA1NjczMDEzLDk0MDM1NDQ2
+NiwtMjA5NzQ0NjY3NiwtMTM3ODA5NjcxLC0zNDQ2NDM1MTcsLT
+E2MDU3NTUyMTUsODE5MzI4NDYxLDQ1MDE0NDY5MSwxMTcwMTg0
+ODUsMTg2NTc1MzcxMSwtMTczNDQxMzc2MCwxNjQxNjY2NSwtMT
+k3MDEyMjM3LC0xMTMxOTI5MDkxLC0yMDYzMTUzMzI4LC03ODg2
+NjY5MTZdfQ==
 -->
               
             </div>
