@@ -247,6 +247,10 @@
                 </li>
                 <li class="toctree-l3 current"><a class="reference internal current" href="./">Les attributs d’un cas de test</a>
     <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#reference">Référence</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#reference_1">Référence</a>
+    </li>
     <li class="toctree-l4"><a class="reference internal" href="#statut">Statut</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#importance">Importance</a>
@@ -256,6 +260,10 @@
     <li class="toctree-l4"><a class="reference internal" href="#type">Type</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#type_1">Type</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#description-permet-de-decrire-lobjectif-du-cas-de-test">'Description' permet de décrire l'objectif du cas de test.</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#champs-personnalises">Champs personnalisés</a>
     </li>
@@ -699,9 +707,13 @@
             <div class="section">
               
                 <h1 id="les-attributs-dun-cas-de-test">Les attributs d’un cas de test</h1>
-<p>Le bloc 'Informations' de la page de consultation d'un cas de test décrit les attributs du cas de test. Il est constitué des éléments suivants :</p>
+<p>Un cas de test est caractérisé par différents attributs accessibles depuis le bloc 'Informations':</p>
+<h2 id="reference">Référence</h2>
+<p>La référence du cas de test est facultative, néanmoins elle permet d'organiser son référentiel. Des conventions de nommages</p>
+<p>Le libellé est le nom du cas de test. Il doivent être définies pour organiser et identifier rapidement les cas de test. clair </p>
+<h2 id="reference_1">Référence</h2>
 <h2 id="statut">Statut</h2>
-<p>Le champ 'Statut' permet d'affecter un statut au cas de test (‘En cours de rédaction’ par défaut). La valeur peut-être modifiée à l'aide de la liste déroulante dont les optionvaleurs sont le suivantes :</p>
+<p>Le champ 'Statut' permet d'affecter un statut au cas de test (‘En cours de rédaction’ par défaut). La valeur peut être modifiée à l'aide de la liste déroulante dont les options sont les suivantes :</p>
 <ul>
 <li>En cours de rédaction</li>
 <li>À approuver</li>
@@ -713,18 +725,44 @@
 <p class="admonition-title">Info</p>
 <p>Une fois validée, le cas de test peut être passée au statut 'Approuvé'. Il est alors prêt à être intégré dans une campagne et une itération pour exécution. </p>
 </div>
-<p>Un cas de test peut être passé au statut 'Obsolète', lorsqu'il n'est pas utile pour le référentiel mais qu'on ne souhaite pas le supprimer.</p>
+<p>Un cas de test peut être passé au statut 'Obsolète' lorsqu'il n'est pas utile pour le référentiel mais qu'on ne souhaite pas le supprimer.</p>
 <h2 id="importance">Importance</h2>
-<p>Le champ '</p>
+<p>Le champ 'Importance' permet d'affecter un niveau d'importance au cas de test ('Faible' par défaut). La valeur peut être modifiée à l'aide de la liste déroulante dont les options sont les suivantes:</p>
+<ul>
+<li>Très haute</li>
+<li>Haute</li>
+<li>Moyenne</li>
+<li>Faible </li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>L'importance du cas de test peut être utilisé pour organiser et prioriser les exécutions mais aussi pour en analyser les résultats (taux de succès/échec en fonction de l'importance des tests, importance des tests jamais exécutés).</p>
+</div>
 <h2 id="nature">Nature</h2>
+<p>Le champ 'Nature' permet de préciser la nature du cas de test ('Non définie' par défaut). La valeur peut être modifiée à l'aide de la liste déroulante.</p>
 <h2 id="type">Type</h2>
+<p>Le champ 'Type' permet de préciser la nature du cas de test ('Non définie' par défaut). Le type peut être modifié à l'aide de la liste déroulante. </p>
 <h2 id="description">Description</h2>
+<p>Le champ d dont les options sont les suivantes:</p>
+<ul>
+<li>Non définie</li>
+<li>Fonctionnel</li>
+<li>Métier</li>
+<li>Utilisateur</li>
+<li>Non fonctionnel</li>
+<li>Performance</li>
+<li>Sécurité</li>
+<li>ATDD (Acceptance Test Driven Development)</li>
+</ul>
+<h2 id="type_1">Type</h2>
+<h2 id="description-permet-de-decrire-lobjectif-du-cas-de-test">'Description' permet de décrire l'objectif du cas de test.</h2>
 <h2 id="champs-personnalises">Champs personnalisés</h2>
 <p>(parler des références+statut+type+importance+cuf)</p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1OTk5NzI4LC05MDkzNDkyODEsMzcyMD
-I1NjQwLC01MjM4OTMwNjksMTM3MDc5MzEyLC04MDU2NzM0Mzdd
-fQ==
+eyJoaXN0b3J5IjpbLTc2MTcyNDcyOSwtMTg3MjM5MTg1MCw4OD
+Y4ODQxMjYsMzgzNDQwNjM1LDE3MzcxNTQxODgsMTI1NTQwMDQ3
+OSwyMDMwNzc4ODcyLC05MDkzNDkyODEsMzcyMDI1NjQwLC01Mj
+M4OTMwNjksMTM3MDc5MzEyLC04MDU2NzM0MzddfQ==
 -->
               
             </div>
