@@ -699,8 +699,10 @@ Cette fonctionnalité est très utile :</p>
 <p>L'import d'exigences se fait depuis des fichiers au format <strong>.xls</strong>, <strong>.xlsx</strong> ou <strong>.xlsm</strong> pour être interprété par Squash.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>L'import est réservé aux profils "Administrateur" et "Chef de projet".
-Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace Exigences.</p>
+<ul>
+<li>L'import est réservé aux profils "Administrateur" et "Chef de projet".</li>
+<li>Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace Exigences.</li>
+</ul>
 </div>
 <h2 id="structure-du-fichier-dimport">Structure du fichier d'import</h2>
 <p>Le fichier d'import comprend trois onglets : REQUIREMENT, LINK_REQ_TC et LINK_REQ_REQ  </p>
@@ -711,15 +713,13 @@ Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace 
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Focus</p>
-<p>Le fichier d'import doit respecter les règles ci- dessous :</p>
-<ul>
-<li>Le nom des 3 onglets ne doivent pas être modifiés.</li>
-<li>Les entêtes des colonnes ne doivent pas être modifiées.  </li>
-<li>Les lignes vides ne sont pas interprétées.   </li>
-<li>Les cellules ne doivent pas être fusionnées.</li>
-<li>L'ordre des lignes n'a pas d'importance. </li>
-<li>L'import se fait ligne par ligne.</li>
-</ul>
+<p>Le fichier d'import doit respecter les règles ci- dessous :
+- Le nom des 3 onglets ne doivent pas être modifiés.
+- Les entêtes des colonnes ne doivent pas être modifiées.<br />
+- Les lignes vides ne sont pas interprétées. <br />
+- Les cellules ne doivent pas être fusionnées.
+- L'ordre des lignes n'a pas d'importance. 
+- L'import se fait ligne par ligne.</p>
 </div>
 <h3 id="onglet-requirement">Onglet REQUIREMENT</h3>
 <table>
@@ -853,7 +853,7 @@ Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace 
 <tr>
 <td>REQ_PATH</td>
 <td>Chemin de l'exigence depuis le nom du projet jusqu'au nom de l'exigence (version courante) NB : le nom de la version courante peut différer de celui de la version à lier</td>
-<td>Par exemple : <br/>- /projet/dossier/exigence <br/>- /projet/exiMère/exiFille</td>
+<td>Par exemple : <br/>- \/projet\/dossier\/exigence <br/>- \/projet\/exiMère\/exiFille</td>
 </tr>
 <tr>
 <td>REQ_VERSION_NUM</td>
@@ -863,11 +863,10 @@ Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace 
 <tr>
 <td>TC_PATH</td>
 <td>Chemin du cas de test depuis le nom du projet jusqu'au nom du cas de test</td>
-<td>Par exemple : /projet/dossier/casdetest</td>
+<td>Par exemple : \/projet\/dossier\/casdetest</td>
 </tr>
 </tbody>
 </table>
-<hr />
 <h3 id="onglet-link_req_req">Onglet LINK_REQ_REQ</h3>
 <p>Si vous souhaitez faire des associations entre exigences, les 3 champs sont obligatoires.</p>
 <table>
@@ -882,7 +881,7 @@ Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace 
 <tr>
 <td>REQ_PATH</td>
 <td>Chemin de l'exigence depuis le nom du projet jusqu'au nom de l'exigence (version courante) NB : le nom de la version courante peut différer de celui de la version à lier</td>
-<td>Par exemple : <br/>- /projet/dossier/exigence <br/>- /projet/exiMère/exiFille</td>
+<td>Par exemple : <br/>- \/projet\/dossier\/exigence <br/>- \/projet\/exiMère\/exiFille</td>
 </tr>
 <tr>
 <td>REQ_VERSION_NUM</td>
@@ -892,7 +891,7 @@ Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace 
 <tr>
 <td>RELATED_REQ_PATH</td>
 <td>Chemin de l'exigence liée depuis le nom du projet jusqu'au nom de l'exigence (version courante) <br/>NB : le nom de la version courante peut différer de celui de la version à lier</td>
-<td>Par exemple : /projet/dossier/nom_exigence_version_courante</td>
+<td>Par exemple : \/projet\/dossier\/nom_exigence_version_courante</td>
 </tr>
 <tr>
 <td>RELATED_REQ_VERSION_NUM</td>
@@ -907,13 +906,13 @@ Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace 
 </tbody>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MzA3MjcwMSw1NTA2NDE3MjIsLTE5Nz
-c5MDMxMDYsMTkxMjQxMzE5Niw4NTc1MzMyNDIsNDc2NTA4Nzc0
-LC0xNzM2MDQ0OTg5LDEwNzA3NjgzOTMsMTA2ODk5OTYwNSw1Mz
-k3NDQwNzUsOTM4NzEwODAzLDY1NTMzMDUyOCwtNDcyMDcyODY0
-LDY2NDI5NDExNywxMTA0ODIxNzY5LDQ3MTAwOTg0OCwtMTg1OT
-A4Njc5Miw2MzYyOTc2ODIsMTUzOTk0Njc4NiwtNTM5MTEzMzI5
-XX0=
+eyJoaXN0b3J5IjpbLTE5Nzc5MDMxMDYsMTkxMjQxMzE5Niw4NT
+c1MzMyNDIsNDc2NTA4Nzc0LC0xNzM2MDQ0OTg5LDEwNzA3Njgz
+OTMsMTA2ODk5OTYwNSw1Mzk3NDQwNzUsOTM4NzEwODAzLDY1NT
+MzMDUyOCwtNDcyMDcyODY0LDY2NDI5NDExNywxMTA0ODIxNzY5
+LDQ3MTAwOTg0OCwtMTg1OTA4Njc5Miw2MzYyOTc2ODIsMTUzOT
+k0Njc4NiwtNTM5MTEzMzI5LC0xODM3MzQ5ODE3LC0yMTM5Mzkx
+NTIzXX0=
 -->
               
             </div>
