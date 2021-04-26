@@ -325,6 +325,10 @@
     <ul class="current">
                 <li class="toctree-l3 current"><a class="reference internal current" href="./">Renseigner un fichier d’import de cas de test</a>
     <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#structure-du-fichier-dimport-au-format-excel">Structure du fichier d'import au format Excel</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#structure-du-fichier-dimport-au-format-zip">Structure du fichier d'import au format Zip</a>
+    </li>
     </ul>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../3.7.2.importer-cas-test/">Importer des cas de test</a>
@@ -687,10 +691,167 @@
             <div class="section">
               
                 <h1 id="renseigner-un-fichier-dimport-de-cas-de-test">Renseigner un fichier d’import de cas de test</h1>
-<p>(gabarit d’import + détails des colonnes)</p>
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDc2MDUzNF19
--->
+<p>L'import de cas de test via un fichier Excel permet de créer ou modifier un patrimoine de test <strong>en masse</strong>. Il est possible d'importer des cas de test, leurs attributs, leurs paramètres et jeux de données ainsi que leur association à des exigences
+Cette fonctionnalité est très utile :</p>
+<ul>
+<li>lors d'une <strong>migration</strong> depuis un outil tiers</li>
+<li>pour récupérer un patrimoine de test existant dans un document</li>
+<li>pour effectuer des modifications en masse sur les cas de test présents dans Squash</li>
+</ul>
+<p>L'import de cas de test se fait depuis des fichiers au format <strong>.xls</strong>, <strong>.xlsx</strong>, <strong>.xlsm</strong> ou un dossier <strong>Zip</strong> pour être interprété par Squash.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>L'import est réservé aux profils "Administrateur" et "Chef de projet".
+Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace Cas de test.</p>
+</div>
+<h2 id="structure-du-fichier-dimport-au-format-excel">Structure du fichier d'import au format Excel</h2>
+<p>Le fichier d'import comprend cinq onglets :   </p>
+<ul>
+<li>L'onglet TEST_CASES permet de remplir les informations liées aux cas de test à importer comme l'emplacement, la description, l'importance, etc.  </li>
+<li>L'onglet STEPS renseigne les informations sur les pas de test (Classique et bdd???)</li>
+<li>L’onglet PARAMETERS renseigne les informations liées aux paramètres d'un cas de test</li>
+<li>L’onglet DATASETS renseigne les informations liées aux jeux de données</li>
+<li>L'onglet LINK_REQ_TC renseigne les informations pour associer les cas de test aux exigences déjà présentes dans Squash.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Focus</p>
+<p>Le fichier d'import doit respecter les règles ci- dessous :</p>
+<ul>
+<li>Le nom des 5 onglets ne doivent pas être modifiés.</li>
+<li>Les entêtes des colonnes ne doivent pas être modifiées.  </li>
+<li>Les lignes vides ne sont pas interprétées.   </li>
+<li>Les cellules ne doivent pas être fusionnées.</li>
+<li>L'ordre des lignes n'a pas d'importance. </li>
+<li>L'import se fait ligne par ligne.</li>
+</ul>
+</div>
+<h3 id="onglet-test_cases">Onglet TEST_CASES</h3>
+<table>
+<thead>
+<tr>
+<th>Nom de la colonne</th>
+<th>Description</th>
+<th>Valeur attendue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="onglet-steps">Onglet STEPS</h3>
+<table>
+<thead>
+<tr>
+<th>Nom de la colonne</th>
+<th>Description</th>
+<th>Valeur attendue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="onglet-parameters">Onglet PARAMETERS</h3>
+<table>
+<thead>
+<tr>
+<th>Nom de la colonne</th>
+<th>Description</th>
+<th>Valeur attendue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TC_OWNER_PATH</td>
+<td>Chemin vers le cas de test propriétaire du paramètre</td>
+<td><u><strong>Champ obligatoire</strong></u></td>
+</tr>
+<tr>
+<td>TC_PARAM_NAME</td>
+<td>Nom du paramètre, doit contenir uniquement les caractères suivants : [0-9], [a-z], [A-Z] et [-,_].</td>
+<td><u><strong>Champ obligatoire</strong></u></td>
+</tr>
+<tr>
+<td>TC_PARAM_DESCRIPTION</td>
+<td>Description du paramètre</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="onglet-datasets">Onglet DATASETS</h3>
+<table>
+<thead>
+<tr>
+<th>Nom de la colonne</th>
+<th>Description</th>
+<th>Valeur attendue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TC_OWNER_PATH</td>
+<td>Chemin vers le cas de test propriétaire du jeu de données.</td>
+<td><u><strong>Champ obligatoire</strong></u></td>
+</tr>
+<tr>
+<td>TC_DATASET_NAME</td>
+<td>Nom du jeux de données, doit contenir uniquement les caractères suivants : [0-9], [a-z], [A-Z] et [-,_].</td>
+<td><u><strong>Champ obligatoire</strong></u></td>
+</tr>
+<tr>
+<td>TC_PARAM_OWNER_PATH</td>
+<td>Chemin vers le cas de test propriétaire du paramètre. Cette colonne est nécessaire dans le cas de paramètres venant de cas de test appelés par le cas de test propriétaire du dataset.</td>
+<td></td>
+</tr>
+<tr>
+<td>TC_DATASET_PARAM_NAME</td>
+<td>Nom du paramètre pour lequel la valeur sera renseignée.  A l’import, si aucun paramètre ne correspond, la valeur est ignorée</td>
+<td><u><strong>Champ obligatoire</strong></u></td>
+</tr>
+<tr>
+<td>TC_DATASET_PARAM_VALUE</td>
+<td>Valeur correspondante pour le couple {jeux de données</td>
+<td>paramètre} spécifié.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onglet-link_req_tc">Onglet LINK_REQ_TC</h3>
+<p>Si vous souhaitez faire des associations entre les cas de test et des exigences présentes dans le référentiel, les 3 champs sont obligatoires.</p>
+<table>
+<thead>
+<tr>
+<th>Nom de la colonne</th>
+<th>Description</th>
+<th>Valeur attendue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REQ_PATH</td>
+<td>Chemin de l'exigence depuis le nom du projet jusqu'au nom de l'exigence (version courante) NB : le nom de la version courante peut différer de celui de la version à lier</td>
+<td>Par exemple : <br/>- /projet/dossier/exigence <br/>- /projet/exiMère/exiFille</td>
+</tr>
+<tr>
+<td>REQ_VERSION_NUM</td>
+<td>Numéro de la version d'exigence à lier</td>
+<td></td>
+</tr>
+<tr>
+<td>TC_PATH</td>
+<td>Chemin du cas de test depuis le nom du projet jusqu'au nom du cas de test</td>
+<td>Par exemple : /projet/dossier/casdetest</td>
+</tr>
+</tbody>
+</table>
+<h2 id="structure-du-fichier-dimport-au-format-zip">Structure du fichier d'import au format Zip</h2>
               
             </div>
           </div>
