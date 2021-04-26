@@ -687,11 +687,11 @@
             <div class="section">
               
                 <h1 id="import-dexigences-a-partir-dun-export">Import d'exigences à partir d’un export</h1>
-<p>Squash TM vous permet de réutiliser un fichier d'export Squash pour ensuite le réimporter. Cette technique est utile si l'on souhaite modifier en masse des données.</p>
+<p>Squash TM vous permet de réutiliser un fichier d'export Squash pour ensuite le réimporter. Cette technique est utile lorsque l'on souhaite modifier en masse des données.</p>
 <p><strong><u>Marche à suivre : </u></strong></p>
 <ol>
 <li>Exporter la sélection souhaitée (Projets, dossiers, exigences)</li>
-<li>Ouvrir le fichier d'exporter et y ajoutant la colonne "ACTION" : Elle est être en première position dans le fichier. Elle devra contenir la valeur <ul>
+<li>Ouvrir le fichier d'exporter et y ajoutant la colonne "ACTION" : Elle doit être en première position dans le fichier et doit contenir la valeur <ul>
 <li>"U" pour mettre à jour une exigence  </li>
 <li>"C" pour créer une nouvelle exigence</li>
 </ul>
@@ -699,24 +699,16 @@
 <li>Apporter les modifications voulues en respectant la syntaxe pour chaque colonne</li>
 <li>Importer le nouveau fichier</li>
 </ol>
-<p>Si vous souhaitez importer les exigences dans un nouveau projet ou à un autre endroit de l'arborescence, la colonne "Req_Path" est à modifier.</p>
+<p>Si vous souhaitez importer les exigences dans un nouveau projet ou à un autre endroit de l'arborescence, la colonne "Req_Path" sera à modifier.</p>
 <div class="admonition warning">
 <p class="admonition-title">Focus</p>
-<p>Si le libellé des objets contient le caractère '/' il faudra alors l'échapper dans le chemin de l'exigence (dans la colonne "Req_Path") au moment de l'import. L’échappement est indiqué par le caractère ‘\’. </p>
+<p>Si le libellé des objets contient le caractère '/' il faudra alors l'échapper dans le chemin de l'exigence (dans la colonne "Req_Path") au moment de l'import. L’échappement est indiqué par le caractère ‘\’. 
+Par exemple : le nom de mon projet est "Projet1/Appli" et le nom de mon exigence est "Exi1/Android". La colonne "Req_Path devra être complété par la valeur : "/Projet1\/Appli/Exi\/Android"</p>
 </div>
-<p>Par exemple : le nom de mon projet est "Projet1/Appli" et le nom de mon exigence est "Exi1/</p>
 <div class="admonition tip">
 <p class="admonition-title">En savoir plus</p>
 <p>Pour compléter un fichier d'import, consulter la page *Liens vers "Renseigner un fichier d'import d'exigences" * [Lien vers2.6.1. Renseigner un fichier d'import]</p>
 </div>
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMTQ3OTQ5OSwtMTMwMTc2MDY3LDYyNz
-cwMTY1NywtMTc3NjUyODE1MiwtNzIyNjA5MzY4LC04Mjg1MDcx
-MSwyMDEyNDcyNzA5LDMzMDI5MDE2NCwtMzMyMzE0MTI2LC0yOT
-AzMTIxNTUsLTEyMjIyNjE3ODIsMTA1OTE1MzIyMiwtMzE1Mjk0
-OTY5LDk4MTM1ODgwOCwtNjUwMTA1NTUsLTEwNzAwMDQzNDUsLT
-E4NDM0MjQ0OTEsODYxNjY4NjA2LC0yMDY1NDI0MjYyXX0=
--->
               
             </div>
           </div>
