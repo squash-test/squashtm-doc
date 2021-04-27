@@ -119,6 +119,20 @@
                 </li>
                 <li class="toctree-l3 current"><a class="reference internal current" href="./">Modifier les champs d'un objet</a>
     <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#modifier-un-champ-de-type-texte-simple">Modifier un champ de type Texte simple</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#modifier-un-champ-de-type-case-a-cocher">Modifier un champ de type Case à cocher</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#modifier-un-champ-de-type-date">Modifier un champ de type Date</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#modifier-un-champ-de-type-liste-deroulante">Modifier un champ de type Liste déroulante</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#modifier-un-champ-de-type-numerique">Modifier un champ de type Numérique</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#modifier-un-champ-de-type-tag">Modifier un champ de type Tag</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#modifier-un-champ-de-type-texte-riche">Modifier un champ de type Texte riche</a>
+    </li>
     </ul>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../1.4.3.copier-coller-objet/">Copier/coller un objet</a>
@@ -687,6 +701,41 @@
             <div class="section">
               
                 <h1 id="modifier-les-champs-dun-objet">Modifier les champs d'un objet</h1>
+<p>Chaque objet de Squash est constitué de divers attributs représentés sous forme de champs, natifs ou personnalisés, obligatoires ou facultatifs, éditables ou non et de différents types. Au survol de la valeur du champ, un icone 'Crayon' indique que le champ est modifiable.</p>
+<h2 id="modifier-un-champ-de-type-texte-simple">Modifier un champ de type Texte simple</h2>
+<p>Les noms et références des objets sont de type Texte simple.
+Au clic sur la valeur du champ, il devient éditable : tous les caractères sont autorisés. La touche <strong>[Entrée]</strong> du clavier ou le bouton <strong>[V]</strong> enregistre la saisie.</p>
+<p><img alt="Modification d'un champ texte simple" src="../resources/modification-textesimple.png" /></p>
+<h2 id="modifier-un-champ-de-type-case-a-cocher">Modifier un champ de type Case à cocher</h2>
+<p>L'importance d'un cas de test dispose d'une case à cocher 'Auto' (cela permet d'attribuer, par correspondance automatique, une importance à un cas de test en fonction de la priorité de son exigence liée).
+Un simple clic dans la case du champ permet de cocher ou décocher la case.</p>
+<p><img alt="Modification d'un champ Case à cocher" src="../resources/modification-caseacocher.png" /></p>
+<h2 id="modifier-un-champ-de-type-date">Modifier un champ de type Date</h2>
+<p>Les campagnes et itérations disposent de champs de type Date (bloc <strong>Plannings</strong>).
+Le clic sur le champ le rend éditable : il est possible de saisir manuellement une date au format jj/mm/aaaa ou de sélectionner une date directement dans le calendrier.</p>
+<p><img alt="Modification d'un champ de type Date" src="../resources/modification-date.png" /></p>
+<h2 id="modifier-un-champ-de-type-liste-deroulante">Modifier un champ de type Liste déroulante</h2>
+<p>Le statut, la criticité ou la catégorie d'une exigence, le statut, l'importance, la nature ou le type d'un cas de test et l'état d'une campagne ou d'une itération sont des champs de type Liste déroulante.
+Au clic sur le champ, les options de liste s'affichent. Au clic sur l'une d'elle, la valeur s'inscrit dans le champ. La touche <strong>[Entrée]</strong> du clavier ou le bouton <strong>[V]</strong> enregistre la sélection.</p>
+<p><img alt="Modification d'une liste déroulante" src="../resources/modification-listederoulante.png" /></p>
+<h2 id="modifier-un-champ-de-type-numerique">Modifier un champ de type Numérique</h2>
+<p>Le champ priorité d'un cas de test éligible à l'automatisation est un champ de type numérique.
+Le clic sur le champ le rend éditable : seul un nombre entier est saisissable. La touche <strong>[Entrée]</strong> du clavier ou le bouton <strong>[V]</strong> enregistre la saisie.</p>
+<p><img alt="Modification d'un champ numérique" src="../resources/modification-numerique.png" /></p>
+<h2 id="modifier-un-champ-de-type-tag">Modifier un champ de type Tag</h2>
+<p>Au clic sur une champ de type Tag, il est possible de saisir des valeurs libres.  La touche <strong>[Entrée]</strong> du clavier ou le bouton ajoute une nouvelle étiquette au champ. Chacune d'elle dispose d'une croix permettant de la supprimer individuellement.
+<img alt="Modification d'un tag" src="../resources/modification-tag.png" /></p>
+<h2 id="modifier-un-champ-de-type-texte-riche">Modifier un champ de type Texte riche</h2>
+<p>Le champ Description de tous les objets est de type Texte riche.
+Il est possible de mettre en forme un texte, d'insérer un lien, un tableau ou une image.
+D'une manière générale, nous ne recommandons pas l'ajout d'image directement dans un champ Texte riche : elles alourdissent considérablement les divers exports possibles via tableur voire empêchent leur génération.</p>
+<p>!!! note "Info" Insérer une image dans un champ texte riche
+ - ajouter l'image depuis l'icone Pièce-jointe de l'objet consulté
+ - récupérer par copié l'url de l'image
+ - depuis l'éditeur de texte du champ, accéder à la fonction <strong>Image</strong>
+ - coller l'url copiée dans le champ URL de l'onglet Informations sur l'image et valider
+L'image apparait dans le champ.</p>
+<p><img alt="Modification d'un texte riche" src="../resources/modification-texteriche.png" /></p>
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTM5MzM1MTZdfQ==
 -->
