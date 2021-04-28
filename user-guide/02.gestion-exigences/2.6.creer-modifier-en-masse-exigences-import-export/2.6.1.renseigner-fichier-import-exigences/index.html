@@ -734,7 +734,7 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>ACTION</td>
 <td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
-<td><u>Champ Obligatoire</u> <br/>C : pour la création (Create) <br/> U : pour la mise à jour (Update)</td>
+<td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>) <br/> U : pour la mise à jour (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td><em>PROJECT_ID</em></td>
@@ -749,11 +749,11 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>REQ_PATH</td>
 <td>Chemin de l’exigence. Il commence par « /nom du projet » et se termine par le nom de l’exigence (= nom de la version courante, soit la dernière version). Il inclut le nom du projet car l’import est multi-projet.</td>
-<td><u>Champ Obligatoire</u> <br/>Par exemple : <br/>- \/projet\/dossier\/exigence <br/>- \/projet\/exiMère\/exiFille</td>
+<td><u>Champ Obligatoire</u> <br/>Par exemple : <br/>- /projet/dossier/exigence <br/>- /projet/exiMère/exiFille</td>
 </tr>
 <tr>
 <td>REQ_VERSION_NUM</td>
-<td>Numéro de version de l’exigence. <br/>- Mode <strong>CREATE</strong> : Si le champ n’est pas renseigné, deux cas possibles : <br/>- Il n’y a qu’une version d’exigence avec ce REQ_PATH, alors REQ_VERSION_NUM=1. <br/>- Il y a plusieurs versions d’exigences avec le même REQ_PATH, alors les versions sont numérotées dans l’ordre d’apparition à partir de 1. <br/>- Mode <strong>UPDATE</strong> : ce champ permet d’identifier la version à mettre à jour.</td>
+<td>Numéro de version de l’exigence. <br/>Mode <strong>CREATE</strong> : Si le champ n’est pas renseigné, deux cas possibles : <br/>- Il n’y a qu’une version d’exigence avec ce REQ_PATH, alors REQ_VERSION_NUM=1. <br/>- Il y a plusieurs versions d’exigences avec le même REQ_PATH, alors les versions sont numérotées dans l’ordre d’apparition à partir de 1. <br/>Mode <strong>UPDATE</strong> : ce champ permet d’identifier la version à mettre à jour.</td>
 <td>Mode <strong>CREATE</strong> : <u>Champ facultatif</u>. <br/>Mode <strong>UPDATE</strong> : <u>Champ obligatoire</u></td>
 </tr>
 <tr>
@@ -896,6 +896,7 @@ Cette fonctionnalité est très utile :</p>
 </tr>
 </tbody>
 </table>
+<p><br/></p>
               
             </div>
           </div>
