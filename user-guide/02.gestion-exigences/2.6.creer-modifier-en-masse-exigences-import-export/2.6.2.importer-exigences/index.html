@@ -700,15 +700,15 @@
               
                 <h1 id="importer-des-exigences">Importer des exigences</h1>
 <h3 id="creer-une-arborescence-dexigences">Créer une arborescence d'exigences</h3>
-<p>L'arborescence est très importante car elle permet d'<strong>organiser e référentiel d'exigences</strong>. L'import offre la possibilité de créer une arborescence précise des éléments que l'on souhaite importer et ce dans plusieurs projets différents : Exigences, Dossiers, Exigences mères et filles etc.
+<p>L'arborescence est très importante car elle permet d'<strong>organiser le référentiel d'exigences</strong>. L'import offre la possibilité de créer une arborescence précise des éléments que l'on souhaite importer et ce dans plusieurs projets différents : Exigences, Dossiers, Exigences mères et filles etc.
 [Lien vers l'explication des exigences mères et filles]</p>
 <p><img alt="Importer une arborescence d'exigences" src="../resources/import-arbo-exi.png" /></p>
 <p>Si les dossiers sont inexistants dans Squash au moment de l'import, ceux-ci seront créés. </p>
 <p><u><strong>Par exemple :</strong></u>
-Le chemin : /Projet1/Dossier1/ExigenceMère/ExigenceFille.
-    - Si l’exigence ExigenceMère est présente dans le référentiel, ExigenceFille est ajoutée sous l'exigence mère ExigenceMère. 
-    - Si l’exigence mère n’existe pas dans le référentiel mais est présente dans le fichier d’import AVANT l'exigence fille, ExigenceFille est ajoutée sous l'exigence mère ExigenceMère. 
-    - Si l’exigence mère n’existe pas dans le référentiel et n’est pas présente dans le fichier d’import ou présente après l'exigence fille, alors l’exigence ExigenceFille est ajoutée dans le dossier ExigenceMère, sous-dossier de Dossier1.</p>
+pour le chemin /Projet1/Dossier1/ExigenceMère/ExigenceFille :
+- Si l’exigence ExigenceMère est présente dans le référentiel, ExigenceFille est ajoutée sous l'exigence mère ExigenceMère. 
+- Si l’exigence mère n’existe pas dans le référentiel mais est présente dans le fichier d’import AVANT l'exigence fille, ExigenceFille est ajoutée sous l'exigence mère ExigenceMère. 
+- Si l’exigence mère n’existe pas dans le référentiel et n’est pas présente dans le fichier d’import ou présente après l'exigence fille, alors l’exigence ExigenceFille est ajoutée dans le dossier ExigenceMère, sous-dossier de Dossier1.</p>
 <h3 id="importer-des-versions-dexigences">Importer des versions d'exigences</h3>
 <p>Pour <strong>créer</strong> plusieurs versions d'une même exigence, dans le fichier excel, chaque version correspondra à une ligne. Le numéro de version que l'on souhaite créer sera à renseigner dans la colonne "REQ_VERSION_NUM".</p>
 <div class="admonition note">
