@@ -755,9 +755,39 @@ Cette fonctionnalité est très utile :</p>
 </thead>
 <tbody>
 <tr>
+<td>TC_OWNER_PATH</td>
+<td>Chemin vers le cas de test propriétaire du pas de test.</td>
+<td><u><strong>Champ obligatoire</strong></u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
+</tr>
+<tr>
+<td>TC_STEP_NUM</td>
+<td>Numéro d’ordre de l’étape de test (commence à 1) <br/>Pour l’import, les numéros peuvent ne pas se suivre : on prend l’ordre relatif entre les différents TC_STEP_NUM. <br/>Si deux steps ont le même numéro d’ordre, ils sont numérotés dans l’ordre dans lequel ils apparaissent dans le fichier. <br/>Si la valeur est absente de l’import, les steps sont numérotés dans l’ordre d’apparition dans le fichier d’import.</td>
 <td></td>
+</tr>
+<tr>
+<td>TC_STEP_IS_CALL_STEP</td>
+<td>Pour l’import, si ce champ n’est pas renseigné, la valeur par défaut à prendre en compte est "0".</td>
+<td>- "0" si l’étape est une action step <br/>- "1" si l’étape est une call step.</td>
+</tr>
+<tr>
+<td>TC_STEP_CALL_DATASET</td>
+<td>La colonne n’est prise en compte que si TC_STEP_IS_CALL_STEP = "1"</td>
+<td>- "INHERIT" si l’option prise est de ne pas choisir de jeu de données, auquel cas le cas de test appelant hérite des paramètres du cas de test appelé <br/>- &lt;NAME> : donne le jeu de données qui a été choisi.</td>
+</tr>
+<tr>
+<td>TC_STEP_ACTION</td>
+<td>- Action de l’étape (qui peut contenir des balises HTML)<br/>- Ou chemin vers le cas de test appelé si c’est une call step.</td>
+<td>Par exemple, dans le cas d’une "call step" : <br/>CALL /projet/dossier/nom_du_CT_appelé</td>
+</tr>
+<tr>
+<td>TC_STEP_EXPECTED_RESULT</td>
+<td>- Résultat attendu pour l’étape si c’est une action step (qui peut contenir des balises HTML). <br/>- Si STEP_IS_CALL_STEP = 1, cette colonne est ignorée (au cas où elle serait tout de même présente dans le fichier d’import)</td>
 <td></td>
-<td></td>
+</tr>
+<tr>
+<td>TC_STEP_CUF &lt;code cuf></td>
+<td>Une colonne par champ personnalisé. Dans l'en-tête, remplacer &lt;code du cuf> par le code du champ personnalisé du pas de test.</td>
+<td>Valeur associée au champ personnalisé</td>
 </tr>
 </tbody>
 </table>
@@ -775,7 +805,7 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>TC_OWNER_PATH</td>
 <td>Chemin vers le cas de test propriétaire du paramètre</td>
-<td><u><strong>Champ obligatoire</strong></u></td>
+<td><u><strong>Champ obligatoire</strong></u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
 </tr>
 <tr>
 <td>TC_PARAM_NAME</td>
@@ -803,7 +833,7 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>TC_OWNER_PATH</td>
 <td>Chemin vers le cas de test propriétaire du jeu de données.</td>
-<td><u><strong>Champ obligatoire</strong></u></td>
+<td><u><strong>Champ obligatoire</strong></u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
 </tr>
 <tr>
 <td>TC_DATASET_NAME</td>
@@ -822,8 +852,8 @@ Cette fonctionnalité est très utile :</p>
 </tr>
 <tr>
 <td>TC_DATASET_PARAM_VALUE</td>
-<td>Valeur correspondante pour le couple {jeux de données</td>
-<td>paramètre} spécifié.</td>
+<td>Valeur correspondante pour le couple {jeux de données | paramètre} spécifié.</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -852,7 +882,7 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>TC_PATH</td>
 <td>Chemin du cas de test depuis le nom du projet jusqu'au nom du cas de test</td>
-<td>Par exemple : /projet/dossier/casdetest</td>
+<td>Par exemple : <br/>/projet/dossier/casdetest</td>
 </tr>
 </tbody>
 </table>
