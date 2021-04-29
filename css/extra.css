@@ -1,5 +1,6 @@
 td, th {
  padding : 5px; 
+ vertical-align:middle;
 }
 
 th {
