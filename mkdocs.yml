@@ -23,4 +23,4 @@ markdown_extensions:
 
 # Fichier CSS ajouté par Séverine
 extra_css: 
-    - extra.css
+    - css/extra.css
