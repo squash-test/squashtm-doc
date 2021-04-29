@@ -737,8 +737,118 @@ Cette fonctionnalité est très utile :</p>
 </thead>
 <tbody>
 <tr>
+<td>ACTION</td>
+<td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
+<td><u><strong>Champ Obligatoire</strong> </u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+</tr>
+<tr>
+<td>TC_PATH</td>
+<td>Chemin du cas de test. Il commence "/nom du projet" et se termine par le nom du cas de test. Il inclut le nom du projet car l'import est multi-projet</td>
+<td><u><strong>Champ Obligatoire</strong> </u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
+</tr>
+<tr>
+<td>TC_NUM</td>
+<td>Ordre du cas de test dans son dossier conteneur. <br/><br/>- Mode <strong>CREATE</strong> : si non renseigné, considéré comme le dernier élément du conteneur. Ensuite le cas de test est créé à cette position. <br/>- Mode <strong>UPDATE</strong> : si non renseigné l'information est ignorée. Si le numéro d'ordre est renseigné et est différent de l'ordre actuel le cas de test sera déplacé à cette nouvelle position.</td>
+<td></td>
+</tr>
+<tr>
+<td>TC_UUID</td>
+<td>Identifiant universel unique du cas de test. <br/><br/>- Mode <strong>CREATE</strong> : si renseigné, le cas de test est créé avec cet UUID. Si non renseigné, le cas de test est créé avec un UUID généré automatiquement. <br/>- Mode <strong>UPDATE</strong> : la valeur de la colonne TC_UUID n'est pas considérée. Il n'est pas possible de modifier l'UUID d'un cas de test déjà existant dans la base de données.</td>
+<td></td>
+</tr>
+<tr>
+<td>TC_REFERENCE</td>
+<td>Référence du cas de test</td>
+<td></td>
+</tr>
+<tr>
+<td>TC_NAME</td>
+<td>Nom du cas de test. <br/>- Mode <strong>CREATE</strong>: le champ est ignoré <br/>- Mode <strong>UPDATE</strong> : permet de renommer un cas de test</td>
+<td></td>
+</tr>
+<tr>
+<td>TC_MILESTONE</td>
+<td>Intitulé du ou des Jalons associé(s) au cas de test. Si un objet est associé à plusieurs jalons, chacun des jalons doit être renseigné dans la colonne correspondante séparé par un "|". <br/>Mode <strong>UPDATE</strong> : si la colonne est vide, les associations existantes sont supprimées.</td>
+<td>Par exemple si un cas de test est associé à deux jalons :  <br/>Jalon1|Jalon 2</td>
+</tr>
+<tr>
+<td>TC_WEIGHT_AUTO</td>
+<td>Si, à l’import, la valeur est à « 1 » il faudra déduire l’importance du cas de test en fonction des exigences qui lui sont associée y compris ceux associées aux cas de test appelés. <br/>Si la colonne ou la valeur est omise, la valeur par défaut à prendre en compte est « 0 » .</td>
+<td>- "1" : Si le calcul de l’importance automatique <br/>- "0" : Si la valorisation de l’importance est manuelle.</td>
+</tr>
+<tr>
+<td>TC_WEIGHT</td>
+<td>Code de l’importance du cas de test. <br/> Si TC_WEIGHT_AUTO = 1, la valeur indiquée pour TC_WEIGHT est ignorée.</td>
+<td>- VERY_HIGH<br/>- HIGH<br/>- MEDIUM<br/>- LOW [valeur par défaut]</td>
+</tr>
+<tr>
+<td>TC_NATURE</td>
+<td>Code de la nature du cas de test</td>
+<td>- NAT_ATDD<br/>- NAT_BUSINESS_TESTING<br/>- NAT_NON_FUNCTIONAL_TESTING<br/>- NAT_PERFORMANCE_TESTING<br/>- NAT_SECURITY_TESTING<br/>- NAT_UNDEFINED [valeur par défaut]<br/>- NAT_USER_TETSTING</td>
+</tr>
+<tr>
+<td>TC_TYPE</td>
+<td>Code du type de cas de test</td>
+<td>• TYP_COMPLIANCE_TESTING  • TYP_CORRECTION_TESTING  • TYP_END_TO_END_TESTING  • TYP_EVOLUTION_TESTING  • TYP_PARTNER_TESTING  • TYP_REGRESSION_TESTING • TYP_UNDEFINED (valeur par défaut si non renseignée)</td>
+</tr>
+<tr>
+<td>TC_STATUS</td>
+<td></td>
+<td>• APPROVED  • OBSOLETE  • TO_BE_UPDATED  • UNDER_REVIEW • WORK_IN_PROGRESS (valeur par défaut si non renseignée)</td>
+</tr>
+<tr>
+<td>TC_DESCRIPTION</td>
+<td>Description du cas de test</td>
+<td></td>
+</tr>
+<tr>
 <td></td>
 <td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC_PRE_REQUISITE</td>
+<td>Prérequis du cas de test</td>
+<td></td>
+</tr>
+<tr>
+<td>TC_CREATED_ON</td>
+<td>Date de création du cas de test. Les dates sont exportées dans des cellules de type date dans le fichier Excel. Pour l’import elles doivent être renseignées dans des cellules de type date ou de type texte au format ISO 8601 (yyyy-mm-dd ).Si elle n’est pas renseignée, utiliser la date courante.</td>
+<td>Format : YYYY-MM-DD</td>
+</tr>
+<tr>
+<td>TC_CREATED_BY</td>
+<td>Login du créateur. Pour l’import, si non renseigné, prendre le login de l’utilisateur qui réalise l’import.</td>
+<td></td>
+</tr>
+<tr>
+<td><em>TC_LAST_MODIFIED_ON</em></td>
+<td><em>Date de dernière modification du cas de test (colonne ignorée si présente dans le fichier d’import)</em></td>
+<td></td>
+</tr>
+<tr>
+<td><em>TC_LAST_MODIFIED_BY</em></td>
+<td><em>Login du dernier modificateur. Les dates sont exportées dans des cellules de type date dans le fichier Excel. (colonne ignorée si présente dans le fichier d’import)</em></td>
+<td></td>
+</tr>
+<tr>
+<td>TC_KIND</td>
+<td>Code du format du cas de test : Si non renseigné le cas de test est importé comme un cas de test classique.</td>
+<td>Format• STANDARD  • GHERKIN  • KEYWORD</td>
+</tr>
+<tr>
+<td>TC_SCRIPT</td>
+<td>• Script Gherkin du cas de test</td>
+<td></td>
+</tr>
+<tr>
+<td>TC_AUTOMATABLE</td>
+<td>Eligibilité à l’automatisation du cas de test :</td>
+<td>• M : A instruire  • Y : Eligible • N : Non éligible</td>
+</tr>
+<tr>
+<td>TC_CUF_<cuf code></td>
+<td>La valeur du champ personnalisé de code &lt;code du cuf> pour le cas de test.</td>
 <td></td>
 </tr>
 </tbody>
@@ -754,6 +864,11 @@ Cette fonctionnalité est très utile :</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>ACTION</td>
+<td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
+<td><u><strong>Champ Obligatoire</strong> </u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+</tr>
 <tr>
 <td>TC_OWNER_PATH</td>
 <td>Chemin vers le cas de test propriétaire du pas de test.</td>
@@ -803,6 +918,11 @@ Cette fonctionnalité est très utile :</p>
 </thead>
 <tbody>
 <tr>
+<td>ACTION</td>
+<td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
+<td><u><strong>Champ Obligatoire</strong> </u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+</tr>
+<tr>
 <td>TC_OWNER_PATH</td>
 <td>Chemin vers le cas de test propriétaire du paramètre</td>
 <td><u><strong>Champ obligatoire</strong></u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
@@ -830,6 +950,11 @@ Cette fonctionnalité est très utile :</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>ACTION</td>
+<td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
+<td><u><strong>Champ Obligatoire</strong> </u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+</tr>
 <tr>
 <td>TC_OWNER_PATH</td>
 <td>Chemin vers le cas de test propriétaire du jeu de données.</td>
