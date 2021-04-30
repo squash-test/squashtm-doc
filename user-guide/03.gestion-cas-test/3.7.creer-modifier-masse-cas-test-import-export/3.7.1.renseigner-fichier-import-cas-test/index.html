@@ -703,7 +703,7 @@ Cette fonctionnalité est très utile :</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>L'import est réservé aux profils "Administrateur" et "Chef de projet".
-<br/>Un gabarit d'import est téléchargeable depuis la popup d'import dans l'espace Cas de test.</p>
+<br/>Un gabarit d'import pour le format Excel ou Zip est téléchargeable depuis la popup d'import dans l'espace Cas de test.</p>
 </div>
 <h2 id="structure-du-fichier-dimport-au-format-excel">Structure du fichier d'import au format Excel</h2>
 <p>Le fichier d'import comprend cinq onglets :   </p>
@@ -773,7 +773,7 @@ Cette fonctionnalité est très utile :</p>
 </tr>
 <tr>
 <td>TC_WEIGHT_AUTO</td>
-<td>Si, à l’import, la valeur est à « 1 » il faudra déduire l’importance du cas de test en fonction des exigences qui lui sont associée y compris ceux associées aux cas de test appelés. <br/>Si la colonne ou la valeur est omise, la valeur par défaut à prendre en compte est « 0 » .</td>
+<td>Si, à l’import, la valeur est à "1" il faudra déduire l’importance du cas de test en fonction des exigences qui lui sont associée y compris ceux associées aux cas de test appelés. <br/>Si la colonne ou la valeur est omise, la valeur par défaut à prendre en compte est "0" .</td>
 <td>- "1" : Si le calcul de l’importance automatique <br/>- "0" : Si la valorisation de l’importance est manuelle.</td>
 </tr>
 <tr>
@@ -794,7 +794,7 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>TC_STATUS</td>
 <td>Code du statut de rédaction du cas de test</td>
-<td>- APPROVED (Approuvé)<br/>- OBSOLETE (Obsolète)<br/>- TO_BE_UPDATED (A mettre à jour)<br/>- UNDER_REVIEW<br/>- WORK_IN_PROGRESS (En cours de rédaction) [Valeur par défaut]</td>
+<td>- APPROVED (Approuvé)<br/>- OBSOLETE (Obsolète)<br/>- TO_BE_UPDATED (À mettre à jour)<br/>- UNDER_REVIEW<br/>- WORK_IN_PROGRESS (En cours de rédaction) [Valeur par défaut]</td>
 </tr>
 <tr>
 <td>TC_DESCRIPTION</td>
@@ -839,7 +839,7 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>TC_AUTOMATABLE</td>
 <td>Eligibilité à l’automatisation du cas de test</td>
-<td>- M : A instruire<br/>- Y : Eligible<br/>- N : Non éligible</td>
+<td>- M : À instruire<br/>- Y : Eligible<br/>- N : Non éligible</td>
 </tr>
 <tr>
 <td>TC_CUF_&lt;cuf code></td>
@@ -862,22 +862,22 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>ACTION</td>
 <td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
-<td><u><strong>Champ Obligatoire</strong> </u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+<td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td>TC_OWNER_PATH</td>
 <td>Chemin vers le cas de test propriétaire du pas de test.</td>
-<td><u><strong>Champ obligatoire</strong></u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
+<td><u>Champ obligatoire</u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
 </tr>
 <tr>
 <td>TC_STEP_NUM</td>
-<td>Numéro d’ordre de l’étape de test (commence à 1) <br/>Pour l’import, les numéros peuvent ne pas se suivre : on prend l’ordre relatif entre les différents TC_STEP_NUM. <br/>Si deux steps ont le même numéro d’ordre, ils sont numérotés dans l’ordre dans lequel ils apparaissent dans le fichier. <br/>Si la valeur est absente de l’import, les steps sont numérotés dans l’ordre d’apparition dans le fichier d’import.</td>
+<td>Numéro d’ordre de l’étape de test (commence à 1) <br/>Pour l’import, les numéros peuvent ne pas se suivre : on prend l’ordre relatif entre les différents TC_STEP_NUM. <br/>L'ordre d'apparition dans le fichier est pris en compte si deux steps ont le même numéro d’ordre, ou si la valeur est absente</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_STEP_IS_CALL_STEP</td>
-<td>Pour l’import, si ce champ n’est pas renseigné, la valeur par défaut à prendre en compte est "0".</td>
-<td>- "0" si l’étape est une action step <br/>- "1" si l’étape est une call step.</td>
+<td>Permet d'indiquer que ce pas de test est soit une action soit cas de test appelé</td>
+<td>- "0" si l’étape est une action step [Valeur par défaut]<br/>- "1" si l’étape est une call step.</td>
 </tr>
 <tr>
 <td>TC_STEP_CALL_DATASET</td>
@@ -891,7 +891,7 @@ Cette fonctionnalité est très utile :</p>
 </tr>
 <tr>
 <td>TC_STEP_EXPECTED_RESULT</td>
-<td>- Résultat attendu pour l’étape si c’est une action step (qui peut contenir des balises HTML). <br/>- Si STEP_IS_CALL_STEP = 1, cette colonne est ignorée (au cas où elle serait tout de même présente dans le fichier d’import)</td>
+<td>- Résultat attendu de l’étape (qui peut contenir des balises HTML). <br/>- Si STEP_IS_CALL_STEP = 1, cette colonne est ignorée (au cas où elle serait tout de même présente dans le fichier d’import)</td>
 <td></td>
 </tr>
 <tr>
@@ -957,18 +957,18 @@ Cette fonctionnalité est très utile :</p>
 </tr>
 <tr>
 <td>TC_DATASET_NAME</td>
-<td>Nom du jeux de données, doit contenir uniquement les caractères suivants : [0-9], [a-z], [A-Z] et [-,_].</td>
-<td><u><strong>Champ obligatoire</strong></u></td>
+<td>Nom du jeux de données. Il doit contenir uniquement les caractères suivants : [0-9], [a-z], [A-Z] et [-,_].</td>
+<td><u>Champ obligatoire</u></td>
 </tr>
 <tr>
 <td>TC_PARAM_OWNER_PATH</td>
-<td>Chemin vers le cas de test propriétaire du paramètre. Cette colonne est nécessaire dans le cas de paramètres venant de cas de test appelés par le cas de test propriétaire du dataset.</td>
+<td>Chemin vers le cas de test propriétaire du paramètre. Cette colonne est nécessaire dans le cas de paramètres venant de cas de test appelés par le cas de test propriétaire du jeu de données.</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_DATASET_PARAM_NAME</td>
 <td>Nom du paramètre pour lequel la valeur sera renseignée.  A l’import, si aucun paramètre ne correspond, la valeur est ignorée</td>
-<td><u><strong>Champ obligatoire</strong></u></td>
+<td><u>Champ obligatoire</u></td>
 </tr>
 <tr>
 <td>TC_DATASET_PARAM_VALUE</td>
