@@ -692,7 +692,7 @@
             <div class="section">
               
                 <h1 id="renseigner-un-fichier-dimport-de-cas-de-test">Renseigner un fichier d’import de cas de test</h1>
-<p>L'import de cas de test via un fichier Excel permet de créer ou modifier un patrimoine de test <strong>en masse</strong>. Il est possible d'importer des cas de test, leurs attributs, leurs paramètres et jeux de données ainsi que leur association à des exigences
+<p>L'import de cas de test via un fichier Excel permet de créer ou modifier un patrimoine de test <strong>en masse</strong>. Il est possible d'importer des cas de test, leurs attributs, leurs paramètres et jeux de données ainsi que leur associations à des exigences
 Cette fonctionnalité est très utile :</p>
 <ul>
 <li>lors d'une <strong>migration</strong> depuis un outil tiers</li>
@@ -708,8 +708,8 @@ Cette fonctionnalité est très utile :</p>
 <h2 id="structure-du-fichier-dimport-au-format-excel">Structure du fichier d'import au format Excel</h2>
 <p>Le fichier d'import comprend cinq onglets :   </p>
 <ul>
-<li>L'onglet TEST_CASES permet de remplir les informations liées aux cas de test à importer comme l'emplacement, la description, l'importance, etc.  </li>
-<li>L'onglet STEPS renseigne les informations sur les pas de test (Classique et bdd???)</li>
+<li>L'onglet TEST_CASES renseigne les informations liées aux cas de test à importer comme l'emplacement, la description, l'importance, etc.  </li>
+<li>L'onglet STEPS renseigne les informations sur les pas de test d'un cas de test classique</li>
 <li>L’onglet PARAMETERS renseigne les informations liées aux paramètres d'un cas de test</li>
 <li>L’onglet DATASETS renseigne les informations liées aux jeux de données</li>
 <li>L'onglet LINK_REQ_TC renseigne les informations pour associer les cas de test aux exigences déjà présentes dans Squash.</li>
@@ -739,12 +739,12 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>ACTION</td>
 <td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
-<td><u><strong>Champ Obligatoire</strong> </u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+<td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td>TC_PATH</td>
 <td>Chemin du cas de test. Il commence "/nom du projet" et se termine par le nom du cas de test. Il inclut le nom du projet car l'import est multi-projet</td>
-<td><u><strong>Champ Obligatoire</strong> </u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
+<td><u>Champ Obligatoire</u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
 </tr>
 <tr>
 <td>TC_NUM</td>
@@ -779,31 +779,26 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>TC_WEIGHT</td>
 <td>Code de l’importance du cas de test. <br/> Si TC_WEIGHT_AUTO = 1, la valeur indiquée pour TC_WEIGHT est ignorée.</td>
-<td>- VERY_HIGH<br/>- HIGH<br/>- MEDIUM<br/>- LOW [valeur par défaut]</td>
+<td>- VERY_HIGH (Très haute)<br/>- HIGH (Haute)<br/>- MEDIUM (Moyenne)<br/>- LOW (Faible) [Valeur par défaut]</td>
 </tr>
 <tr>
 <td>TC_NATURE</td>
 <td>Code de la nature du cas de test</td>
-<td>- NAT_ATDD<br/>- NAT_BUSINESS_TESTING<br/>- NAT_NON_FUNCTIONAL_TESTING<br/>- NAT_PERFORMANCE_TESTING<br/>- NAT_SECURITY_TESTING<br/>- NAT_UNDEFINED [valeur par défaut]<br/>- NAT_USER_TETSTING</td>
+<td>- NAT_ATDD (ATDD) <br/>- NAT_BUSINESS_TESTING (Métier)<br/>- NAT_FUNCTIONAL_TESTING (Fonctionnelle)<br/>- NAT_NON_FUNCTIONAL_TESTING (Non fonctionnelle)<br/>- NAT_PERFORMANCE_TESTING (Performance) <br/>- NAT_SECURITY_TESTING (Sécurité)<br/>- NAT_UNDEFINED (Non définie) [Valeur par défaut]<br/>- NAT_USER_TETSTING (Utilisateur)</td>
 </tr>
 <tr>
 <td>TC_TYPE</td>
 <td>Code du type de cas de test</td>
-<td>• TYP_COMPLIANCE_TESTING  • TYP_CORRECTION_TESTING  • TYP_END_TO_END_TESTING  • TYP_EVOLUTION_TESTING  • TYP_PARTNER_TESTING  • TYP_REGRESSION_TESTING • TYP_UNDEFINED (valeur par défaut si non renseignée)</td>
+<td>- TYP_COMPLIANCE_TESTING (Recevabilité)<br/>- TYP_CORRECTION_TESTING (Correctif)<br/>- TYP_END_TO_END_TESTING (Bout-en-bout)<br/>- TYP_EVOLUTION_TESTING (Évolution) <br/>- TYP_PARTNER_TESTING (Partenaire)<br/>- TYP_REGRESSION_TESTING (Non-régression)<br/>- TYP_UNDEFINED (Non définie) [Valeur par défaut]</td>
 </tr>
 <tr>
 <td>TC_STATUS</td>
-<td></td>
-<td>• APPROVED  • OBSOLETE  • TO_BE_UPDATED  • UNDER_REVIEW • WORK_IN_PROGRESS (valeur par défaut si non renseignée)</td>
+<td>Code du statut de rédaction du cas de test</td>
+<td>- APPROVED (Approuvé)<br/>- OBSOLETE (Obsolète)<br/>- TO_BE_UPDATED (A mettre à jour)<br/>- UNDER_REVIEW<br/>- WORK_IN_PROGRESS (En cours de rédaction) [Valeur par défaut]</td>
 </tr>
 <tr>
 <td>TC_DESCRIPTION</td>
 <td>Description du cas de test</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
 <td></td>
 </tr>
 <tr>
@@ -813,43 +808,43 @@ Cette fonctionnalité est très utile :</p>
 </tr>
 <tr>
 <td>TC_CREATED_ON</td>
-<td>Date de création du cas de test. Les dates sont exportées dans des cellules de type date dans le fichier Excel. Pour l’import elles doivent être renseignées dans des cellules de type date ou de type texte au format ISO 8601 (yyyy-mm-dd ).Si elle n’est pas renseignée, utiliser la date courante.</td>
-<td>Format : YYYY-MM-DD</td>
+<td>Date de création du cas de test. Les dates sont exportées dans des cellules de type date ou de type texte au format ISO 8601</td>
+<td>Format : YYYY-MM-DD <br/>Si elle n’est pas renseignée, la date courante est utilisée.</td>
 </tr>
 <tr>
 <td>TC_CREATED_BY</td>
-<td>Login du créateur. Pour l’import, si non renseigné, prendre le login de l’utilisateur qui réalise l’import.</td>
-<td></td>
+<td>Login du créateur.</td>
+<td>Si non renseigné, c'est le login de l’utilisateur qui réalise l’import qui est utilisé.</td>
 </tr>
 <tr>
 <td><em>TC_LAST_MODIFIED_ON</em></td>
-<td><em>Date de dernière modification du cas de test (colonne ignorée si présente dans le fichier d’import)</em></td>
-<td></td>
+<td><em>Date de dernière modification du cas de test</em></td>
+<td><em>Colonne ignorée si présente dans le fichier d’import</em></td>
 </tr>
 <tr>
 <td><em>TC_LAST_MODIFIED_BY</em></td>
-<td><em>Login du dernier modificateur. Les dates sont exportées dans des cellules de type date dans le fichier Excel. (colonne ignorée si présente dans le fichier d’import)</em></td>
-<td></td>
+<td><em>Login du dernier modificateur.</em></td>
+<td><em>Colonne ignorée si présente dans le fichier d’import</em></td>
 </tr>
 <tr>
 <td>TC_KIND</td>
-<td>Code du format du cas de test : Si non renseigné le cas de test est importé comme un cas de test classique.</td>
-<td>Format• STANDARD  • GHERKIN  • KEYWORD</td>
+<td>Code du format du cas de test. <br/>Si non renseigné le cas de test est importé comme un cas de test classique.</td>
+<td>Format :<br/>- STANDARD<br/>- GHERKIN<br/>- KEYWORD (BDD)</td>
 </tr>
 <tr>
 <td>TC_SCRIPT</td>
-<td>• Script Gherkin du cas de test</td>
+<td>Script Gherkin du cas de test</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_AUTOMATABLE</td>
-<td>Eligibilité à l’automatisation du cas de test :</td>
-<td>• M : A instruire  • Y : Eligible • N : Non éligible</td>
+<td>Eligibilité à l’automatisation du cas de test</td>
+<td>- M : A instruire<br/>- Y : Eligible<br/>- N : Non éligible</td>
 </tr>
 <tr>
-<td>TC_CUF_<cuf code></td>
-<td>La valeur du champ personnalisé de code &lt;code du cuf> pour le cas de test.</td>
-<td></td>
+<td>TC_CUF_&lt;cuf code></td>
+<td>Une colonne par champ personnalisé.  <br/>Dans l'en-tête, remplacer &lt;code du cuf> par le code du champ personnalisé.</td>
+<td>Valeur associée au champ personnalisé</td>
 </tr>
 </tbody>
 </table>
@@ -920,7 +915,7 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>ACTION</td>
 <td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
-<td><u><strong>Champ Obligatoire</strong> </u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+<td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td>TC_OWNER_PATH</td>
@@ -953,12 +948,12 @@ Cette fonctionnalité est très utile :</p>
 <tr>
 <td>ACTION</td>
 <td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
-<td><u><strong>Champ Obligatoire</strong> </u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+<td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td>TC_OWNER_PATH</td>
 <td>Chemin vers le cas de test propriétaire du jeu de données.</td>
-<td><u><strong>Champ obligatoire</strong></u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
+<td><u>Champ obligatoire</u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
 </tr>
 <tr>
 <td>TC_DATASET_NAME</td>
