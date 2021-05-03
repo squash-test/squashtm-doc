@@ -134,7 +134,7 @@
                 </li>
                 <li class="toctree-l3 current"><a class="reference internal current" href="./">Rechercher un objet</a>
     <ul class="current">
-    <li class="toctree-l4"><a class="reference internal" href="#bouton-rechercher-screen-icone-rechercher">Bouton [Rechercher] [screen Icone Rechercher]</a>
+    <li class="toctree-l4"><a class="reference internal" href="#bouton-rechercher">Bouton [Rechercher]</a>
     </li>
     </ul>
                 </li>
@@ -690,8 +690,47 @@
             <div class="section">
               
                 <h1 id="rechercher-un-objet">Rechercher un objet</h1>
-<h3 id="bouton-rechercher-screen-icone-rechercher">Bouton [Rechercher] [screen Icone Rechercher]</h3>
-<p>Au clic sur ce bouton, la page de recherche propre à chaque espace s'ouvre. Par défaut, le périmètre de recherche est celui du filtre projet.</p>
+<h2 id="bouton-rechercher">Bouton [Rechercher] <img alt="icone Rechercher" src="../resources/browse.png" /></h2>
+<p>Au clic sur ce bouton présent au dessus des bibliothèques Exigences, Cas de test et Campagnes, la page de recherche propre à chaque espace s'ouvre. Par défaut, le périmètre de recherche est celui du filtre projet.
+Le volet sur la gauche de la page des résultats de recherche permet de définir un périmètre de recherche et d'ajouter des critères de recherches propres aux objets de l'espace.</p>
+<h3 id="le-perimetre">Le périmètre</h3>
+<p>Depuis le critère Périmètre et l'onglet Projet, il est possible de sélectionner ou désélectionner par case à cocher le ou les projets à inclure ou exclure du périmètre.</p>
+<p><img alt="Rechercher un objet - Périmètre projet" src="../resources/rechercher-perimetre-projet-fr.png" /></p>
+<p>L'onglet Personnalisé permet de sélectionner un ou plusieurs répertoires ou des éléments pour définir le périmètre de recherche.</p>
+<p><img alt="Rechercher un objet - Périmètre personnalisé" src="../resources/rechercher-perimetre-perso-fr.png" /></p>
+<h3 id="les-criteres">Les critères</h3>
+<p>L'ajout de critères de recherche se fait par simple sélection des attributs disponibles pour l'entité de l'espace à partir du bouton <strong>[Ajouter des critères]</strong>. La liste de résultat se met automatiquement à jour à la sélection d'un critère.</p>
+<p><img alt="Rechercher un objet - Ajouter un critère" src="../resources/rechercher-ajouter-un-critere-fr.png" /> </p>
+<p>Le clic sur le bouton <strong>[Nouvelle recherche]</strong> réinitialise les critères de recherche.</p>
+<h3 id="modifier-les-attributs">Modifier les attributs</h3>
+<p>À partir d'une sélection simple ou multiple dans la table de résultats, il est possible de modifier en masse certains attributs :</p>
+<ul>
+<li>le statut, la criticité ou la catégorie de la version d'une exigence</li>
+<li>l'importance, le statut, le type, la nature ou l'éligibilité à l'automatisation d'un cas de test</li>
+<li>le statut d'exécution d'un test associé à un plan d'itération</li>
+</ul>
+<p><img alt="Rechercher un objet - Modifier en masse" src="../resources/rechercher-modif-masse-fr.png" /> </p>
+<div class="admonition note">
+<p class="admonition-title">Info</p>
+<p>Il est possible via cette fonctionnalité d'appliquer le statut Approuvée à une version d'exigence depuis n'importe quel autre statut.</p>
+</div>
+<h3 id="modifier-les-associations-aux-jalons">Modifier les associations aux jalons</h3>
+<p>À partir d'une sélection simple ou multiple dans la table de résultats, il est possible d'associer en masse la sélection à un jalon à condition que le jalon soit déjà associé au projet auxquels appartiennent les objets sélectionnés.</p>
+<p><img alt="Rechercher un objet - association en masse à un jalon" src="../resources/rechercher-asso-masse-fr.png" /></p>
+<h3 id="exporter">Exporter</h3>
+<p>À partir du bouton <strong>[Exporter]</strong>, il est possible d'exporter vers un tableur tout ou sélection du résultat de recherche.
+Diverses options sont alors disponibles : </p>
+<ul>
+<li>le format XLS 'Champs actuels' : cet export permet de récupérer les données des exigence ou des cas de test sous la forme d'un classeur Excel n'ayant que les informations affichées dans les résultats de recherche;</li>
+<li>le format XLS 'Tous les champs' : cet export permet de récupérer l'intégralité des données des exigences des cas de test sous la forme d'un classeur Excel.</li>
+<li>conserver le format des textes riches : les champs de type "texte riche" seront exportés avec leur balises HTML afin de conserver la mise en forme lors d'un futur import. Ne pas conserver le format facilite la lecture de ces champs dans l'export</li>
+<li>inclure ou non les cas de test appelés (pour l'espace Cas de test uniquement)</li>
+</ul>
+<p><img alt="Rechercher un objet - exporter les résultats" src="../resources/rechercher-exporter-fr.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">En savoir plus</p>
+<p>Les résultats de recherche de l'espace Campagne ne sont pas exportables mais il est possible d'<a href="/[04.gestion-executions](https://github.com/squash-test/squashtm-doc/tree/main/docs/user-guide/04.gestion-executions)/[4.2.planifier-campagnes-tests](https://github.com/squash-test/squashtm-doc/tree/main/docs/user-guide/04.gestion-executions/4.2.planifier-campagnes-tests)/**4.2.4.identifier-tests-resultats-exec-precedents-plugin.md**">ajouter tout ou sélection des résultats à un plan d'exécution d'une itération</a>.</p>
+</div>
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDIwNzMzNjgwXX0=
 -->
