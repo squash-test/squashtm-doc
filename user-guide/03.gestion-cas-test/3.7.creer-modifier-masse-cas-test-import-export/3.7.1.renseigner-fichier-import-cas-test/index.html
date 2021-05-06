@@ -703,11 +703,13 @@ Cette fonctionnalité est très utile :</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>L'import est réservé aux profils "Administrateur" et "Chef de projet".
-<br/>Un gabarit d'import pour le format Excel ou Zip est téléchargeable depuis la popup d'import dans l'espace Cas de test.</p>
+<br/>Un gabarit d'import pour le format Excel ou Zip est téléchargeable depuis la popup d'import dans l'espace Cas de test.
+<br/></p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Focus</p>
-<p>Il n'est pas possible d'importer des cas de test BDD.</p>
+<p>Il n'est pas possible d'importer des cas de test BDD<br/>
+Il n'est pas possible de changer un cas de test de format (classique/Gherkin/BDD) par l’import via lors d'une mise à jour des données</p>
 </div>
 <h2 id="structure-du-fichier-dimport-au-format-excel">Structure du fichier d'import au format Excel</h2>
 <p>Le fichier d'import comprend cinq onglets :   </p>
@@ -1012,13 +1014,68 @@ Cette fonctionnalité est très utile :</p>
 </table>
 <p><br/></p>
 <h2 id="structure-du-fichier-dimport-au-format-zip">Structure du fichier d'import au format Zip</h2>
-<p>Le fichier zip doit contenir un tableur excel avec un onglet (le nom de l’onglet correspond au nom du cas de test à importer), les autres seront ignorés.
-Pour importer plusieurs cas de test, il faut créer plusieurs fichiers (1 fichier = 1 onglet = 1 cas de test).
-Le tableur doit contenir les balises suivantes dans le même ordre que ci-dessous :</p>
-<div class="admonition warning">
-<p class="admonition-title">Focus</p>
+<p>Le fichier zip peut contenir les dossiers et sous dossiers ainsi que l'ensemble des cas de test que vous souhaitez importer.
+Il faudra créer autant de fichier Excel que vous souhaitez importer de cas de test. Chaque fichier Excel doit contenir un onglet avec les informations du cas de test.  Le nom de l’onglet correspond au <strong>nom du cas de test à importer</strong>.
+Ces fichiers peuvent être répartis dans des dossiers, qui seront créés lors de l'import. </p>
+<p>Par exemple: 
+- Si vous souhaitez importer 10 cas de test, il vous faudra 10 fichier Excel.
+- Si vous souhaitez importer un cas de test dans un dossier qui s'appellera "Dossier1" : dans le dossier zippé, il faudra créer le dossier "Dossier1"; puis à l'intérieur de ce dossier, le fichier Excel qui contiendra les informations du cas de test à importer</p>
+<div class="admonition note">
+<p class="admonition-title">Info</p>
 <p>L’import par .zip ne permet pas d’importer des cas de test Gherkin et BDD</p>
 </div>
+<p>L'onglet du fichier Excel doit contenir les balises suivantes dans le même ordre que ci-dessous :</p>
+<table>
+<thead>
+<tr>
+<th>Balise</th>
+<th>Première valeur</th>
+<th>Deuxième valeur</th>
+<th>Commentaire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Indiquer la description du cas de test. <br/>Cette donnée alimentera le champ "Description" de Squash TM.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Importance</td>
+<td>Indiquer l'importance du cas de test en choisissant l'une des valeurs normées suivantes :<br/>- VERY_HIGH<br/>- HIGH<br/>- MEDIUM<br/>- LOW. <br/>Cette donnée alimentera le champ "Importance" de Squash TM.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Created_by</td>
+<td>Indiquer le login du créateur. <br/>Cette donnée alimentera le champ "Créé par" de Squash TM.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Created_on</td>
+<td>Possibilité d'inscrire la date soit au format de cellule date (heure incluse) ou texte dans ce dernier cas, indiquer la date de création au format JJ/MM/AAAA. <br/>Cette donnée alimentera le champ "Créé par xxx le …" de Squash TM.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Action_step</td>
+<td>Indiquer l'action à réaliser.</td>
+<td>Indiquer le résultat attendu.</td>
+<td>Cette balise entraîne la création d'un nouveau pas de test à chaque fois qu'elle est rencontrée. Les pas de test sont créés dans l'ordre du fichier (de haut en bas).</td>
+</tr>
+<tr>
+<td>Prerequisite</td>
+<td>Indique les informations à ajouter dans les "Prérequis" du cas de test.</td>
+<td></td>
+<td>Si plusieurs lignes du fichier Excel sont renseignées avec cette balise, les différentes valeurs seront concaténées dans le champ "Prérequis".</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Exemple de fichier Excel pour un import au format ZIP" src="./resources/import-ct-zip.jpg" /></p>
+<p><br/>
+Les informations du cas de test sont contenus dans le premier onglet. Le nom donné à cet onglet sera le nom de mon cas de test "Cas de test 1"</p>
               
             </div>
           </div>
