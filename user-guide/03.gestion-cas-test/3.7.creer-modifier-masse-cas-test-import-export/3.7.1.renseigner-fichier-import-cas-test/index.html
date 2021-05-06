@@ -743,23 +743,23 @@ Il n'est pas possible de modifier le format d'un cas de test (classique/Gherkin/
 <tbody>
 <tr>
 <td>ACTION</td>
-<td>Valeur qui indique l'action que l'on souhaite effectuer.</td>
+<td>Valeur qui indique l'action à effectuer.</td>
 <td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td>TC_PATH</td>
-<td>Chemin du cas de test. Il commence "/nom du projet" et se termine par le nom du cas de test. Il inclut le nom du projet car l'import est multi-projet</td>
+<td>Chemin du cas de test. Il commence par "/nom du projet" et se termine par le nom du cas de test. Il inclut le nom du projet car l'import est multi-projet</td>
 <td><u>Champ Obligatoire</u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
 </tr>
 <tr>
 <td>TC_NUM</td>
-<td>Ordre du cas de test dans son dossier conteneur. <br/><br/>- Mode <strong>CREATE</strong> : si non renseigné, considéré comme le dernier élément du conteneur. Ensuite le cas de test est créé à cette position. <br/>- Mode <strong>UPDATE</strong> : si non renseigné l'information est ignorée. Si le numéro d'ordre est renseigné et est différent de l'ordre actuel le cas de test sera déplacé à cette nouvelle position.</td>
+<td>Ordre du cas de test dans son dossier conteneur. <br/><br/>- Mode <strong>CREATE</strong> : si non renseigné, considéré comme le dernier élément du conteneur. Si renseigné, le cas de test est donc créé à cette position. <br/>- Mode <strong>UPDATE</strong> : si non renseigné l'information est ignorée. Si le numéro d'ordre renseigné est différent de l'ordre actuel le cas de test est déplacé à cette nouvelle position.</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_UUID</td>
 <td>Identifiant universel unique du cas de test. <br/><br/>- Mode <strong>CREATE</strong> : si renseigné, le cas de test est créé avec cet UUID. Si non renseigné, le cas de test est créé avec un UUID généré automatiquement. <br/>- Mode <strong>UPDATE</strong> : la valeur de la colonne TC_UUID n'est pas considérée. Il n'est pas possible de modifier l'UUID d'un cas de test déjà existant dans la base de données.</td>
-<td></td>
+<td>Si renseignée, la valeur de la colonne TC_UUID doit correspondre à l'expression régulière :<br/> [0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}</td>
 </tr>
 <tr>
 <td>TC_REFERENCE</td>
@@ -773,13 +773,13 @@ Il n'est pas possible de modifier le format d'un cas de test (classique/Gherkin/
 </tr>
 <tr>
 <td>TC_MILESTONE</td>
-<td>Intitulé du ou des Jalons associé(s) au cas de test. Si un objet est associé à plusieurs jalons, chacun des jalons doit être renseigné dans la colonne correspondante séparé par un "|". <br/>Mode <strong>UPDATE</strong> : si la colonne est vide, les associations existantes sont supprimées.</td>
+<td>Intitulé du ou des jalons associés au cas de test. Si un objet est associé à plusieurs jalons, chacun des jalons doit être renseigné dans la colonne correspondante séparé par un "|". <br/>Mode <strong>UPDATE</strong> : si la colonne est vide, les associations existantes sont supprimées.</td>
 <td>Par exemple si un cas de test est associé à deux jalons :  <br/>Jalon1|Jalon 2</td>
 </tr>
 <tr>
 <td>TC_WEIGHT_AUTO</td>
-<td>Si, à l’import, la valeur est à "1" il faudra déduire l’importance du cas de test en fonction des exigences qui lui sont associées y compris ceux associées aux cas de test appelés. <br/>Si la colonne ou la valeur est omise, la valeur par défaut à prendre en compte est "0" .</td>
-<td>- "1" : Si le calcul de l’importance automatique <br/>- "0" : Si la valorisation de l’importance est manuelle.</td>
+<td>Si, à l’import, la valeur est à "1" Squash déduit l’importance du cas de test en fonction des exigences qui lui sont associées y compris celles associées aux cas de test appelés. <br/>Si la colonne ou la valeur est omise, la valeur par défaut prise en compte est "0" .</td>
+<td>- "1" : Si le calcul de l’importance est automatique <br/>- "0" : Si la valorisation de l’importance est manuelle.</td>
 </tr>
 <tr>
 <td>TC_WEIGHT</td>
@@ -799,7 +799,7 @@ Il n'est pas possible de modifier le format d'un cas de test (classique/Gherkin/
 <tr>
 <td>TC_STATUS</td>
 <td>Code du statut de rédaction du cas de test</td>
-<td>- APPROVED (Approuvé)<br/>- OBSOLETE (Obsolète)<br/>- TO_BE_UPDATED (À mettre à jour)<br/>- UNDER_REVIEW<br/>- WORK_IN_PROGRESS (En cours de rédaction) [Valeur par défaut]</td>
+<td>- APPROVED (Approuvé)<br/>- OBSOLETE (Obsolète)<br/>- TO_BE_UPDATED (À mettre à jour)<br/>- UNDER_REVIEW (À approuver)<br/>- WORK_IN_PROGRESS (En cours de rédaction) [Valeur par défaut]</td>
 </tr>
 <tr>
 <td>TC_DESCRIPTION</td>
@@ -1012,6 +1012,10 @@ Il n'est pas possible de modifier le format d'un cas de test (classique/Gherkin/
 </tbody>
 </table>
 <p><br/></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Avec un import Excel, il est possible de mettre en forme tous les champs de type texte riche comme la description ou encore les pas de test en utilisant des balises HTML.</p>
+</div>
 <h2 id="structure-du-fichier-dimport-au-format-zip">Structure du fichier d'import au format Zip</h2>
 <p>Le fichier zip peut contenir des dossiers et sous dossiers ainsi que l'ensemble des cas de test à importer.
 Il faut créer autant de fichier Excel que de cas de test à importer. Chaque fichier Excel doit contenir un onglet avec les informations du cas de test.  Le nom de l’onglet correspond au <strong>nom du cas de test à importer</strong>.
