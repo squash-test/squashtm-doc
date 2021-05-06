@@ -705,6 +705,10 @@ Cette fonctionnalité est très utile :</p>
 <p>L'import est réservé aux profils "Administrateur" et "Chef de projet".
 <br/>Un gabarit d'import pour le format Excel ou Zip est téléchargeable depuis la popup d'import dans l'espace Cas de test.</p>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Focus</p>
+<p>Il n'est pas possible d'importer des cas de test BDD.</p>
+</div>
 <h2 id="structure-du-fichier-dimport-au-format-excel">Structure du fichier d'import au format Excel</h2>
 <p>Le fichier d'import comprend cinq onglets :   </p>
 <ul>
@@ -1008,6 +1012,13 @@ Cette fonctionnalité est très utile :</p>
 </table>
 <p><br/></p>
 <h2 id="structure-du-fichier-dimport-au-format-zip">Structure du fichier d'import au format Zip</h2>
+<p>Le fichier zip doit contenir un tableur excel avec un onglet (le nom de l’onglet correspond au nom du cas de test à importer), les autres seront ignorés.
+Pour importer plusieurs cas de test, il faut créer plusieurs fichiers (1 fichier = 1 onglet = 1 cas de test).
+Le tableur doit contenir les balises suivantes dans le même ordre que ci-dessous :</p>
+<div class="admonition warning">
+<p class="admonition-title">Focus</p>
+<p>L’import par .zip ne permet pas d’importer des cas de test Gherkin et BDD</p>
+</div>
               
             </div>
           </div>
