@@ -1017,14 +1017,16 @@ Il n'est pas possible de changer un cas de test de format (classique/Gherkin/BDD
 <p>Le fichier zip peut contenir des dossiers et sous dossiers ainsi que l'ensemble des cas de test que vous souhaitez importer.
 Il faudra créer autant de fichier Excel que vous souhaitez importer de cas de test. Chaque fichier Excel doit contenir un onglet avec les informations du cas de test.  Le nom de l’onglet correspond au <strong>nom du cas de test à importer</strong>.
 <br/>Ces fichiers peuvent être répartis dans des dossiers, qui seront créés lors de l'import. </p>
-<p>Par exemple: </p>
+<p><strong>Par exemple:</strong></p>
 <ul>
-<li>Si vous souhaitez importer 10 cas de test, il vous faudra 10 fichier Excel.</li>
-<li>Si vous souhaitez importer un cas de test dans un dossier qui s'appellera "Dossier1" : dans le dossier zippé, il faudra créer le dossier "Dossier1"; puis à l'intérieur de ce dossier, placer le fichier Excel qui contiendra les informations du cas de test à importer</li>
+<li>Si vous souhaitez créer/importer 10 cas de test, il vous faudra 10 fichier Excel.</li>
+<li>Si vous souhaitez créer/importer un cas de test dans un dossier qui s'appellera "Dossier1" : dans le dossier zippé devra avoir comme nom "Dossier1", puis à l'intérieur de ce dossier, placer le fichier Excel qui contiendra les informations du cas de test à importer</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Info</p>
-<p>L’import par .zip ne permet pas d’importer des cas de test Gherkin et BDD</p>
+<p>L’import par .zip ne permet pas d’importer des cas de test Gherkin et BDD
+<br/> L'import par .zip ce fait sur un seul projet à la fois
+<br/> Seuls la création de nouveau cas de test est possible via un import par .zip</p>
 </div>
 <p>L'onglet du fichier Excel doit contenir les balises suivantes dans le même ordre que ci-dessous :</p>
 <table>
@@ -1075,7 +1077,7 @@ Il faudra créer autant de fichier Excel que vous souhaitez importer de cas de t
 </tr>
 </tbody>
 </table>
-<p><br/><strong>Par exemple :</strong><br/>
+<p><br/><strong>Par exemple:</strong><br/>
 Les informations du cas de test sont contenus dans le premier onglet. Le nom donné à cet onglet sera le nom de mon cas de test "Cas de test 1"</p>
 <p><br/>
 <img alt="Exemple de fichier Excel pour un import au format ZIP" src="../resources/import-ct-zip.jpg" /></p>
