@@ -328,6 +328,22 @@
                 </li>
                 <li class="toctree-l3 current"><a class="reference internal current" href="./">Importer des cas de test</a>
     <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#creer-une-arborescence-de-cas-de-test">Créer une arborescence de cas de test</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#importer-des-cas-de-test-avec-une-liste-personnalisee">Importer des cas de test avec une liste personnalisée</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#importer-des-cas-de-test-avec-des-champs-personnalises">Importer des cas de test avec des champs personnalisés</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#importer-des-cas-de-test-avec-des-associations-a-des-exigences">Importer des cas de test avec des associations à des exigences</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#importer-des-pas-de-test">Importer des pas de test</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#importer-des-parametres-et-des-jeux-de-donnees">Importer des paramètres et des jeux de données</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#importer-un-cas-de-test-faisant-appel-a-un-autre-cas-de-test">Importer un cas de test faisant appel à un autre cas de test</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#importer-un-cas-de-test-gherkin-avec-un-script">Importer un cas de test Gherkin avec un script</a>
+    </li>
     </ul>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../3.7.3.exporter-cas-test-bibliotheque/">Exporter des cas de test depuis la bibliothèque</a>
@@ -688,10 +704,88 @@
             <div class="section">
               
                 <h1 id="importer-des-cas-de-test">Importer des cas de test</h1>
-<p>(cas de figure)</p>
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTA3NjM1MTZdfQ==
--->
+<p>Squash permet d’importer une arborescence de cas de test depuis un fichier au format .xls ou .zip </p>
+<p>Pour réaliser cet import, il  faut renseigner un fichier Excel en respectant les recommandations faites dans <a href="lien à mettre vers la partie">Renseigner un fichier d'import de cas de test</a> puis l'importer via l'option <strong>[Importer]</strong> de l'espace Cas de test. Il est possible de simuler l'import pour vérifier la cohérence du fichier d'import avant de l'importer.</p>
+<div class="admonition tip">
+<p class="admonition-title">En savoir plus</p>
+<p>Pour plus de détails sur la procédure à suivre pour réaliser un import, consulter la page <a href="lien à ajouter">Importer/Exporter un objet</a>.</p>
+</div>
+<p>L'import permet de créer des cas de test avec toutes les fonctionnalités disponibles dans l'espace Cas de test:</p>
+<h3 id="creer-une-arborescence-de-cas-de-test">Créer une arborescence de cas de test</h3>
+<p>L'arborescence est très importante car elle permet d'<strong>organiser le référentiel de tests</strong>. L'import offre la possibilité de créer une arborescence précise des dossiers et cas de test à importer et ce dans plusieurs projets à la fois.</p>
+<p><img alt="Importer une arborescence de cas de test " src="resources/import-arbo-ct.png" /></p>
+<p>Si les dossiers sont inexistants dans Squash au moment de l'import, ceux-ci sont créés par l'import. </p>
+<p><strong>Par exemple :</strong></p>
+<p>Pour le chemin:  /Projet1/Dossier1/Sousdossier1/Casdetest1</p>
+<p>Le cas de test Casdetest1 est ajouté dans le projet Projet1, dans le dossier Sousdossier1, sous-dossier de Dossier1.</p>
+<h3 id="importer-des-cas-de-test-avec-une-liste-personnalisee">Importer des cas de test avec une liste personnalisée</h3>
+<p>Si une liste personnalisée est configurée pour la nature et/ou le type des cas de test sur le projet, dans le fichier d'import, <strong>le code de l'option</strong> souhaitée est à renseigner dans la colonne "TC_NATURE" et/ou "TC_TYPE"</p>
+<p><strong>Par exemple :</strong></p>
+<ol>
+<li>Avoir une liste personnalisée avec plusieurs options, dont une des options est "Option2" associée au code "Opt2".
+<br/>
+<img alt="Page de consultation d'une liste personnalisé" src="resources/listeperso.jpg" />
+<br/></li>
+<li>
+<p>Dans le fichier Excel, renseigner la valeur du code de l'option dans la colonne "TC_NATURE" : ici "Opt2"</p>
+</li>
+<li>
+<p>Lorsque le fichier est importé, le cas de test est créée et le champ 'Nature' est renseigné par "Option2"</p>
+</li>
+</ol>
+<h3 id="importer-des-cas-de-test-avec-des-champs-personnalises">Importer des cas de test avec des champs personnalisés</h3>
+<p>Si des champs personnalisés (CUF) sont configurés pour les cas de test du projet, dans le fichier d'import, la colonne "TC_CUF_&lt;code du cuf>" peut être renseignée, à raison d'une colonne par champ personnalisé. L'entête de la colonne doit comporter le code du champ personnalisé présent sur sa page de consultation.</p>
+<p>Contenu de la colonne "TC_CUF_&lt;code du cuf>" :</p>
+<table>
+<thead>
+<tr>
+<th>Type de champ personnalisé</th>
+<th>Valeur attendue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tag</td>
+<td>Tag1|Tag2</td>
+</tr>
+<tr>
+<td>Case à cocher</td>
+<td>'true' ou 'false'</td>
+</tr>
+<tr>
+<td>Liste déroulante</td>
+<td>Libellé de l'option</td>
+</tr>
+<tr>
+<td>Numérique</td>
+<td>Par exemple : '50', '12,8'</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>'AAAA-MM-JJ'</td>
+</tr>
+<tr>
+<td>Texte simple</td>
+<td>Texte avec 255 caractères maximum sans mise en forme</td>
+</tr>
+<tr>
+<td>Texte riche</td>
+<td>Pour importer de la mise en forme, le texte doit être en HTML</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="importer-des-cas-de-test-avec-des-associations-a-des-exigences">Importer des cas de test avec des associations à des exigences</h3>
+<p>L'onglet "LINK_REQ_TC" du fichier d'import est à compléter avec le chemin de l'exigence, le numéro de la version ainsi que le chemin du cas de test à associer. Pour que l'association fonctionne, l'exigence doit au préalable exister dans le référentiel.</p>
+<p>Les informations sont visibles après l'import dans l'ancre <strong>Exigences vérifiées par ce cas de test</strong>  du cas de test.</p>
+<h3 id="importer-des-pas-de-test">Importer des pas de test</h3>
+<h3 id="importer-des-parametres-et-des-jeux-de-donnees">Importer des paramètres et des jeux de données</h3>
+<h3 id="importer-un-cas-de-test-faisant-appel-a-un-autre-cas-de-test">Importer un cas de test faisant appel à un autre cas de test</h3>
+<h3 id="importer-un-cas-de-test-gherkin-avec-un-script">Importer un cas de test Gherkin avec un script</h3>
+<div class="admonition warning">
+<p class="admonition-title">Focus</p>
+<p>Il n'est pas possible d'importer des cas de test BDD</p>
+</div>
               
             </div>
           </div>
