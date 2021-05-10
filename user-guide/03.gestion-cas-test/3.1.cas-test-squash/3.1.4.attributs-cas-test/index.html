@@ -712,8 +712,8 @@
 <h2 id="reference">Référence</h2>
 <p>La référence du cas de test est facultative, néanmoins elle permet d'organiser son référentiel. Des conventions de nommages doivent être définies pour organiser et identifier les cas de test.</p>
 <h2 id="statut">Statut</h2>
-<p>Le champ 'Statut' permet d'affecter un statut au cas de test. Par défaut, il sera "En cours de rédaction’". Chaque statut est représenté par une couleur facilement identifiable dans la bibliothèque des cas de test grâce à la pastille qui précède la référence ou le libellé du cas de test.
-Le statut peut être modifiée à l'aide de la liste déroulante dont les valeurs sont les suivantes :</p>
+<p>Le champ 'Statut' permet d'affecter un statut au cas de test. Par défaut, il sera "En cours de rédaction’". Chaque statut est représenté par une couleur facilement identifiable dans la bibliothèque des cas de test grâce à la pastille qui précède la référence ou, s'il n'y a pas de référence, le libellé du cas de test.
+Le statut peut être modifié à l'aide de la liste déroulante dont les valeurs sont les suivantes :</p>
 <ul>
 <li>
 <p><img alt="En cours de rédaction" src="../resources/en-cours-redactionFR.png" /></p>
@@ -756,10 +756,7 @@ Un cas de test peut être passé au statut 'Obsolète' lorsqu'il n'est pas utile
 <p class="admonition-title">Focus</p>
 <p>La case "Auto" au niveau de l'importance permet de déterminer automatiquement l'importance du cas de test à partir de la criticité des exigences qu'il vérifie.</p>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
 <p>L'importance du cas de test peut être utilisé pour organiser et prioriser les exécutions mais aussi pour en analyser les résultats (taux de succès/échec en fonction de l'importance des tests, importance des tests jamais exécutés).</p>
-</div>
 <h2 id="nature">Nature</h2>
 <p>La valeur du champ 'Nature' est 'Non définie' par défaut. Elle peut être modifiée à l'aide de la liste déroulante.</p>
 <p><img alt="Nature d'un cas de test" src="../resources/natureFR.png" /></p>
@@ -767,9 +764,9 @@ Un cas de test peut être passé au statut 'Obsolète' lorsqu'il n'est pas utile
 <h2 id="type">Type</h2>
 <p>La valeur du champ 'Type' est 'Non définie' par défaut. Elle peut être modifiée à l'aide de la liste déroulante. </p>
 <p><img alt="Type d'un cas de test" src="../resources/typeFR.png" /></p>
-<p>Le champ type peut être utilisé pour classer et organiser le patrimoine de tests mais aussi pour identifier facilement un certain type de cas de test à ajouter à une campagne (exemple: les tests de non-régression)</p>
+<p>Le champ type peut être utilisé pour classer et organiser le patrimoine de tests mais aussi pour identifier facilement un certain type de cas de test à ajouter à une campagne, par exemple, les tests de non-régression.</p>
 <h2 id="description">Description</h2>
-<p>Le bloc 'Description' permet de décrire l'objectif du cas de test. La description reprend souvent les éléments de l'exigence associée au cas de test.
+<p>Le bloc 'Description' permet de décrire l'objectif du cas de test. La description reprend les éléments à vérifier de l'exigence associée au cas de test.
 La description peut débuter par "<em>Le cas de test vérifie que [action]</em>".</p>
 <h2 id="champs-personnalises">Champs personnalisés</h2>
 <p>Les champs personnalisés peuvent prendre plusieurs formes (texte, case à cocher, date, tag...) et peuvent être ajouté au niveau d'un dossier de cas de test, d'un cas de test ou d'un pas de test. Ils n'apparaîtront dans les différents blocs que s'ils ont été ajouté lors de la configuration du projet.
