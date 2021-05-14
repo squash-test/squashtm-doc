@@ -698,37 +698,42 @@
               
                 <h1 id="tableau-de-bord-des-exigences">Tableau de bord des exigences</h1>
 <p>En sélectionnant des éléments dans la bibliothèque des exigences, un tableau de bord s'affiche dans la partie droite. Il est possible d’afficher un tableau de bord par défaut ou un tableau de bord personnalisé.</p>
+<p>Le bouton <strong>[Rafraîchir]</strong> en haut à droite permet de rafraîchir les graphiques du tableau de bord.
+<br/>Le bouton <strong>[Favori]</strong> en haut à droite permet d’afficher un tableau de bord favori personnalisé à la place du tableau de bord par défaut</p>
 <p>!!! tip “En savoir plus”
     Pour plus de renseignements sur le tableau de bord personnalisé, consulter la page "<a href="7.5. Les tableaux de bord personnalisés">Les tableaux de bord personnalisés</a>"</p>
 <h2 id="les-differents-graphiques">Les différents graphiques</h2>
-<p>Le tableau de bord se divise en 6 parties :</p>
+<p>Le tableau de bord se divise en 6 graphiques :</p>
 <ul>
-<li><strong>Couverture par les cas de test</strong></li>
+<li><strong>Graphique 'Couverture par les cas de test'</strong></li>
 </ul>
-<p>Répartition par associations à des cas de test</p>
+<p>Répartition des exigences en fonction de leur association à aucun, un ou plusieurs cas de test. Ce graphique est très utile pour vérifier la couverture fonctionnelle de l'application. </p>
 <ul>
-<li><strong>Statut</strong></li>
+<li><strong>Graphique 'Statut'</strong></li>
 </ul>
-<p>répartition des statut de rédaction des exigences</p>
+<p>Répartition des exigences en fonction de leur statut de rédaction. Ce graphique permet d'avoir une vue d'ensemble de l'avancement de la rédaction des exigences.</p>
 <ul>
-<li><strong>Criticité</strong> </li>
+<li><strong>Graphique 'Criticité'</strong> </li>
 </ul>
-<p>répartition des criticités des exigences</p>
+<p>Répartition des exigences en fonction de leur criticité. </p>
 <ul>
-<li><strong>Description</strong> </li>
+<li><strong>Graphique 'Description'</strong> </li>
 </ul>
-<p>présence ou non d’une description</p>
+<p>Répartition des exigences en fonction de la présence ou non d'une description. Ce graphique permet de visualiser rapidement si certaines exigences n'ont pas de description, et donc de pouvoir compléter cette information. Pour rappel, la description d'une exigence correspond à une spécificité de l'application, et est primordiale pour la rédaction des tests.</p>
 <ul>
-<li><strong>Couverture par criticité</strong></li>
+<li><strong>Graphique 'Couverture par criticité'</strong></li>
 </ul>
-<p>des exigences par des cas de test en fonction de leur criticité</p>
+<p>Répartition des exigences en fonction de leur criticité et du taux de couverture des exigences par des cas de test.</p>
 <ul>
-<li><strong>Validation des Cdt par criticité</strong></li>
+<li><strong>Graphique 'Validation des Cdt par criticité'</strong></li>
 </ul>
-<p>des cas de test associés aux exigences en fonction de leur criticité</p>
-<p>AJOUTER UNE IMAGE des 6 graphiques</p>
+<p>Répartition des exigences en fonction de leur criticité et du taux de validation des cas de test associés aux exigences. Ce graphique permet, par exemple, de savoir si toutes les exigences critiques associés à un cas de test, ont été exécutés en succès.</p>
+<p><img alt="Tableau de bord par défaut de l'espace Exigences" src="./resources/tableaubordexigence.jpg" /></p>
 <h2 id="acces-a-la-page-de-recherche">Accès à la page de recherche</h2>
 <p>Au clic sur les portions d'un graphique du tableau de bord par défaut, une page de recherche s'affiche, avec les critères présélectionnés correspondant à la portion de graphique.</p>
+<p><strong>Par exemple:</strong></p>
+<p><br/> Au clic sur la portion de graphique "Exigences liées à aucun CT" du graphique "Couverture par les cas de test", une page de recherche s'affiche avec le critère "Nombre de cas de test : Egal 0". 
+<br/> En cliquant sur le bouton <img alt="Bouton d'édition" src="../resources/edit1.png" /> ou le bouton <img alt="Bouton dossier" src="../resources/dossier.png" /> il est possible de modifier directement le cas de test, et d'associer au moins un cas de test pour chaque exigence.</p>
               
             </div>
           </div>
