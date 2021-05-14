@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <meta name="author" content="Henix">
-  <link rel="canonical" href="https://squash-test.github.io/squashtm-doc/user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.1.graphiques-tableau-bord/">
+  <link rel="canonical" href="https://squash-test.github.io/squashtm-doc/user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.tableau-bord-casdetest/">
   <link rel="shortcut icon" href="../../../../img/favicon.ico">
-  <title>Les graphiques du tableau de bord par défaut - Squash TM documentation</title>
+  <title>Tableau de bord des cas de test - Squash TM documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../../../css/theme.css" />
@@ -19,9 +19,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Les graphiques du tableau de bord par d\u00e9faut";
-    var mkdocs_page_input_path = "user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.1.graphiques-tableau-bord.md";
-    var mkdocs_page_url = "/squashtm-doc/user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.1.graphiques-tableau-bord/";
+    var mkdocs_page_name = "Tableau de bord des cas de test";
+    var mkdocs_page_input_path = "user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.tableau-bord-casdetest.md";
+    var mkdocs_page_url = "/squashtm-doc/user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.tableau-bord-casdetest/";
   </script>
   
   <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
@@ -357,8 +357,12 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">3.9.tableau bord cas test</a>
     <ul class="current">
-                <li class="toctree-l3 current"><a class="reference internal current" href="./">Les graphiques du tableau de bord par défaut</a>
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">Tableau de bord des cas de test</a>
     <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#les-differents-graphiques">Les différents graphiques</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#acces-a-la-page-de-recherche">Accès à la page de recherche</a>
+    </li>
     </ul>
                 </li>
     </ul>
@@ -679,10 +683,10 @@
         
       
     
-    <li>Les graphiques du tableau de bord par défaut</li>
+    <li>Tableau de bord des cas de test</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/squash-test/squashtm-doc/edit/master/docs/user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.1.graphiques-tableau-bord.md"> Edit on squash-test/squashtm-doc</a>
+        <a href="https://github.com/squash-test/squashtm-doc/edit/master/docs/user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.tableau-bord-casdetest.md"> Edit on squash-test/squashtm-doc</a>
       
     </li>
   </ul>
@@ -692,11 +696,40 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="les-graphiques-du-tableau-de-bord-par-defaut">Les graphiques du tableau de bord par défaut</h1>
-<p>(PIL1 + Doc + Intérêt de chaque tableau + évoquer juste le Favori)</p>
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MDUzMDg3M119
--->
+                <h1 id="tableau-de-bord-des-cas-de-test">Tableau de bord des cas de test</h1>
+<p>En sélectionnant des éléments dans la bibliothèque des cas de test, un tableau de bord s'affiche dans la partie droite. Il est possible d’afficher un tableau de bord par défaut ou un tableau de bord personnalisé.</p>
+<p>Le bouton <strong>[Rafraîchir]</strong> en haut à droite permet de rafraîchir les graphiques du tableau de bord.
+<br/>Le bouton <strong>[Favori]</strong> en haut à droite permet d’afficher un tableau de bord favori personnalisé à la place du tableau de bord par défaut</p>
+<p>!!! tip “En savoir plus”
+    Pour plus de renseignements sur le tableau de bord personnalisé, consulter la page "<a href="7.5. Les tableaux de bord personnalisés">Les tableaux de bord personnalisés</a>"</p>
+<h2 id="les-differents-graphiques">Les différents graphiques</h2>
+<p>Le tableau de bord se divise en 4 graphiques :</p>
+<ul>
+<li><strong>Graphique 'Associations aux exigences'</strong></li>
+</ul>
+<p>Répartition des cas de test en fonction de leur association à aucune, une ou plusieurs exigences. Ce graphique est très utile pour vérifier la couverture fonctionnelle de l'application. </p>
+<ul>
+<li><strong>Graphique 'Statut'</strong></li>
+</ul>
+<p>Répartition des cas de test en fonction de leur statut de rédaction. Ce graphique permet d'avoir une vue d'ensemble de l'avancement de la rédaction des cas de test.</p>
+<ul>
+<li><strong>Graphique 'Importance'</strong> </li>
+</ul>
+<p>Répartition des cas de test en fonction de leur importance. </p>
+<ul>
+<li><strong>Graphique 'Pas de test'</strong> </li>
+</ul>
+<p>Répartition des cas de test en fonction du nombre de pas de test. Ce graphique permet de visualiser rapidement si certains cas de test n'ont pas de pas de test. Pour rappel, un cas de test sans pas ne peut pas être exécutés</p>
+<p><img alt="Tableau de bord par défaut de l'espace Cas de test" src="../resources/tableaubord-CT.jpg" /></p>
+<div class="admonition note">
+<p class="admonition-title">Info</p>
+<p>Les cas de test Gherkin sont toujours considérés comme n'ayant pas de pas de test, et sont donc présents dans la portion "CT avec aucun pas de test"</p>
+</div>
+<h2 id="acces-a-la-page-de-recherche">Accès à la page de recherche</h2>
+<p>Au clic sur les portions d'un graphique du tableau de bord par défaut, une page de recherche s'affiche, avec les critères présélectionnés correspondant à la portion de graphique.</p>
+<p><strong>Par exemple:</strong>
+<br/><br/> Au clic sur la portion de graphique "CT avec aucun pas de test" du graphique "Pas de test", une page de recherche s'affiche avec le critère "Nombre de pas de test : Egal 0". 
+<br/> En cliquant sur le bouton <img alt="Bouton d'édition" src="../resources/edit1.png" /> ou le bouton <img alt="Bouton dossier" src="../resources/dossier.png" /> il est possible de modifier directement le cas de test en y ajoutant des pas de test.</p>
               
             </div>
           </div>
