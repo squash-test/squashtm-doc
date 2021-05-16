@@ -26,13 +26,7 @@ extra_css:
     - css/extra.css
 
 nav:
-  - Guide de l'administrateur:
-    - 'admin-guide/index.md'
-  - Install Guide:
-    - 'install-guide/index.md'
-  - Guide des plugins:
-    - 'plugin-guides/waj-guide/index.md'
-    - 'plugin-guides/xsquash-guide/index.md'
+  - index.md
   - Guide Utilisateur:
     - Présentation Générale:
       - user-guide/01.presentation-generale-outil/index.md
@@ -42,13 +36,13 @@ nav:
         - 'user-guide/01.presentation-generale-outil/1.1.differents-espaces-squash/1.1.2.page-accueil-squash.md'
         - 'user-guide/01.presentation-generale-outil/1.1.differents-espaces-squash/1.1.3.presentation-espaces.md'
         - 'user-guide/01.presentation-generale-outil/1.1.differents-espaces-squash/1.1.4.terminologie.md'
-      - Les fonctionnalités globales de Squash TM:
+      - Fonctionnalités globales:
         - 'user-guide/01.presentation-generale-outil/1.2.fonctionnalites-globales/1.2.fonctionnalites-globales.md'
         - 'user-guide/01.presentation-generale-outil/1.2.fonctionnalites-globales/1.2.1.mon-compte.md'
         - 'user-guide/01.presentation-generale-outil/1.2.fonctionnalites-globales/1.2.2.filtre-projets.md'
         - 'user-guide/01.presentation-generale-outil/1.2.fonctionnalites-globales/1.2.3.bugtrackers.md'
         - 'user-guide/01.presentation-generale-outil/1.2.fonctionnalites-globales/1.2.4.aide.md'
-      - Structure des pages de Squash TM:
+      - Structure générique des pages Squash:
         - 'user-guide/01.presentation-generale-outil/1.3.structure-generique-pages-squash/1.3.1.bibliotheque.md'
         - 'user-guide/01.presentation-generale-outil/1.3.structure-generique-pages-squash/1.3.2.page-consultation.md'
         - 'user-guide/01.presentation-generale-outil/1.3.structure-generique-pages-squash/1.3.structure-generique-pages-squash.md'
@@ -69,18 +63,18 @@ nav:
         - 'user-guide/01.presentation-generale-outil/1.4.fonctionnalites-transverses/1.4.13.fonctionnement-tables.md'
     - Gestion des exigences:
       - 'user-guide/02.gestion-exigences/index.md'
-      - Gérer les exigences:
+      - Gérer une exigence:
         - 'user-guide/02.gestion-exigences/2.1.gerer-exigences/2.1.gerer-exigence.md'
         - 'user-guide/02.gestion-exigences/2.1.gerer-exigences/2.1.1.quest-ce-qu-une-exigence.md'
         - 'user-guide/02.gestion-exigences/2.1.gerer-exigences/2.1.2.page-consultation-exigence.md'
         - 'user-guide/02.gestion-exigences/2.1.gerer-exigences/2.1.3.attributs-exigence.md'
         - 'user-guide/02.gestion-exigences/2.1.gerer-exigences/2.1.4.workflow-exigence-historique-modifications.md'
-      - Organiser le patrimoine d'exigences:
+      - Organiser un patrimoine/arborescence d’exigences:
         - 'user-guide/02.gestion-exigences/2.2.organiser-patrimoine-exigences/2.2.1.organisation-dossiers.md'
         - 'user-guide/02.gestion-exigences/2.2.organiser-patrimoine-exigences/2.2.2.hierarchie-exigences.md'
         - 'user-guide/02.gestion-exigences/2.2.organiser-patrimoine-exigences/2.2.3.liens-entre-exigences.md'
         - 'user-guide/02.gestion-exigences/2.2.organiser-patrimoine-exigences/2.2.organiser-patrimoine-exigence.md'
-      - Couvrir les exigences de test:
+      - Couvrir les exigences par les tests:
         - 'user-guide/02.gestion-exigences/2.3.couvrir-exigences-tests/2.3.1.associer-cas-de-test-exigence-arbre.md'
         - 'user-guide/02.gestion-exigences/2.3.couvrir-exigences-tests/2.3.2.associer-cas-test-exigence-recherche.md'
         - 'user-guide/02.gestion-exigences/2.3.couvrir-exigences-tests/2.3.couvrir-exigences-par-tests.md'
@@ -99,15 +93,15 @@ nav:
         - 'user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.3.exporter-exigences-bibliotheque.md'
         - 'user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.4.importer-exigences-a-partir-un-export.md'
         - 'user-guide/02.gestion-exigences/2.6.creer-modifier-en-masse-exigences-import-export/2.6.creer-modifier-en-masse-exigences-import-export.md'
-      - Tableaux de bord:
+      - Tableaux de bord des exigences:
         - 'user-guide/02.gestion-exigences/2.7.tableaux-bord-exigences/2.7.tableau-bord-exigences.md'
-      - Rechercher dans les exigences:
+      - Rechercher des exigences:
         - 'user-guide/02.gestion-exigences/2.8.rechercher-exigences/2.8.1.criteres-recherche-exigences.md'
         - 'user-guide/02.gestion-exigences/2.8.rechercher-exigences/2.8.2.resultats-recherche.md'
         - 'user-guide/02.gestion-exigences/2.8.rechercher-exigences/2.8.recherche-exigences.md'
     - Gestion des cas de tests:
       - 'user-guide/03.gestion-cas-test/index.md'
-      - Les cas de test:
+      - Les cas de test dans Squash:
         - 'user-guide/03.gestion-cas-test/3.1.cas-test-squash/3.1.1.qu-est-ce-qu-un-cas-test.md'
         - 'user-guide/03.gestion-cas-test/3.1.cas-test-squash/3.1.2.formats-cas-test-squash.md'
         - 'user-guide/03.gestion-cas-test/3.1.cas-test-squash/3.1.3.page-consultation-cas-test.md'
@@ -147,7 +141,7 @@ nav:
       - Suivi des exécutions:
         - 'user-guide/03.gestion-cas-test/3.8.suivi-executions/3.8.suivre-executions-cas-test.md'
       - Tableau de bord des cas de test:
-        - 'user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.1.graphiques-tableau-bord.md'
+        - 'user-guide/03.gestion-cas-test/3.9.tableau-bord-cas-test/3.9.tableau-bord-casdetest.md'
       - Rechercher des cas de test:
         - 'user-guide/03.gestion-cas-test/3.10.recherche-cas-test/3.10.1.criteres-recherche-cas-test.md'
         - 'user-guide/03.gestion-cas-test/3.10.recherche-cas-test/3.10.2.resultats-recherche.md'
@@ -218,10 +212,10 @@ nav:
         - 'user-guide/06.gestion-tests-automatises/6.6.execution-automatique/6.6.3.consulter-execution-automatisee.md'
     - Pilotage de recette:
       - 'user-guide/07.pilotage-recette/index.md'
-      - Pilotage dans Squash:
+      - Le pilotage dans Squash:
         - 'user-guide/07.pilotage-recette/7.1.pilotage-squash/7.1.1.espace-pilotage-squash.md'
         - 'user-guide/07.pilotage-recette/7.1.pilotage-squash/7.1.2.page-consultation-espace-pilotage.md'
-      - Rapports:
+      - Les rapports:
         - 'user-guide/07.pilotage-recette/7.2.rapports/7.2.2.rapports-phase-preparation/7.2.2.1.cahiers-exigences.md'
         - 'user-guide/07.pilotage-recette/7.2.rapports/7.2.2.rapports-phase-preparation/7.2.2.2.cahiers-test.md'
         - 'user-guide/07.pilotage-recette/7.2.rapports/7.2.2.rapports-phase-preparation/7.2.2.3.couverture-exigences.md'
@@ -231,26 +225,43 @@ nav:
         - 'user-guide/07.pilotage-recette/7.2.rapports/7.2.3.rapports-phase-execution/7.2.3.3.bilan-campagne.md'
         - 'user-guide/07.pilotage-recette/7.2.rapports/7.2.3.rapports-phase-execution/7.2.3.4.bilan-iteration.md'
         - 'user-guide/07.pilotage-recette/7.2.rapports/7.2.3.rapports-phase-execution/7.2.3.rapports-phase-execution.md'
-      - Graphiques:
+      - Les graphiques:
         - 'user-guide/07.pilotage-recette/7.3.graphiques/7.3.1.page-creation-graphique.md'
         - 'user-guide/07.pilotage-recette/7.3.graphiques/7.3.2.choix-perimetre.md'
         - 'user-guide/07.pilotage-recette/7.3.graphiques/7.3.3.type-graphique.md'
         - 'user-guide/07.pilotage-recette/7.3.graphiques/7.3.4.selection-attributs-axes-graphique.md'
         - 'user-guide/07.pilotage-recette/7.3.graphiques/7.3.5.mise-en-place-filtres.md'
         - 'user-guide/07.pilotage-recette/7.3.graphiques/7.3.6.exemples-graphiques.md'
-      - Export de campagne personnalisés:
+      - Les exports de campagne personnalisés:
         - 'user-guide/07.pilotage-recette/7.4.exports-campagne-personnalises/7.4.1.export-personnalise.md'
         - 'user-guide/07.pilotage-recette/7.4.exports-campagne-personnalises/7.4.2.construction-export-personnalise.md'
+      - Les tableaux de bord personnalisés:
         - 'user-guide/07.pilotage-recette/7.5.tableaux-bord-personnalises/7.5.1.creer-tableau-bord-personnalise.md'
         - 'user-guide/07.pilotage-recette/7.5.tableaux-bord-personnalises/7.5.2.afficher-tableau-bord-favori.md'
     - La gestion des Jalons:
+      - 'user-guide/08.gestion-jalons/index.md'
       - Les jalons dans Squash:
         - 'user-guide/08.gestion-jalons/8.1.jalons-squash/8.1.1.qu-est-ce-qu-un-jalon.md'
         - 'user-guide/08.gestion-jalons/8.1.jalons-squash/8.1.2.cycle-vie-jalon.md'
+      - Associer un jalon à un objet:
         - 'user-guide/08.gestion-jalons/8.2.associer-jalon-objet/8.2.1.associer-jalon-objet.md'
         - 'user-guide/08.gestion-jalons/8.2.associer-jalon-objet/8.2.2.criteres-recherche-modifier-jalon.md'
+      - Le mode jalon:
         - 'user-guide/08.gestion-jalons/8.3.mode-jalon/8.3.1.affichage-bibliotheque.md'
         - 'user-guide/08.gestion-jalons/8.3.mode-jalon/8.3.2.gestion-elements-mode-jalon.md'
+      - Les jalons et le reporting:
         - 'user-guide/08.gestion-jalons/8.4.jalons-reporting/8.4.1.tableau-bord-jalon.md'
         - 'user-guide/08.gestion-jalons/8.4.jalons-reporting/8.4.2.rapports-jalon.md'
-        - 'user-guide/08.gestion-jalons/index.md'
+  - Guide de l'administrateur:
+    - 'admin-guide/index.md'
+  - Install Guide:
+    - 'install-guide/index.md'
+  - Guide des plugins:
+    - 'plugin-guides/waj-guide/index.md'
+    - 'plugin-guides/xsquash-guide/index.md'
+    - 'plugin-guides/action-word-guide/index.md'
+    - 'plugin-guides/ad-ldap-guide/index.md'
+    - 'plugin-guides/campaign-wizard-guide/index.md'
+    - 'plugin-guides/polarion-guide/index.md'
+    - 'plugin-guides/redmine-req-guide/index.md'
+    - 'plugin-guides/saml-guide/index.md'
