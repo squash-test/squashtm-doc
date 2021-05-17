@@ -736,8 +736,9 @@ Le statut peut être modifié à l'aide de la liste déroulante dont les valeurs
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Une fois validée, le cas de test peut être passé au statut <strong>'Approuvé'</strong>. Il est alors prêt à être intégré dans une campagne et une itération pour exécution.
-Un cas de test peut être passé au statut <strong>'Obsolète'</strong> lorsqu'il n'est pas utile pour le référentiel mais qu'on ne souhaite pas le supprimer.</p>
+<p>Une fois validée, le cas de test peut être passé au statut <strong>'Approuvé'</strong>. Il est alors prêt à être intégré dans une itération pour exécution.
+<br/>Un cas de test peut être passé au statut <strong>'Obsolète'</strong> lorsqu'il n'est plus conforme au système testé. Ce statut permet d'archiver le cas de test dans le référentiel sans le supprimer.
+<br/>Le statut <strong>'À mettre à jour'</strong> est idéal pour identifier les cas de test qui nécessitent une modification suite à l'évolution du système testé.</p>
 </div>
 <h2 id="importance">Importance</h2>
 <p>Le champ 'Importance' permet d'affecter un niveau d'importance au cas de test ('Faible' par défaut). La valeur peut être modifiée à l'aide de la liste déroulante dont les options sont les suivantes:</p>
@@ -761,11 +762,17 @@ Un cas de test peut être passé au statut <strong>'Obsolète'</strong> lorsqu'i
 </div>
 <p>L'importance du cas de test peut être utilisé pour organiser et prioriser les exécutions mais aussi pour en analyser les résultats (taux de succès/échec en fonction de l'importance des tests, importance des tests jamais exécutés).</p>
 <h2 id="nature">Nature</h2>
-<p>La valeur du champ 'Nature' est 'Non définie' par défaut. Elle peut être modifiée à l'aide de la liste déroulante.</p>
-<p><img alt="Nature d'un cas de test" src="../resources/natureFR.png" /></p>
-<p>Le champ nature peut être utilisé pour classer et organiser le patrimoine de test. </p>
+<p>Le champ 'Nature' permet de définir la nature du cas de test ('Non définie' par défaut). Elle peut être modifiée à l'aide de la liste déroulante.</p>
+<p><img alt="Nature d'un cas de test" src="../resources/natureFR.png" />
+ <br/>
+Les tests de nature fonctionnels permettent de valider une fonctionnalité. 
+<br/>Les tests métiers relèvent souvent de la responsabilité des clients ou des utilisateurs d'un système. Les objectifs des tests métiers sont de s'assurer que l'outil répond aux besoins exprimés.
+<br/>Les tests de performances appartiennent à la famille des tests de robustesse et permettent de tester la qualité du code développé. En effet, un test de performance peut consister à vérifier les temps de réponse d'une application/module/méthode, suivant un chargement de données plus ou moins conséquent.
+<br/>Les tests de sécurité portent sur des fonctions liées à la détection de menaces.
+<br/>Les tests dits ATDD (Acceptance Test Driven Development) sont des tests d'acceptation qui permettent de valider le fonctionnement du système testé en fonction des attentes des utilisateurs finaux.</p>
+<p>Le champ nature permet de classer et d'organiser le patrimoine de test. </p>
 <h2 id="type">Type</h2>
-<p>La valeur du champ 'Type' est 'Non définie' par défaut. Elle peut être modifiée à l'aide de la liste déroulante. </p>
+<p>La valeur du champ 'Type' permet de définir le type du cas de test ('Non défini' par défaut). Elle peut être modifiée à l'aide de la liste déroulante. </p>
 <p><img alt="Type d'un cas de test" src="../resources/typeFR.png" /></p>
 <p>Le champ type peut être utilisé pour classer et organiser le patrimoine de tests mais aussi pour identifier facilement un certain type de cas de test à ajouter à une campagne, par exemple, les tests de non-régression.</p>
 <h2 id="description">Description</h2>
