@@ -733,25 +733,26 @@
 <p><em>Ce bloc s'affiche uniquement pour les cas de test au format Classique et BDD.</em></p>
 <p>Le bloc <strong>Paramètres et jeux de données</strong> permet de variabiliser les cas de test en valorisant leurs paramètres par des jeux de données. Les paramètres peuvent être définis au niveau des champs "Prérequis", "Action" et "Résultat attendu" pour un cas de test Classique et au niveau des actions des pas de test pour un cas de test BDD. Les jeux de données permettent de définir des ensembles de valeurs pour ces paramètres. Les paramètres renseignés dans les pas de test et prérequis sont automatiquement reportés dans la table des 'Paramètres et jeux de données'. </p>
 <h4 id="cas-de-test-appele-par"><img alt="Ancre Cas de test appelé par" src="../resources/called_testcase.png" /> Cas de test appelé par</h4>
-<p>Le bloc <strong>Cas de test appelé par</strong> liste les tests qui appellent le cas de test en cours. Le mécanisme d'appels de tests dans un cas de test permet la construction de bibliothèques modulaires de cas de test. Lors de l'exécution, les pas de test du cas de test appelé sont vu comme des pas de test dans le cas de test appelant. Une table affiche les informations des cas de test "appelant".</p>
+<p><em>Ce bloc s'affiche uniquement pour les cas de test au format Classique.</em></p>
+<p>Le bloc <strong>Cas de test appelé par</strong> liste les tests qui appellent le cas de test classique courant. Le mécanisme d'appel de test dans un cas de test permet la construction de bibliothèques modulaires de cas de test. Lors de l'exécution, les pas de test du cas de test appelé sont vus comme des pas de test dans le cas de test appelant. Une table affiche les informations des cas de test "appelant".</p>
 <div class="admonition note">
 <p class="admonition-title">Info</p>
 <p>Ce mécanisme peut également être utilisé pour des tests de bout en bout faisant appel au patrimoine de tests de différents projets.</p>
 </div>
 <h4 id="prerequis-et-pas-de-test"><img alt="Ancre Prérequis et pas de test" src="../resources/list.png" /> Prérequis et pas de test</h4>
 <p><em>Ce bloc s'affiche uniquement pour les cas de test au format Classique.</em></p>
-<p>Le bloc <strong>Prérequis et pas de test</strong> est constitué de deux parties:</p>
+<p>Le bloc <strong>Prérequis et pas de test</strong> est constitué de deux parties :</p>
 <ul>
 <li>
-<p>Prérequis: qui recueille les préconditions du cas de test</p>
+<p>Prérequis : qui recueille les préconditions du cas de test</p>
 </li>
 <li>
-<p>Pas de test: qui se compose d'une suite d'actions à accomplir et des résultats attendus correspondants. </p>
+<p>Pas de test : qui se compose d'une suite d'actions à accomplir pour atteindre l'objectif du test et des résultats attendus correspondants. </p>
 </li>
 </ul>
 <h4 id="script"><img alt="Ancre Prérequis et pas de test" src="../resources/list.png" /> Script</h4>
 <p><em>Ce bloc s'affiche uniquement pour les cas de test au format Gherkin.</em> </p>
-<p>Au clic, le bloc <strong>Script</strong> devient éditable et permet de rédiger des scripts Gherkin via l'utilisation de snippets. 
+<p>Au clic, le bloc <strong>Script</strong> devient éditable et permet de rédiger des scénarios Gherkin via l'utilisation de snippets. 
 Une aide à la rédaction des cas de test Gherkin est disponible au clic sur le bouton [Aide]. </p>
 <h4 id="pas-de-test"><img alt="Ancre Prérequis et pas de test" src="../resources/list.png" /> Pas de test</h4>
 <p><em>Ce bloc s'affiche uniquement pour les cas de test au format BDD.</em></p>
@@ -759,13 +760,18 @@ Une aide à la rédaction des cas de test Gherkin est disponible au clic sur le 
 <h4 id="executions"><img alt="Ancre exécutions" src="../resources/play.png" /> Exécutions</h4>
 <p>Le bloc <strong>Exécutions</strong> liste les exécutions du cas de test et leurs attributs (statut, identifiant du testeur ayant exécuté le cas de test, date de l'éxecution et nombre d'anomalies remontées). La table est alimentée automatiquement, en temps réel et ne peut être modifiée.</p>
 <h4 id="anomalies-connues"><img alt="Ancre Anomalies connues" src="../resources/bug.png" /> Anomalies connues</h4>
-<p>La table 'Anomalies connues'* liste les anomalies déclarées lors de l’exécution des cas de test. La table est alimentée automatiquement et en temps réel par le bugtracker et ne peut être modifiée. Deux liens cliquables permettent à l'utilisateur d'accéder à :</p>
+<p>La table <strong>Anomalies connues</strong> <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> liste les anomalies déclarées lors de l’exécution des cas de test. La table est alimentée automatiquement et en temps réel par le bugtracker et ne peut être modifiée. Deux liens cliquables permettent à l'utilisateur d'accéder à :</p>
 <ul>
 <li>la page de consultation de l’anomalie dans le bugtracker</li>
 <li>la page de consultation de l’exécution durant laquelle l’anomalie a été relevée</li>
 </ul>
-<hr />
-<p>*Cette ancre s'affiche uniquement lorsqu'un bugtracker est associé au projet de l'exigence.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>Cette ancre s'affiche uniquement lorsqu'un bugtracker est associé au projet du cas de test.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
               
             </div>
           </div>
