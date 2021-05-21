@@ -5736,12 +5736,6 @@
 <li><img alt="Pastille Approuvée" src="../resources/pastille-approuvee.png" /> Approuvée</li>
 <li><img alt="Pastille Obsolète" src="../resources/pastille-obsolete.png" /> Obsolète</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Une fois validée, une exigence pourra être passée au statut <strong>'Approuvée'</strong>, elle est alors prête à être associée à un ou plusieurs cas de test. 
-<br/>Une exigence pourra être passée au statut <strong>'Obsolète'</strong>, lorsqu'elle sera considérée comme non utile pour le référentiel d'exigence sans pour autant être supprimée.
-<br/>L'édition des attributs d'une exigence ayant l'un de ces 2 statuts est impossible. Il conviendra de repasser au statut <strong>'A approuver'</strong> pour éditer un attribut.</p>
-</div>
 <h3 id="criticite">Criticité</h3>
 <p>Le champ 'Criticité' permet d'affecter une criticité à une exigence ('Mineure' par défaut). La criticité peut-être modifiée à l'aide de la liste déroulante dont les valeurs sont les suivantes :</p>
 <ul>
@@ -5779,12 +5773,12 @@
 <p>Pour plus d'informations sur les listes personnalisées, se référer à la page <a href="../../../admin-guide/gestion-projets/configurer-projet/#les-listes-personnalisees">Les listes personnalisées d'un projet</a> du guide administrateur.</p>
 </div>
 <h3 id="jalons">Jalons</h3>
-<p>Lorsque l'utilisation des jalons est activée, le champ 'Jalons' permet d'associer l'exigence à un ou plusieurs jalons via le bouton <strong>[Ajouter]</strong> <img alt="Bouton ajouter jalon" src="../resources/icone-add.png" />. L'association a un ou plusieurs jalons permettra notamment d'organiser son référentiel d'exigence.</p>
+<p>Lorsque l'utilisation des jalons est activée, le champ 'Jalons' permet d'associer l'exigence à un ou plusieurs jalons via le bouton <strong>[Ajouter]</strong> <img alt="Bouton ajouter jalon" src="../resources/icone-add.png" />. L'association a un ou plusieurs jalons permettra notamment d'organiser le référentiel d'exigences.</p>
 <h3 id="description">Description</h3>
 <p>Le champ 'Description' permet de décrire l'exigence. La description peut-être complétée en détaillant le comportement attendu.
 Elle peut être rédigée sous la forme : "L'application doit permettre de [action]".</p>
 <h3 id="id-exigence-et-id-version">ID exigence et Id version</h3>
-<p>Les numéros d'identifiant prennent pour valeur un entier strictement positif déterminé automatiquement par le système. Le premier est le numéro d'identifiant de l'exigence. Une même exigence pouvant exister sous différentes versions, le second identifiant est le numéro d'identifiant de la version d'exigence.
+<p>Les numéros d'identifiant technique prennent pour valeur un entier strictement positif déterminé automatiquement par le système. Le premier est le numéro d'identifiant technique de l'exigence. Une même exigence pouvant exister sous différentes versions, le second identifiant est le numéro d'identifiant technique de la version d'exigence.
 <br/>Les 2 champs ne sont pas éditables. </p>
 <h3 id="creation-et-modification">Création et Modification</h3>
 <p>Le champ 'Création' affiche automatiquement la date de création avec le login de l'utilisateur qui a créé l'exigence.
@@ -5797,18 +5791,16 @@ Elle peut être rédigée sous la forme : "L'application doit permettre de [acti
 <p>Pour plus d'informations sur les champs personnalisés, se référer à la page <a href="../../../admin-guide/gestion-projets/configurer-projet/#les-champs-personnalises">Les champs personnalisés d'un projet</a> du guide administrateur.</p>
 </div>
 <h2 id="workflow-exigence">Workflow exigence</h2>
-<p>Le champ 'Statut' permet d'affecter un statut à l’exigence (‘En cours de rédaction’ par défaut). La valeur peut-être modifiée au moyen de la liste déroulante dont les valeurs sont le suivantes :</p>
-<ul>
-<li>En cours de rédaction</li>
-<li>A approuver</li>
-<li>Approuvée</li>
-<li>Obsolète</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Une fois validée, une exigence pourra être passée au statut 'Approuvée'. Elle est alors prête à être associée à un cas de test. 
-<br/>Une exigence pourra être passée au statut 'Obsolète', lorsqu'elle sera considérée comme non utile pour le référentiel d'exigence sans pour autant être supprimée.
-<br/>L'édition des attributs d'une exigence ayant l'un de ces 2 statuts est impossible. Il conviendra de repasser au statut 'A approuver' pour éditer un attribut.</p>
+<p>Le workflow d'attribution du statut d'une exigence conseillé est le suivant : </p>
+<ol>
+<li>Le statut <strong>'En cours de rédaction'</strong> est le statut par défaut d'une exigence</li>
+<li>Une fois rédigée, une exigence est passée au statut <strong>'À approuver'</strong></li>
+<li>Le statut <strong>'Approuvée'</strong> est attibué à l'exigence après validation, elle est alors prête à être associée à un ou plusieurs cas de test </li>
+</ol>
+<p>Une exigence peut être passée au statut <strong>'Obsolète'</strong>, lorsqu'elle est considérée comme non utile pour le référentiel d'exigences sans pour autant être supprimée.</p>
+<div class="admonition danger">
+<p class="admonition-title">Attention</p>
+<p>L'édition des attributs d'une exigence ayant les statuts <strong>'Approuvée'</strong> ou '<strong>Obsolète</strong>' est impossible. Il conviendra de repasser au statut <strong>'A approuver'</strong> pour éditer les attributs.</p>
 </div>
 <h2 id="historique-des-modifications">Historique des modifications</h2>
 <p>A faire</p>
