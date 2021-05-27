@@ -2728,11 +2728,12 @@
                 
                 
                 <h1 id="fonctionnalites-de-la-bibliotheque-inter-projets">Fonctionnalités de la bibliothèque inter projets</h1>
+<p>Au sein de chaque espace, Squash TM permet de réaliser des actions génériques depuis la bibliothèque inter projets. </p>
 <h2 id="creer-un-objet">Créer un objet</h2>
-<p>Lorsqu'une sélection est active dans la bibliothèque d'un espace (projet, dossier ou objet), au survol du bouton <strong>[Ajouter]</strong> <img alt="Ajouter" src="../resources/icone-ajouter.png" /> une liste des objets pouvant être ajoutés s'affiche. Il est possible d'ajouter un dossier (commun à tous les espaces) ou des objets spécifiques à l'espace consulté. Selon l'élément sélectionné, certains items de la liste peuvent être grisés.</p>
+<p>Lorsqu'une sélection est active dans la bibliothèque d'un espace (projet, dossier ou objet), au survol du bouton <strong>[Ajouter]</strong> <img alt="Ajouter" src="../resources/icone-ajouter.png" /> une liste des objets pouvant être ajoutés s'affiche. Il est possible d'ajouter un dossier (fonction communne à tous les espaces) ou des objets spécifiques à l'espace consulté. Selon l'élément cible sélectionné, certains items de la liste peuvent être grisés.</p>
 <p><img alt="Ajouter un objet" src="../resources/ajout-objet.png" /></p>
 <p>Le clic sur une option de la liste ouvre une popup de création. Il sera nécessaire de saisir, à minima, une valeur pour le champ 'Nom' pour pouvoir ajouter l'objet. Si des champs personnalisés obligatoires sont associés à l'objet, ils apparaissent également afin d'être renseignés à la création.</p>
-<p>Cette popup de création offre la possibilité d'ajouter des objets à la chaîne. En effet, elle est réinitialisée au clic sur le bouton <strong>[Ajouter un autre]</strong> permettant ainsi l'ajout rapide d'objets.
+<p>Cette popup de création offre la possibilité d'ajouter des objets à la chaîne. En effet, elle est réinitialisée au clic sur le bouton <strong>[Ajouter un autre]</strong> permettant ainsi l'ajout rapide de plusieurs objets.
 À chaque ajout, la bibliothèque se met à jour automatiquement et l'objet est inséré à la racine de l'élément sélectionné.</p>
 <p>Dans l'espace Pilotage, le clic sur certaines options de création donnent accès à une page de configuration :</p>
 <ul>
@@ -2740,19 +2741,20 @@
 <li>page de sélection du rapport pour 'Ajouter un rapport',</li>
 <li>page de sélection des attributs pour 'Ajouter un export personnalisé'</li>
 </ul>
-<p>Une fois les attributs ou le rapport sélectionnés, l'utilisateur peut ensuite enregistrer l'objet crée. Il est ensuite accessible depuis la bibliothèque de l'espace Pilotage à la racine de l'élément sélectionné.</p>
+<p>Une fois les attributs ou le rapport sélectionnés, l'utilisateur peut enregistrer l'objet crée. Il est ensuite accessible depuis la bibliothèque de l'espace Pilotage à la racine de l'élément sélectionné.</p>
 <h2 id="supprimer-un-objet">Supprimer un objet</h2>
 <p>Le bouton <strong>[Supprimer]</strong> est à la fois disponible dans la bibliothèque et dans certaines tables.</p>
-<p>Lors d'une sélection simple, multiple continue ou discontinue, le bouton <strong>[Supprimer]</strong> est actif. Lorsque la sélection comporte un élément ne pouvant être supprimé, le bouton est grisé (un projet, une exigence dont le statut n'autorise pas sa suppression par exemple). Il est également possible de supprimer une sélection en utilisant le raccourci clavier <strong>Suppr</strong>.</p>
-<p>Dans la bibliothèque, la suppression d'un objet ou répertoire parent entraîne la suppression de tous les éléments qu'il contient. Par exemple, la suppression d'un dossier de cas de test entraîne la suppression des cas de test qu'il contient et la suppression d'une campagne entraîne la suppression de ses itérations et des exécutions contenues dans celles-ci.</p>
+<p>Suite à une sélection simple, multiple continue ou discontinue d'objets, le bouton <strong>[Supprimer]</strong> devient actif. Lorsque la sélection comporte un élément ne pouvant être supprimé, le bouton reste grisé (par exemple un projet ou une exigence dont le statut n'autorise pas sa suppression). Il est également possible de supprimer une sélection en utilisant le raccourci clavier <strong>Suppr</strong>.</p>
+<p>Dans la bibliothèque, la suppression d'un objet ou répertoire parent entraîne la suppression de tous les éléments qu'il contient. Par exemple, la suppression d'un dossier de cas de test entraîne la suppression des cas de test qu'il contient et la suppression d'une campagne entraîne la suppression de ses itérations et des exécutions contenues dans celles-ci. 
+<br/>Cette régle ne s'applique pas à la suppression d'un exigence mère. En effet, si elle est supprimée, les exigences filles qu'elles contient s'affichent à l'emplacement précédent de l'exigence mère.</p>
 <div class="admonition danger">
 <p class="admonition-title">Attention</p>
-<p>Toute suppression est définitive et il n'existe pas de moyen de récupérer ce qui a été supprimé. D'une manière générale nous recommandons d'être vigilant quant à l'attribution des profils et habilitations aux utilisateurs et de faire des sauvegardes régulières du patrimoine (exports et/ou sauvegarde de la base de données) afin de faciliter une restauration partielle ou complète.</p>
+<p>Toute suppression est définitive et il n'existe pas de moyen de récupérer ce qui a été supprimé. D'une manière générale nous recommandons d'être vigilant quant à l'attribution des profils et habilitations aux utilisateurs et de faire des sauvegardes régulières du patrimoine (exports d'objets et/ou sauvegarde de la base de données) afin de faciliter une restauration partielle ou complète.</p>
 </div>
 <p><img alt="Supprimer plusieurs objets" src="../resources/suppression-fr.png" /></p>
 <h2 id="copiercoller-un-objet">Copier/coller un objet</h2>
-<p>Lors d'une sélection simple, multiple continue ou discontinue, le bouton <strong>[Copier la sélection]</strong> <img alt="Copier la sélection" src="../resources/icone-copier.png" /> est actif. Lorsque la sélection comporte un élément ne pouvant être copié, le bouton est grisé (un projet par exemple).
-Il est également possible de copier une sélection en utilisant le raccourci  clavier <strong>Crtl+C</strong>.</p>
+<p>Lors d'une sélection simple, multiple continue ou discontinue d'objets, le bouton <strong>[Copier la sélection]</strong> <img alt="Copier la sélection" src="../resources/icone-copier.png" /> est actif. Lorsque la sélection comporte un élément ne pouvant être copié, le bouton reste grisé (un projet par exemple).
+Il est également possible de copier une sélection en utilisant le raccourci clavier <strong>Crtl+C</strong>.</p>
 <p><img alt="Copier un objet" src="../resources/copier-objet.png" /></p>
 <p>Lorsque des éléments ont été copiés, il faut sélectionner un répertoire de destination pour activer le bouton <strong>[Coller]</strong> <img alt="Coller" src="../resources/icone-coller.png" /> :</p>
 <ul>
@@ -2762,7 +2764,7 @@ Il est également possible de copier une sélection en utilisant le raccourci  c
 <li>les éléments copiés sont gardés en mémoire et peuvent être collés à différents emplacements dans l'arborescence</li>
 <li>lorsque la sélection comporte un élément ne pouvant être copié dans l'élément cible, le bouton est grisé : un dossier ne peut pas être copié dans une exigence, un cas de test dans un autre cas de test ou une itération dans un projet</li>
 </ul>
-<p>Il est également possible de coller une sélection en utilisant le raccourci  clavier <strong>Crtl+V</strong>.</p>
+<p>Il est également possible de coller une sélection en utilisant le raccourci clavier <strong>Crtl+V</strong>.</p>
 <p><img alt="Coller un objet" src="../resources/coller-objet.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Focus</p>
@@ -2789,7 +2791,7 @@ Il est également possible de copier une sélection en utilisant le raccourci  c
 <p>Lorsque la bibliothèque est en ordre positionnel, la position cible du ou des éléments déplacés devient la position définitive.</p>
 </div>
 <h2 id="ordonner-la-bibliotheque">Ordonner la bibliothèque</h2>
-<p>Le bouton [Ordonner la bibliothèque] <img alt="cone ordre" src="../resources/icone-sort.png" /> permet à l'utilisateur de choisir l'ordre d'affichage des objets dans les bibliothèques des espaces Exigences, Cas de test et Campagnes.
+<p>Le bouton <strong>[Ordonner la bibliothèque]</strong> <img alt="cone ordre" src="../resources/icone-sort.png" /> permet à l'utilisateur de choisir l'ordre d'affichage des objets dans les bibliothèques des espaces Exigences, Cas de test et Campagnes.
 Cet ordre, propre à chaque espace, est partagé par l’ensemble des utilisateurs.</p>
 <p>L'ordre alphabétique affiche les objets par ordre alphabétique de leur référence (lorsqu'elle existe), puis de leur nom.</p>
 <p><img alt="ordre alphanumérique" src="../resources/ordre-alpha-fr.png" /></p>
@@ -2806,14 +2808,14 @@ Cet ordre, propre à chaque espace, est partagé par l’ensemble des utilisateu
 <li>Dans la popup d'import, télécharger le gabarit d'import</li>
 <li>Compléter le fichier d'import</li>
 <li>Choisir le fichier d'import depuis la popup</li>
-<li>Simuler l'import. Cette étape permet de vérifier que le fichier d'import est conforme, elle est facultative.</li>
+<li>Simuler l'import. Cette étape permet de vérifier que le fichier d'import est conforme. Elle est facultative.</li>
 <li>Importer le fichier </li>
 <li>Une fois l'import effectué, l'arborescence est mise à jour.</li>
 </ol>
 <p><img alt="popup-import" src="../resources/popup-import.png" /></p>
 <p>À l'issue de la simulation et/ou de l'import, un rapport s'affiche et présente :</p>
 <ul>
-<li>les lignes traitées avec succès : aucune erreur rencontrée, les objets sont importés tels qu'ils figurent dans le fichier</li>
+<li>les lignes traitées en succès : aucune erreur rencontrée, les objets sont importés tels qu'ils figurent dans le fichier</li>
 <li>les lignes traitées avec réserve : les objets sont importés mais des éléments peuvent manquer ou avoir été modifiés</li>
 <li>les lignes en échec : les objets ne sont pas importés pour cause de saisie incomplète ou erronée dans le fichier d'import</li>
 <li>un bilan téléchargeable qui détaille les erreurs rencontrées</li>
@@ -2833,7 +2835,7 @@ Cet ordre, propre à chaque espace, est partagé par l’ensemble des utilisateu
 <p>L'import de campagnes, itérations ou suites n'est pas disponible.</p>
 </div>
 <h3 id="exporter">Exporter</h3>
-<p>La fonction d'export permet d'exporter en masse des éléments des espaces Exigences, Cas de test. Elle fonctionne sur une sélection simple, multiple continue ou discontinue d'éléments d'un ou plusieurs projets.</p>
+<p>La fonction d'export permet d'exporter en masse des éléments des espaces Exigences et Cas de test. Elle fonctionne sur une sélection simple, multiple continue ou discontinue d'éléments d'un ou plusieurs projets.</p>
 <p>Pour exporter une arborescence d'exigences ou de cas de test au format Excel :</p>
 <ol>
 <li>Sélectionner des éléments dans l'arborescence (projets, dossiers, ou objets)</li>
@@ -2841,13 +2843,9 @@ Cet ordre, propre à chaque espace, est partagé par l’ensemble des utilisateu
 <li>Dans la popup, choisir le format d'export. Le format XLS est compatible au format attendu pour un import  tandis que le format CSV est idéal pour l'exploitation de données.</li>
 <li>Nommer le fichier d'export</li>
 <li>Choisir les options d'export. L'option 'Conserver le format des textes riches' permet de conserver les balises html des champs texte riche (ex: champ 'Description') afin de conserver leur mise en forme pour un futur import</li>
-<li>Cliquer sur [Exporter] pour télécharger le document.</li>
+<li>Cliquer sur <strong>[Exporter]</strong> pour télécharger le document.</li>
 </ol>
 <p>L'export dans l'espace Campagnes est différent. Il ne fonctionne que si une seule campagne est sélectionnée et il se décline sous trois formes :  simple, standard ou complet.</p>
-<div class="admonition tip">
-<p class="admonition-title">En savoir plus</p>
-<p>Pour plus de détails sur les exports de campagnes, consulter la page <a href="../../gestion-executions/exporter-campagne/">Exporter les données d'une campagne</a></p>
-</div>
 <p>Pour exporter une campagnes au format Excel :</p>
 <ol>
 <li>Sélectionner une campagne</li>
@@ -2855,13 +2853,16 @@ Cet ordre, propre à chaque espace, est partagé par l’ensemble des utilisateu
 <li>Choisir un des 3 formats d'export possibles.</li>
 <li>Le fichier est téléchargé directement au format CSV sur le poste de l'utilisateur.</li>
 </ol>
-<p><img alt="exporter-tous-les-espaces" src="../resources/exporter-tous-les-espaces.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">En savoir plus</p>
+<p>Pour plus de détails sur les exports de campagnes, consulter la page <a href="../../gestion-executions/exporter-campagne/">Exporter les données d'une campagne</a></p>
+</div>
 <h2 id="generer-un-tableau-de-bord">Générer un tableau de bord</h2>
-<p>Depuis la bibliothèque d'un espace, un tableau de bord par défaut s'affiche à la sélection d'un projet, d'un dossier ou d'une sélection multiple.
-Les tableaux de bord par défaut présentent une sélection de graphiques dont leurs lectures indiquent l'état d'avancement de rédaction, de couverture et de validation.</p>
+<p>Depuis la bibliothèque d'un espace, un tableau de bord par défaut s'affiche à la sélection d'un projet, d'un dossier ou d'une sélection multiple d'objets.
+Les tableaux de bord par défaut présentent une sélection de graphiques indiquants l'état d'avancement de rédaction, de couverture et de validation des objets de chaque espace.</p>
 <p>Au survol d'une portion, une infobulle précise le critère de la portion, le nombre d'éléments comptabilisé pour ce critère et le pourcentage que cela représente par rapport au nombre total d'éléments de la sélection.</p>
 <p><img alt="Survol d'une portion" src="../resources/selection-personnalisee-infobulle-portion.png" /></p>
-<p>Le clic sur une portion renvoi vers le résultat de recherche relatif aux critères de la portion : le périmètre correspond à la sélection et le ou les critères propres au graphique et à la portion sont pré-sélectionnés.</p>
+<p>Le clic sur une portion renvoi vers le résultat de recherche relatif aux critères de la portion : le périmètre de la recherche correspond à la sélection réalisée et le ou les critères propres au graphique et à la portion choisie sont pré-sélectionnés.</p>
 <p><img alt="Résultat de recherche clic portion" src="../resources/resultat-de-recherche-graphique-fr.png" /></p>
 <p>Il est alors possible d'affiner sa recherche et d'utiliser <a href="../fonctionnalites-objet/#rechercher-un-objet">toutes les fonctionnalités liées à la recherche</a>.</p>
                 
