@@ -2638,7 +2638,7 @@
 <p>Squash TM permet d’exporter au format .xls ou .csv une arborescence de cas de test. Cette fonctionnalité est très souvent utilisée pour la sauvegarde de données ou la <a href="#importer-des-cas-de-test-a-partir-dun-export">modification de données en masse</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Si le format .csv est sélectionné pour l'export, un seul onglet est exporté contenant les attributs du cas de test et les pas de test. <br/>Les paramètres, les jeux de données et les associations avec des exigences ne sont pas exportés.</p>
+<p>Si le format .csv est sélectionné pour l'export, seuls les attributs du cas de test et les pas de test sont exportés. <br/>Les paramètres, les jeux de données et les associations avec des exigences ne sont pas exportés.</p>
 </div>
 <p>Le nom du fichier d'export est par défaut  « export-cas-de-test_aaaammjj_hhmmss » mais peut être modifié.</p>
 <p>Sélectionner les éléments (projets, dossiers et/ou cas de test) à exporter dans la bibliothèque (en sélection simple ou multiple) puis cliquer sur le bouton <strong>[Exporter]</strong>. La sélection peut porter sur des éléments de plusieurs projets. </p>
@@ -2657,10 +2657,10 @@
 </div>
 <div class="admonition tip">
 <p class="admonition-title">En savoir plus</p>
-<p>Il est également possible d'<a href="#exporter-les-scripts-des-cas-de-test-bdd-et-gherkin">exporter des scripts</a> Gherkin et des BDD</p>
+<p>Il est également possible d'<a href="#exporter-les-scripts-des-cas-de-test-bdd-et-gherkin">exporter des scripts</a> BDD et Gherkin</p>
 </div>
 <h2 id="importer-des-cas-de-test-a-partir-dun-export">Importer des cas de test à partir d’un export</h2>
-<p>Squash TM permet d'importer un fichier précédemment exporter depuis l'outil. Cette technique est utile lorsque l'on souhaite modifier en masse des données ou faire une restauration de données.</p>
+<p>Squash TM permet d'importer un fichier précédemment exporté depuis l'outil. Cette technique est utile lorsque l'on souhaite modifier en masse des données ou faire une restauration de données.</p>
 <p><strong>Pour importer un fichier d'export d'exigences, voici la marche à suivre :</strong></p>
 <ol>
 <li>Exporter la sélection souhaitée (Projets, dossiers, cas de test) au format .xls</li>
@@ -2672,7 +2672,7 @@
 <li>Apporter les modifications voulues en respectant la syntaxe pour chaque colonne</li>
 <li>Importer le nouveau fichier</li>
 </ol>
-<p>Pour importer les cas de test dans un nouveau projet ou à un autre emplacement dans l'arborescence, la colonne "TC_PATH" est à modifier.</p>
+<p>Pour importer les cas de test dans un nouveau projet ou à un autre emplacement dans l'arborescence, la colonne "TC_PATH" est à modifier dans chacun des onglets.</p>
 <div class="admonition warning">
 <p class="admonition-title">Focus</p>
 <p>Si le libellé des objets contient le caractère '/' il faut  l'échapper dans le chemin du cas de test (dans la colonne "TC_PATH") au moment de l'import. <br/>L’échappement est indiqué par le caractère ‘\’. 
