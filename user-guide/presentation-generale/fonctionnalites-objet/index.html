@@ -1613,13 +1613,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modifier-les-associations-aux-jalons" class="md-nav__link">
-    Modifier les associations aux jalons
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#exporter" class="md-nav__link">
     Exporter
   </a>
@@ -2912,13 +2905,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modifier-les-associations-aux-jalons" class="md-nav__link">
-    Modifier les associations aux jalons
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#exporter" class="md-nav__link">
     Exporter
   </a>
@@ -3017,7 +3003,7 @@
 <li>d'ajouter une association via le bouton <img alt="Ajouter" src="../resources/icone-ajouter.png" /></li>
 <li>de rechercher un ou plusieurs objets puis de les associer via le bouton <img alt="Loupe" src="../resources/browse.png" /></li>
 <li>de supprimer une association via le bouton <img alt="Supprimer l'association" src="../resources/unlike.png" /> présent en bout de ligne </li>
-<li>de supprimer une sélection de plusieurs associations <img alt="Supprimer les associations" src="../resources/unlike.png" /> présent au-dessus de la table</li>
+<li>de supprimer une sélection de plusieurs associations via le bouton <img alt="Supprimer les associations" src="../resources/unlike.png" /> présent au-dessus de la table</li>
 <li>d'accéder via un lien sur le nom de l'objet à la page de niveau 2 de ce dernier pour le consulter</li>
 </ul>
 <p>Par défaut, un tri est appliqué aux tables et il est possible, en cliquant sur l'en-tête de la colonne de modifier ce tri : la flèche orientée vers le haut indique un tri alphabétique ou chronologique, la flèche orientée vers le bas indique un tri inverse.</p>
@@ -3032,72 +3018,69 @@
 <p>Depuis la page de consultation d'une exigence, il est possible via un glisser/déposer d'associer une exigence de la bibliothèque à l'exigence consultée. Elles apparaissent alors dans leur table <strong>Exigences liées</strong> respectives. </p>
 <p><img alt="Associer depuis la bibliothèque" class="pleinepage" src="../resources/associer-bibliotheque-fr.png" /></p>
 <h3 id="associer-deux-objet-depuis-la-bibliotheque-dassociation">Associer deux objet depuis la bibliothèque d'association</h3>
-<p>Depuis la page de consultation d'une exigence, d'un cas de test ou d'un plan d'exécution, il est possible d'accéder à une bibliothèque d'association en cliquant sur le bouton <img alt="Ajouter" src="../resources/icone-ajouter.png" />.</p>
-<p><strong>YAMINA : RELECTURE A SUIVRE</strong></p>
+<p>Depuis la page de consultation d'une exigence, d'un cas de test ou d'un plan d'exécution, il est possible d'accéder à une bibliothèque d'association en cliquant sur le bouton <img alt="Ajouter" src="../resources/icone-ajouter.png" /> de la table d'association. Le lien est créé entre les deux entités en réalisant un glisser déposer depuis cette bibliothèque vers l'objet consulté. Les liens apparaissent ensuite dans la table correspondante.</p>
 <h3 id="associer-depuis-la-recherche">Associer depuis la recherche</h3>
-<p>À partir d'une table d'association, <strong>Cas de test vérifiant cette exigence</strong>, <strong>Exigences vérifiées par ce cas de test</strong> ou un <strong>Plan d'exécution</strong>, le bouton <img alt="Rechercher" src="../resources/browse.png" /> permet d'accéder à la recherche des objets: tout ou partie des résultats peut alors être associé.</p>
+<p>À partir d'une table d'association, <strong>Cas de test vérifiant cette exigence</strong>, <strong>Exigences vérifiées par ce cas de test</strong> ou un <strong>Plan d'exécution</strong>, le bouton <img alt="Rechercher" src="../resources/browse.png" /> permet d'accéder à la recherche des objets: tout ou partie des résultats peut alors être associé via les boutons <img alt="Associer la sélection" src="../resources/link-selection.png" /> et <img alt="Tout associer" src="../resources/link-all.png" />.</p>
 <p><img alt="Associer la recherche" class="pleinepage" src="../resources/associer-recherche-fr.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Depuis un <strong>Plan d'exécution</strong>, il est possible d'accéder à la recherche directe de cas de test ou d'accéder à la recherche d'exigences dont les résultats sont les cas de tests associés aux exigences respectant les critères de recherche.</p>
+<p>Depuis un <strong>Plan d'exécution</strong>, il est possible d'accéder à la recherche directe de cas de test ou d'accéder à la recherche de cas de test via leurs exigences. En effet, cette recherche basée sur les critères des exigence récupère en resultat les cas de tests associés aux exigences répondant aux critères choisis.</p>
 </div>
 <h3 id="dissocier-des-objets">Dissocier des objets</h3>
-<p>Dans les différentes tables de Squash TM, il est possible de supprimer une association via le bouton présent en bout de ligne pour une dissociation simple ou via le bouton présent au dessus de la table lors d'une sélection multiple.</p>
-<p><img alt="Supprimer des associations" class="pleinepage" src="../resources/dissociation-fr.png" /></p>
+<p>Dans les différentes tables de Squash TM, il est possible de supprimer une association via le bouton <img alt="Supprimer les associations" src="../resources/unlike.png" /> présent en bout de ligne pour une dissociation simple ou via le bouton <img alt="Supprimer les associations" src="../resources/unlike.png" /> présent au dessus de la table lors d'une sélection multiple.</p>
 <h2 id="ajoutersupprimer-une-piece-jointe">Ajouter/Supprimer une pièce jointe</h2>
 <h3 id="ajouter-une-piece-jointe">Ajouter une pièce jointe</h3>
 <p>Sur la page de consultation d'un objet (dossier, exigences, cas de test, pas de test, campagne, itération ou suite), il est possible d'ajouter des pièces jointes via l'icone <img alt="icone pièce-jointe" src="../resources/attachments.png" />.
 L'ajout se fait par glisser déposer dans l'encart dédié ou en parcourant les répertoires locaux.</p>
 <p><img alt="Ajout de pièce jointe" class="pleinepage" src="../resources/ajout-pj.png" /></p>
 <p>Ce volet permet de consulter les informations des pièces jointes (nom, taille et date d'ajout) et de les télécharger.</p>
-<div class="admonition note">
+<div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Par défaut, les types de fichier acceptés sont : txt, doc, xls, ppt, docx, xlsx, pptx, odt, ods, odp, pdf. La liste est modifiable par un Administrateur pour ajouter ou supprimer des extensions.
 Par défaut, la taille maximale d'une pièce jointe est de 4000000 bytes. Elle aussi peut être ajustée par un Administrateur.</p>
 </div>
 <h3 id="supprimer-une-piece-jointe">Supprimer une pièce jointe</h3>
-<p>À partir du volet des pièces jointes, la suppression des pièces jointes est possible via le bouton <strong>[Poubelle]</strong> présent en bout de ligne.</p>
-<p><img alt="Suppression d'une pièce jointe" class="pleinepage" src="../resources/suppression-pj.png" /></p>
+<p>À partir du volet des pièces jointes, la suppression des pièces jointes est possible via le bouton <img alt="Poubelle" src="../resources/delete.png" /> présent en bout de ligne.</p>
 <h2 id="rechercher-un-objet">Rechercher un objet</h2>
-<p>Au clic sur le bouton [Rechercher] <img alt="icone Rechercher" src="../resources/browse.png" /> présent au-dessus des bibliothèques Exigences, Cas de test et Campagnes, la page de recherche propre à chaque espace s'ouvre. Par défaut, le périmètre de recherche est celui du filtre projet.
-Le volet sur la gauche de la page des résultats de recherche permet de définir un périmètre de recherche et d'ajouter des critères de recherches propres aux objets de l'espace.</p>
+<p>Au clic sur le bouton <img alt="icone Rechercher" class="icone" src="../resources/browse.svg" /> présent au-dessus des bibliothèques Exigences, Cas de test et Campagnes, la page de recherche propre à chaque espace s'ouvre. Par défaut, le périmètre de recherche est celui du filtre projet.</p>
+<p>Le volet sur la gauche de la page des résultats de recherche permet de définir un périmètre de recherche et d'ajouter des critères de recherches propres aux objets de l'espace.</p>
 <h3 id="le-perimetre">Le périmètre</h3>
-<p>Depuis le critère Périmètre et l'onglet Projet, il est possible de sélectionner ou désélectionner par case à cocher le ou les projets à inclure ou exclure du périmètre.</p>
+<p>Depuis l'onglet Projet du critère Périmètre, il est possible de sélectionner les projets à inclure ou exclure du périmètre.</p>
 <p><img alt="Rechercher un objet - Périmètre projet" class="pleinepage" src="../resources/rechercher-perimetre-projet-fr.png" /></p>
-<p>L'onglet Personnalisé permet de sélectionner un ou plusieurs répertoires ou des éléments pour définir le périmètre de recherche.</p>
+<p>L'onglet Personnalisé permet de sélectionner un ou plusieurs répertoires ou des objets précis pour définir le périmètre de recherche.</p>
 <p><img alt="Rechercher un objet - Périmètre personnalisé" class="pleinepage" src="../resources/rechercher-perimetre-perso-fr.png" /></p>
 <h3 id="les-criteres">Les critères</h3>
-<p>L'ajout de critères de recherche se fait par simple sélection des attributs disponibles pour l'entité de l'espace à partir du bouton <strong>[Ajouter des critères]</strong>. La liste de résultat se met automatiquement à jour à la sélection d'un critère.</p>
+<p>L'ajout de critères de recherche se fait par simple sélection des attributs disponibles pour l'entité de l'espace à partir du bouton <strong>[+ Ajouter un critère]</strong>. La liste de résultat se met automatiquement à jour à la sélection d'un critère.</p>
 <p><img alt="Rechercher un objet - Ajouter un critère" class="pleinepage" src="../resources/rechercher-ajouter-un-critere-fr.png" /></p>
 <p>Le clic sur le bouton <strong>[Nouvelle recherche]</strong> réinitialise les critères de recherche.</p>
 <h3 id="modifier-les-attributs">Modifier les attributs</h3>
-<p>À partir d'une sélection simple ou multiple dans la table de résultats, il est possible de modifier en masse certains attributs :</p>
+<p>À partir d'une sélection simple ou multiple dans la table des résultats de recherche, il est possible de modifier en masse certains attributs en cliquant sur le bouton <img alt="Modifier les attributs" class="icone" src="../resources/bulk-edition.svg" /> :</p>
 <ul>
 <li>le statut, la criticité ou la catégorie de la version d'une exigence</li>
 <li>l'importance, le statut, le type, la nature ou l'éligibilité à l'automatisation d'un cas de test</li>
 <li>le statut d'exécution d'un test associé à un plan d'itération</li>
 </ul>
 <p><img alt="Rechercher un objet - Modifier en masse" class="pleinepage" src="../resources/rechercher-modif-masse-fr.png" /></p>
-<div class="admonition note">
+<div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Il est possible via cette fonctionnalité d'appliquer le statut Approuvée à une version d'exigence depuis n'importe quel autre statut.</p>
 </div>
-<h3 id="modifier-les-associations-aux-jalons">Modifier les associations aux jalons</h3>
-<p>À partir d'une sélection simple ou multiple dans la table de résultats, il est possible d'associer en masse la sélection à un jalon à condition que le jalon soit déjà associé au projet auxquels appartiennent les objets sélectionnés.</p>
-<p><img alt="Rechercher un objet - association en masse à un jalon" class="pleinepage" src="../resources/rechercher-asso-masse-fr.png" /></p>
 <h3 id="exporter">Exporter</h3>
-<p>À partir du bouton <strong>[Exporter]</strong>, il est possible d'exporter vers un tableur tout ou sélection du résultat de recherche.
+<p>À partir du bouton <img alt="Exporter" src="../resources/icone-export-campagne.png" />, il est possible d'exporter vers un tableur la totalité ou une sélection des résultats de recherche.
 Diverses options sont alors disponibles : </p>
 <ul>
-<li>le format XLS 'Champs actuels' : cet export permet de récupérer les données des exigence ou des cas de test sous la forme d'un classeur Excel n'ayant que les informations affichées dans les résultats de recherche;</li>
-<li>le format XLS 'Tous les champs' : cet export permet de récupérer l'intégralité des données des exigences des cas de test sous la forme d'un classeur Excel.</li>
-<li>conserver le format des textes riches : les champs de type "texte riche" seront exportés avec leur balises HTML afin de conserver la mise en forme lors d'un futur import. Ne pas conserver le format facilite la lecture de ces champs dans l'export</li>
-<li>inclure ou non les cas de test appelés (pour l'espace Cas de test uniquement)</li>
+<li>le format XLS 'Champs actuels' : cet export permet de récupérer les données des exigence ou des cas de test dans un classeur Excel avec uniquement les informations affichées dans les résultats de recherche;</li>
+<li>le format XLS 'Tous les champs' : <ul>
+<li>cet export permet de récupérer l'intégralité des données des exigences ou des cas de test sous la forme d'un classeur Excel.</li>
+<li>de conserver le format des textes riches : les champs de type "texte riche" sont exportés avec leur balises HTML afin de conserver leur mise en forme lors d'un futur import. Ne pas conserver le format facilite la lecture de ces champs dans l'export</li>
+<li>d'inclure ou non les cas de test appelés (pour l'espace Cas de test uniquement)</li>
+</ul>
+</li>
 </ul>
 <p><img alt="Rechercher un objet - exporter les résultats" class="pleinepage" src="../resources/rechercher-exporter-fr.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">En savoir plus</p>
-<p>Les résultats de recherche de l'espace Campagne ne sont pas exportables mais il est possible d'<a href="../../gestion-executions/creer-plan-execution/#identifier-les-tests-a-rejouer-selon-les-resultats-dexecution-precedents">ajouter tout ou sélection des résultats à un plan d'exécution d'une itération</a>.</p>
+<p>Les résultats de recherche de l'espace Campagnes ne sont pas exportables mais il est possible d'<a href="../../gestion-executions/creer-plan-execution/#identifier-les-tests-a-rejouer-selon-les-resultats-dexecution-precedents">ajouter tout ou une sélection des résultats au plan d'exécution d'une itération</a>.</p>
 </div>
                 
               
