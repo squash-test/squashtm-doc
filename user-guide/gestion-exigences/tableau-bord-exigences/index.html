@@ -2654,19 +2654,22 @@
                 
                 
                 <h1 id="tableau-de-bord-des-exigences">Tableau de bord des exigences</h1>
-<p>En sélectionnant des éléments dans la bibliothèque des exigences, un tableau de bord s'affiche dans la partie droite. Il est possible d’afficher un tableau de bord par défaut ou un tableau de bord personnalisé.</p>
-<p>Le bouton <strong>[Rafraîchir]</strong> en haut à droite permet de rafraîchir les graphiques du tableau de bord.
-<br/>Le bouton <strong>[Favori]</strong> en haut à droite permet d’afficher un tableau de bord favori personnalisé à la place du tableau de bord par défaut</p>
+<p>En sélectionnant des éléments dans la bibliothèque des exigences, un tableau de bord s'affiche sur la page de consultation. Il est possible d’afficher un tableau de bord par défaut ou un tableau de bord personnalisé à l'aide du bouton <strong>[Favori]</strong>/<strong>[Défaut]</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Le tableau de bord s'affiche automatiquement lors de la sélection d'un projet ou d'un dossier.<br />
+Lors d'une sélection multiple (projets, dossiers, exigences), il est nécessaire de rafraîchir le tableau de bord pour l'afficher.</p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">En savoir plus</p>
 <p>Pour plus de renseignements sur le tableau de bord personnalisé, consulter la page "<a href="../../pilotage-recette/tableaux-bord-perso/">Les tableaux de bord personnalisés</a>"</p>
 </div>
 <h2 id="les-differents-graphiques">Les différents graphiques</h2>
-<p>Le tableau de bord se divise en 6 graphiques :</p>
+<p>Le tableau de bord par défaut des exigences est composé de 6 graphiques :</p>
 <ul>
 <li><strong>Graphique 'Couverture par les cas de test'</strong></li>
 </ul>
-<p>Répartition des exigences en fonction de leur association à aucun, un ou plusieurs cas de test. Ce graphique est très utile pour vérifier la couverture fonctionnelle de l'application. </p>
+<p>Répartition des exigences en fonction de leur association à aucun, un ou plusieurs cas de test. Ce graphique est très utile pour vérifier la couverture fonctionnelle de l'application et permet d'identifier les exigences non couvertes par des cas de test. </p>
 <ul>
 <li><strong>Graphique 'Statut'</strong></li>
 </ul>
@@ -2678,15 +2681,15 @@
 <ul>
 <li><strong>Graphique 'Description'</strong> </li>
 </ul>
-<p>Répartition des exigences en fonction de la présence ou non d'une description. Ce graphique permet de visualiser rapidement si certaines exigences n'ont pas de description, et donc de pouvoir compléter cette information. Pour rappel, la description d'une exigence correspond à une spécificité de l'application, et est primordiale pour la rédaction des tests.</p>
+<p>Répartition des exigences en fonction de la présence ou non d'une description. Ce graphique permet d'identifier rapidement les exigences qui n'ont pas de description afin de la compléter. Pour rappel, la description d'une exigence correspond à une spécificité de l'application, et est primordiale pour la rédaction des tests.</p>
 <ul>
 <li><strong>Graphique 'Couverture par criticité'</strong></li>
 </ul>
-<p>Répartition des exigences en fonction de leur criticité et du taux de couverture des exigences par des cas de test.</p>
+<p>Répartition des exigences en fonction de leur criticité et de leur couverture par des cas de test. Ce graphique permet de prioriser la rédaction des cas de test qui doivent vérifer les exigences les plus critiques.</p>
 <ul>
 <li><strong>Graphique 'Validation des cas de test par criticité'</strong></li>
 </ul>
-<p>Répartition des exigences en fonction de leur criticité et du taux de validation des cas de test associés aux exigences. Ce graphique permet, par exemple, de savoir si toutes les exigences critiques associés à un cas de test, ont été exécutés en succès.</p>
+<p>Répartition des exigences en fonction de leur criticité et du taux de validation des cas de test associés aux exigences. Ce graphique permet par exemple, de savoir si toutes les exigences critiques ont été validées suite à l'exécution des cas de test associés.</p>
 <p><img alt="Tableau de bord par défaut de l'espace Exigences" src="../resources/tableaubord-exigences.png" /></p>
 <h2 id="acces-a-la-page-de-recherche">Accès à la page de recherche</h2>
 <p>Au clic sur les portions d'un graphique du tableau de bord par défaut, une page de recherche s'affiche, avec les critères présélectionnés correspondant à la portion de graphique.</p>
@@ -2694,6 +2697,10 @@
 <br/>
 <br/> Au clic sur la portion de graphique "Exigences liées à aucun CT" du graphique "Couverture par les cas de test", une page de recherche s'affiche avec le critère "Nombre de cas de test : Egal 0". 
 <br/> En cliquant sur le bouton <img alt="Bouton d'édition" src="../resources/edit1.png" /> ou le bouton <img alt="Bouton dossier" src="../resources/dossier.png" /> il est possible de modifier directement le cas de test, et d'associer au moins un cas de test pour chaque exigence.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Cette fonctionnalité n'est pas disponible pour les tableaux de bord personnalisés</p>
+</div>
                 
               
 
