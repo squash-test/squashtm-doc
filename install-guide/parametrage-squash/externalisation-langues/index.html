@@ -2654,8 +2654,92 @@
                 
                 
                 <h1 id="externalisation-des-fichiers-de-langues">Externalisation des fichiers de langues</h1>
+<p>Cette partie présente le fonctionnement de l’externalisation des fichiers de langues utilisés pour l’internationalisation de Squash TM et de ses différents plugins.</p>
 <h2 id="fonctionnement-des-fichiers-de-langues">Fonctionnement des fichiers de langues</h2>
+<p>Les fichiers de langues utilisés pour l’internationalisation de Squash TM, sont des fichiers avec l’extension .properties.
+Il y a un fichier ‘principal’ nom_du_fichier.properties puis un fichier pour chaque langue qui est nommé nom_du_fichier_locale.properties. </p>
+<p>La valeur « locale » doit être remplacée par le code correspondant à la langue, par exemple en pour l’anglais ou fr pour le français.
+Ces fichiers sont composés d’associations clé/valeurs pour chaque traduction à effectuer. </p>
+<p><em>Exemple de fichier :</em></p>
+<pre><code>report.name = SampleReport
+report.name = ThisisaSampleReport,thatissuppliedwiththearchetypeasanexampleforyourowndevelopments.
+</code></pre>
+<p>Ces fichiers de langues sont utilisés pour que Squash TM s’affiche dans la langue sélectionnée depuis le navigateur. 
+Depuis Squash TM v1.11.0.release, il est désormais possible d’externaliser la gestion des fichiers de langues. Il est donc aisément possible d’ajouter de nouvelles langues et de modifier les existantes.</p>
 <h2 id="fichiers-de-langues-externalises">Fichiers de langues externalisés</h2>
+<p>Pour faciliter le changement de tout ou partie des fichiers de langues, il est possible de redéfinir les fichiers de langue dans le répertoire config/lang de squash-tm.</p>
+<p><em>Exemple d’arborescence :</em></p>
+<p><img alt="Fichiers de langues externalisés" class="centre" src="../resources/fichiers-langue-externes.png" /></p>
+<p>Ces fichiers devront être placés dans un sous répertoire ayant le nom du plugin et le nom des fichiers de langues seront dépendants du plugin. Dans le tableau ci-dessous est récapitulé le nom des répertoires et des fichiers de langues à utiliser :</p>
+<table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>Nom du sous-répertoire</th>
+<th>Nom du fichier de langue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Redmine</td>
+<td>plugin.bugtracker.redmine</td>
+<td>messages</td>
+</tr>
+<tr>
+<td>Bugzilla</td>
+<td>plugin.bugtracker.bugzilla</td>
+<td>bugzilla</td>
+</tr>
+<tr>
+<td>Jira BT Server</td>
+<td>henix-tm-jira-rest-connector</td>
+<td>jira-rest</td>
+</tr>
+<tr>
+<td>Report Qualitative coverage</td>
+<td>squash-tm-report-qualitativecoverage</td>
+<td>messages</td>
+</tr>
+<tr>
+<td>Report requirements</td>
+<td>reports.books.requirements</td>
+<td>messages</td>
+</tr>
+<tr>
+<td>Report testcases</td>
+<td>reports.books.testcases</td>
+<td>messages</td>
+</tr>
+<tr>
+<td>Squash TM</td>
+<td>plugin.bugtracker.mantis</td>
+<td>mantis-bugmessages</td>
+</tr>
+<tr>
+<td>Report std</td>
+<td>Report std</td>
+<td>messages</td>
+</tr>
+<tr>
+<td>Report test</td>
+<td>plugin.report.test</td>
+<td>messages</td>
+</tr>
+<tr>
+<td>Workspacewizard test</td>
+<td>plugin.workspacewizard.test</td>
+<td>messages</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Ces fichiers de langues externalisés sont optionnels. En l’absence de ces fichiers, ce sont les fichiers de langues définis en interne qui seront utilisés.</li>
+<li>De plus il n’est pas nécessaire de redéfinir toutes les clés, si des clés sont absentes du fichier externe, ce sera la clé du fichier interne qui sera utilisé.</li>
+<li>Il est possible d’ajouter de nouvelles langues à squash ou à ses plugins, pour ce faire il suffit d’ajouter le fichier nom_du_fichier_locale.properties. Par exemple pour traduire squash en italien il suffit de rajouter dans le dossier conf/lang/core le fichier messages_it.properties et bien sur de traduire chaque clé en italien.</li>
+</ul>
+<p><em>Contacter le référent Squash de votre organisation pour obtenir la liste des fichiers de langues à modifier ou à traduire.</em> </p>
+<p><strong>Remarques Yamina :</strong></p>
+<p><strong>Il manque de nombreux plugins dans cette liste. EN outre, j'ignore à quoi correspond le plugin Report std</strong></p>
                 
               
 
