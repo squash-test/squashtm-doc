@@ -1729,7 +1729,7 @@
       
         <li class="md-nav__item">
   <a href="#prerequis-et-pas-de-test-dun-cas-de-test-classique" class="md-nav__link">
-    Prérequis et pas de test d’un cas de test classique
+    Prérequis et pas de test d’un cas de test Classique
   </a>
   
 </li>
@@ -2634,7 +2634,7 @@
       
         <li class="md-nav__item">
   <a href="#prerequis-et-pas-de-test-dun-cas-de-test-classique" class="md-nav__link">
-    Prérequis et pas de test d’un cas de test classique
+    Prérequis et pas de test d’un cas de test Classique
   </a>
   
 </li>
@@ -2683,64 +2683,100 @@
                   </a>
                 
                 
-                <h1 id="rediger-le-scenario-dun-cas-de-test-classique">Rédiger le scénario d'un cas de test classique</h1>
-<h2 id="prerequis-et-pas-de-test-dun-cas-de-test-classique">Prérequis et pas de test d’un cas de test classique</h2>
-<p>Depuis l'espace <strong>Cas de test</strong>, l'ancre prérequis et pas de test <img alt="Ancre Prérequis et pas de test" src="../resources/steps.png" /> se compose de deux parties:</p>
+                <h1 id="rediger-le-scenario-dun-cas-de-test-classique">Rédiger le scénario d'un cas de test Classique</h1>
+<p>Chaque cas de test a pour objectif à minima de vérifier le résultat attendu spécifié par une exigence. Pour atteindre cet objectif, il faut concevoir un scénario de test. Ce scénario se caractèrise par une série d'actions à réaliser sur l'outil testé pour vérifier le comportement attendu de l'outil face à ces actions. Dans Squash TM, le scénario de test d'un cas de test Classique est géré dans l'ancre <strong>'Prérequis et pas de test'</strong>.</p>
+<h2 id="prerequis-et-pas-de-test-dun-cas-de-test-classique">Prérequis et pas de test d’un cas de test Classique</h2>
+<p>L'ancre 'Prérequis et pas de test' <img alt="Ancre Prérequis et pas de test" class="icone" src="../resources/steps.png" /> d'un cas de test Classique se compose de deux parties :</p>
 <ul>
-<li>une partie Prérequis</li>
+<li>un Prérequis</li>
 </ul>
-<p>Les préconditions du cas de test. Ici, il faut détailler les actions à accomplir ou les conditions à respecter avant de commencer l'exécution des pas de test.</p>
+<p>Ce champ accueille les préconditions du test. C'est ici que sont détaillées les actions à accomplir ou les conditions à respecter <strong>avant</strong> de commencer l'exécution des pas de test.</p>
 <ul>
-<li>une partie Pas de test</li>
+<li>des Pas de test</li>
 </ul>
-<p>Une suite d'actions à accomplir et de résultats attendus qui permettent la bonne exécution du cas de test dans son ensemble. Ils permettent de vérifier les spécifications de l'exigence liée.</p>
-<p><img alt="Prérequis et pas de test" src="../resources/page-prerequis-et-pas-test.png" /></p>
-<p>Ces deux parties sont constituées de champs de texte riche dans lesquels il possible d'ajouter une mise en forme, des tableaux, des URL ou encore des images.</p>
+<p>Les pas de test sont une suite d'étapes composés d'un champ 'Action' contenant les instructions à réaliser et d'un champ 'Résultat attendu' contenant les comportements attendus de l'outil.</p>
+<p><img alt="Prérequis et pas de test" class="pleinepage" src="../resources/page-prerequis-et-pas-test.png" /></p>
+<p>Les champs Prérequis, Action et Résultat attendu sont des champs de type texte riche dans lesquels il est possible d'ajouter une mise en forme, des tableaux, des URLs ou encore des images.</p>
 <div class="admonition warning">
 <p class="admonition-title">Focus</p>
 <p>Il est fortement déconseillé d'utiliser le copier/coller pour ajouter des images dans les différents champs de texte riche de Squash TM.<br />
 Pour ajouter des images dans les champs Prérequis, Action et Résultat attendu, consulter la page <a href="../../presentation-generale/fonctionnalites-objet/#inserer-une-image">Insérer une image dans un champ texte riche</a></p>
 </div>
 <p>Au survol des pas de test, une barre d'icônes s'affiche en haut à droite du bloc. 
-À l'aide de ces boutons, il est possible:</p>
+À l'aide de ces boutons, il est possible :</p>
 <ul>
-<li>d'<strong>ajouter</strong> un pas de test (il sera ajouté directement sous le pas de test sélectionné)</li>
-<li>de <strong>supprimer</strong> un pas de test</li>
-<li>de <strong>copier</strong> et <strong>coller</strong> un pas de test</li>
+<li>d'<strong>ajouter</strong> <img alt="Ajouter" class="icone" src="../resources/plus.svg" /> un pas de test (il sera ajouté directement sous le pas de test sélectionné)</li>
+<li>de <strong>supprimer</strong> <img alt="Supprimer" class="icone" src="../resources/delete.svg" /> un pas de test</li>
+<li>de <strong>copier</strong> <img alt="Copier" class="icone" src="../resources/copy.svg" /> et <strong>coller</strong> <img alt="Ajouter" class="icone" src="../resources/paste.svg" /> un pas de test</li>
 <li>d'<strong>associer des exigences</strong></li>
-<li>d'<strong>afficher le détail</strong> du pas de test </li>
-<li>d'<strong>ajouter une pièce jointe</strong></li>
+<li>d'<strong>appeler un cas de test</strong></li>
+<li>d'<strong>afficher les détails</strong> du pas de test </li>
+<li>d'<strong>ajouter une pièce jointe</strong>. Il est aussi possible de glisser/déposer une pièce jointe directement sur le pas de test</li>
 </ul>
-<p><img alt="Barre d'icônes d'un pas de test" src="../resources/icones-survol-pas-de-testFR.png" /></p>
-<p>Le bouton <img alt="Boutons loupe" src="../resources/collapse.png" /> permet de réduire l'affichage et d'avoir une vue d'ensemble des pas de test rédigés.</p>
-<p><img alt="Prérequis et pas de test" src="../resources/prerequis-pas-de-test.png" /></p>
-<p>Le bouton <img alt="Boutons loupe" src="../resources/expand.png" /> permet de développer l'affichage des pas de test. </p>
+<p>Capture à refaire :
+<img alt="Barre d'icônes d'un pas de test" class="pleinepage" src="../resources/icones-survol-pas-de-test.png" /></p>
+<p>Si le pas de test posséde des champs personnalisés, des pièces jointes ou des exigences associées, ces élements s'affichent sous les champs Action et Résultat attendu.</p>
+<p>Le bouton <img alt="Boutons loupe" class="icone" src="../resources/collapse.png" /> permet de réduire l'affichage et d'avoir une vue d'ensemble des pas de test rédigés. Tandis que le bouton <img alt="Boutons loupe" class="icone" src="../resources/expand.png" /> permet de développer l'affichage des pas de test. Pour réduire ou étendre unitairement l'affichage du prérequis ou d'un pas de test, utiliser les flèches suivantes : <img alt="Réduire" class="icone" src="../resources/collapse-single.png" /> et <img alt="Etendre" class="icone" src="../resources/expand-single.png" />.</p>
+<p><img alt="Prérequis et pas de test" class="pleinepage" src="../resources/prerequis-pas-de-test.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Pour copier/coller ou supprimer plusieurs pas de test à la fois, sélectionner tous les pas de test à supprimer en cliquant sur leur numéro d'ordre avec un <strong>Ctrl+clic</strong> puis cliquer sur le bouton corrrespondant de l'un d'eux.</p>
+</div>
 <h2 id="reordonner-les-pas-de-test">Réordonner les pas de test</h2>
-<p>Pour réordonner les pas de test, il est possible de faire un glisser-déposer ou d'utiliser les flèches <img alt="Remonter le pas de test" src="../resources/chevron-double-up.png" /> ou <img alt="Descendre le pas de test" src="../resources/chevron-double-down.png" /> qui apparaissent au survol d'un pas de test. </p>
-<p>Le nouvel ordre après modification sera pris en compte lors de l'exécution. </p>
+<p>Pour réordonner un ou plusieurs pas de test : </p>
+<ol>
+<li>Sélectionner les pas de test en cliquant sur leur numéro d'ordre avec un <strong>Ctrl+clic</strong></li>
+<li>Cliquer sur les deux lignes verticales en pointillé qui s'affichent avant l'un des numéros d'ordre</li>
+<li>Réaliser un glisser/déposer à l'emplacement de destination</li>
+</ol>
+<p><img alt="Déplacer des pas de test" class="pleinepage" src="../resources/deplacer-pas-test.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Pour faciliter le réordonnancement des pas de test, il est recommandé de basculer en affichage réduit.</p>
+</div>
+<p>En affichage étendu, il est également possible de déplacer un pas de test d'un cran vers le haut ou vers le bas via les flèches <img alt="Remonter le pas de test" class="icone" src="../resources/chevron-double-up.png" /> et <img alt="Descendre le pas de test" class="icone" src="../resources/chevron-double-down.png" /> qui apparaissent au survol de ce dernier. </p>
 <h2 id="associer-une-exigence-a-un-pas-de-test">Associer une exigence à un pas de test</h2>
-<p>L'association d'une exigence à un pas de test se fait depuis l'ancre 'Prérequis et pas de test' <img alt="Ancre Prérequis et pas de test" src="../resources/steps.png" />de l'espace <strong>Cas de test</strong>. L'association se fait:</p>
+<p>L'association d'une exigence à un pas de test permet d'avoir une couverture plus précise d'une exigence par les tests. 
+<br/>L'association d'une exigence à un pas de test se fait de deux façons :</p>
 <ul>
 <li>
-<p>En cliquant sur le bouton [...] qui apparaît au survol en haut à droite du pas de test, puis en sélectionnant l'option <em>"Associer des exigences"</em>. L'arbre du Référentiel des exigences permet d'associer une exigence à un pas de test via un glisser-déposer.</p>
+<p>Via l'option 'Associer des exigences' :</p>
+<ol>
+<li>Cliquer sur le bouton <img alt="Plus" class="icone" src="../resources/more.png" /> qui apparaît au survol d'un pas de test </li>
+<li>Sélectionner l'option <em>'Associer des exigences'</em>. </li>
+<li>L'arbre du Référentiel des exigences s'affiche à droite et permet d'associer des exigences aux pas de test par glisser-déposer.</li>
+</ol>
 </li>
 <li>
-<p>En cliquant sur le bouton [...] puis en sélectionnant l'option <em>"Détails du pas de test"</em>. Lorsqu'une exigence est ajoutée à la table 'Exigences vérifiées par ce cas de test', la case 'Etape' est cochée par défaut, indiquant que l'exigence est reliée au pas de test.</p>
+<p>Via l'option 'Détails du pas de test' :</p>
+<ol>
+<li>Cliquer sur le bouton <img alt="Plus" class="icone" src="../resources/more.png" /> </li>
+<li>Sélectionnant l'option <em>'Détails du pas de test'</em>. </li>
+<li>Sur la page 'Détails pas de test', cliquer sur le bouton <img alt="Ajouter" class="icone" src="../resources/add.png" /> ou <img alt="Rechercher" class="icone" src="../resources/browse.png" /> pour ajouter des exigences à la table 'Exigences vérifiées par ce cas de test'</li>
+<li>Lorsqu'une exigence est associée au cas de test, la case 'Etape' est cochée par défaut, indiquant que l'exigence est également reliée au pas de test.</li>
+</ol>
 </li>
 </ul>
-<p>Une fois associée au pas de test, l'exigence associée apparaît:</p>
+<p>Une fois associée au pas de test, l'exigence associée apparaît :</p>
 <ul>
-<li>dans le pas de test, sous les champs 'Action' et 'Résultat attendu'.</li>
+<li>dans le pas de test, à la suite des champs 'Action' et 'Résultat attendu'.</li>
 </ul>
-<p><img alt="Pas de test avec exigence associée" src="../resources/pas-de-test-avec-exiFR.png" /></p>
+<p><img alt="Pas de test avec exigence associée" class="pleinepage" src="../resources/pas-de-test-avec-exiFR.png" /></p>
 <ul>
-<li>dans la table 'Exigences vérifiées par ce cas de test' de l'espace <strong>Cas de test</strong>.</li>
+<li>dans la table 'Exigences vérifiées par ce cas de test' du cas de test avec le numéro du pas de test qui lui est associé dans la colonne 'Vérifiée par'.</li>
 </ul>
-<p><img alt="Table 'Exigences vérifiées par ce cas de test'" src="../resources/exigences-verifieesFR.png" /></p>
-<p>Le pas de test associé à l'exigence apparaît dans la table 'Cas de test vérifiant cette exigence' de l'espace <strong>Exigences</strong>.</p>
-<p><img alt="Table 'Exigences vérifiées par ce cas de test'" src="../resources/CT-verifiant-exigenceFR.png" /></p>
+<p><img alt="Table 'Exigences vérifiées par ce cas de test'" class="pleinepage" src="../resources/exigences-verifieesFR.png" /></p>
+<p>Le cas de test associé à l'exigence  apparaît quant à lui dans la table 'Cas de test vérifiant cette exigence' de l'exigence.</p>
+<p><img alt="Table 'Exigences vérifiées par ce cas de test'" class="pleinepage" src="../resources/CT-verifiant-exigenceFR.png" /></p>
 <h2 id="rediger-un-pas-de-test-en-visualisant-les-exigences">Rédiger un pas de test en visualisant les exigences</h2>
-<p>En cliquant sur le bouton [...] qui apparaît au survol en haut à droite du pas de test, puis en sélectionnant l'option <em>'Détails du pas de test'</em>, il est possible de créer, modifier et supprimer des pas de test en visualisant les exigences qui sont associées. </p>
+<p>Il est possible de créer, modifier et supprimer les pas de test d'un cas de test en visualisant sur la même page les exigences qui lui sont associées. Pour ce faire :</p>
+<ol>
+<li>Cliquer sur le bouton <img alt="Plus" class="icone" src="../resources/more.png" /> qui s'affiche au survole du pas de test</li>
+<li>Sélectionner l'option <em>'Détails du pas de test'</em></li>
+<li>La page 'Détails du pas de test' s'affiche avec à gauche un espace de visualisation des exigences associées et à droite les informations du pas de test. </li>
+<li>Cliquer sur le bouton <strong>&gt;</strong> pour consulter le détail des exigences</li>
+</ol>
+<p>Les champs 'Action' et 'Résultat attendu' sont modifiables et il est possible d'ajouter un pas de test via le bouton <img alt="Ajouter" class="icone" src="../resources/add.png" /> ou de le supprimer avec le bouton <img alt="Supprimer" class="icone" src="../resources/delete.svg" />.</p>
 <p><img alt="Détails du pas de test" src="../resources/details-du-pas-de-test.png" /></p>
                 
               
